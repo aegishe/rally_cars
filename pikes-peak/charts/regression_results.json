@@ -1,0 +1,326 @@
+{
+  "track": {
+    "name": "Pikes Peak",
+    "length_km": 19.99,
+    "turns": 156,
+    "elev_start": 2862,
+    "elev_end": 4302,
+    "elev_gain": 1440,
+    "avg_grade_pct": 7.2
+  },
+  "regression": {
+    "n": 13,
+    "p": 8,
+    "r2": 0.8495044596838658,
+    "r2_adj": 0.6388107032412779,
+    "intercept": 6.185282245173359,
+    "coeffs": [
+      {
+        "name": "ln(hp)",
+        "value": -0.03567127523914424,
+        "se": 0.04479008284628976,
+        "p": 0.461915930473032
+      },
+      {
+        "name": "ln(kg)",
+        "value": 0.06228933762635337,
+        "se": 0.04025136999669384,
+        "p": 0.18241584187540655
+      },
+      {
+        "name": "EV",
+        "value": 0.03518299952839468,
+        "se": 0.026084014241703504,
+        "p": 0.23525754975127125
+      },
+      {
+        "name": "PHEV",
+        "value": 0.05399485359017996,
+        "se": 0.03503047020916309,
+        "p": 0.18386248318486903
+      },
+      {
+        "name": "SUV",
+        "value": 0.008413314121554778,
+        "se": 0.03607436348693688,
+        "p": 0.8248365476493439
+      },
+      {
+        "name": "Sedan",
+        "value": 0.008546844036435575,
+        "se": 0.0339733960639596,
+        "p": 0.8113826633649536
+      },
+      {
+        "name": "AeroMod",
+        "value": -0.09284237866522001,
+        "se": 0.026642743879677508,
+        "p": 0.017569672325203924
+      }
+    ],
+    "beta_hp": -0.03567127523914424,
+    "beta_kg": 0.06228933762635337,
+    "weight_penalty_ratio": 1.746204395799103,
+    "pw_elasticity_k": 0.11028581081143427
+  },
+  "cars": [
+    {
+      "name": "Porsche GT2 RS Clubsport",
+      "hp": 700,
+      "weight": 1390,
+      "lap_s": 558.053,
+      "powertrain": "ICE",
+      "body": "Coupe",
+      "aero": "Modified",
+      "engine": "涡轮",
+      "residual_pct": 1.4907850086459007,
+      "predicted_lap_s": 549.795334489595,
+      "pw_ratio": 0.5035971223021583,
+      "mod_level": "厂商改装",
+      "mod_detail": "保时捷Motorsport赛车部门出品, 大尾翼+全底盘"
+    },
+    {
+      "name": "Corvette ZR1X",
+      "hp": 1250,
+      "weight": 1884,
+      "lap_s": 570.104,
+      "powertrain": "PHEV",
+      "body": "Coupe",
+      "aero": "Modified",
+      "engine": "涡轮+电机",
+      "residual_pct": -1.5981056264266158,
+      "predicted_lap_s": 579.2880540810022,
+      "pw_ratio": 0.6634819532908705,
+      "mod_level": "厂商改装",
+      "mod_detail": "雪佛兰官方, 原厂性能包配套, 1250hp混动, 职业车手"
+    },
+    {
+      "name": "Acura NSX",
+      "hp": 573,
+      "weight": 1725,
+      "lap_s": 601.913,
+      "powertrain": "PHEV",
+      "body": "Coupe",
+      "aero": "Modified",
+      "engine": "涡轮+电机",
+      "residual_pct": 1.5981056264267046,
+      "predicted_lap_s": 592.3702491956038,
+      "pw_ratio": 0.33217391304347826,
+      "mod_level": "私人改装",
+      "mod_detail": "私人车队参赛, 2020年混动组记录"
+    },
+    {
+      "name": "Porsche 911 Turbo S",
+      "hp": 650,
+      "weight": 1650,
+      "lap_s": 593.74,
+      "powertrain": "ICE",
+      "body": "Coupe",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": -2.92713299950913,
+      "predicted_lap_s": 611.3764209822477,
+      "pw_ratio": 0.3939393939393939,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装(防滚架+座椅+灭火)"
+    },
+    {
+      "name": "Corvette ZR1 (Hartford)",
+      "hp": 1079,
+      "weight": 1735,
+      "lap_s": 611.018,
+      "powertrain": "ICE",
+      "body": "Coupe",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": 1.436347990863318,
+      "predicted_lap_s": 602.3043839656132,
+      "pw_ratio": 0.6219020172910663,
+      "mod_level": "原厂",
+      "mod_detail": "几乎原厂规格+原厂性能包, 私人车手"
+    },
+    {
+      "name": "Tesla Model S Plaid改",
+      "hp": 1020,
+      "weight": 2200,
+      "lap_s": 594.901,
+      "powertrain": "EV",
+      "body": "Sedan",
+      "aero": "Modified",
+      "engine": "电动",
+      "residual_pct": 1.994813234776771,
+      "predicted_lap_s": 583.1514168593515,
+      "pw_ratio": 0.4636363636363636,
+      "mod_level": "私人改装",
+      "mod_detail": "Unplugged Performance私人改装, 改装质量存疑"
+    },
+    {
+      "name": "BMW M8",
+      "hp": 625,
+      "weight": 1965,
+      "lap_s": 612.024,
+      "powertrain": "ICE",
+      "body": "Sedan",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": -1.977024610664735,
+      "predicted_lap_s": 624.2442659008349,
+      "pw_ratio": 0.31806615776081426,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装"
+    },
+    {
+      "name": "Bentley Continental GT",
+      "hp": 635,
+      "weight": 2244,
+      "lap_s": 618.488,
+      "powertrain": "ICE",
+      "body": "Sedan",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": -1.6967745792238809,
+      "predicted_lap_s": 629.0718855717739,
+      "pw_ratio": 0.28297682709447414,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装"
+    },
+    {
+      "name": "Tesla Model 3 Performance",
+      "hp": 450,
+      "weight": 1850,
+      "lap_s": 662.802,
+      "powertrain": "EV",
+      "body": "Sedan",
+      "aero": "Stock",
+      "engine": "电动",
+      "residual_pct": 1.6789859551120223,
+      "predicted_lap_s": 651.7665485887983,
+      "pw_ratio": 0.24324324324324326,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装"
+    },
+    {
+      "name": "Hyundai Ioniq 5 N TA",
+      "hp": 641,
+      "weight": 2100,
+      "lap_s": 570.852,
+      "powertrain": "EV",
+      "body": "SUV",
+      "aero": "Modified",
+      "engine": "电动",
+      "residual_pct": -3.485598243422494,
+      "predicted_lap_s": 591.1004470298537,
+      "pw_ratio": 0.30523809523809525,
+      "mod_level": "厂商改装",
+      "mod_detail": "现代N + WRC冠军Dani Sordo驾驶, ECU+空力+悬架+slick胎"
+    },
+    {
+      "name": "Lamborghini Urus Perf",
+      "hp": 666,
+      "weight": 2150,
+      "lap_s": 632.064,
+      "powertrain": "ICE",
+      "body": "SUV",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": 0.9244403121051903,
+      "predicted_lap_s": 626.2478703293235,
+      "pw_ratio": 0.3097674418604651,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装"
+    },
+    {
+      "name": "Hyundai Ioniq 5 N",
+      "hp": 641,
+      "weight": 2200,
+      "lap_s": 649.267,
+      "powertrain": "EV",
+      "body": "SUV",
+      "aero": "Stock",
+      "engine": "电动",
+      "residual_pct": -0.1882009464660328,
+      "predicted_lap_s": 650.4900771995167,
+      "pw_ratio": 0.2913636363636364,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装, 现代官方参赛"
+    },
+    {
+      "name": "Bentley Bentayga W12",
+      "hp": 635,
+      "weight": 2440,
+      "lap_s": 649.902,
+      "powertrain": "ICE",
+      "body": "SUV",
+      "aero": "Stock",
+      "engine": "涡轮",
+      "residual_pct": 2.7493588777835143,
+      "predicted_lap_s": 632.2772555978156,
+      "pw_ratio": 0.26024590163934425,
+      "mod_level": "原厂",
+      "mod_detail": "仅安全改装"
+    }
+  ],
+  "protos": [
+    {
+      "name": "VW I.D. R",
+      "hp": 680,
+      "weight": 1100,
+      "lap_s": 477.148,
+      "powertrain": "EV",
+      "pw_ratio": 0.6181818181818182
+    },
+    {
+      "name": "Peugeot 208 T16",
+      "hp": 875,
+      "weight": 875,
+      "lap_s": 493.878,
+      "powertrain": "ICE",
+      "pw_ratio": 1.0
+    },
+    {
+      "name": "Ford Super Mustang Mach-E",
+      "hp": 1400,
+      "weight": 1500,
+      "lap_s": 498.202,
+      "powertrain": "EV",
+      "pw_ratio": 0.9333333333333333
+    },
+    {
+      "name": "Ford F-150 Lightning SuperTruck",
+      "hp": 1600,
+      "weight": 1700,
+      "lap_s": 533.563,
+      "powertrain": "EV",
+      "pw_ratio": 0.9411764705882353
+    }
+  ],
+  "truck_ref": [
+    {
+      "name": 0,
+      "hp": 1025,
+      "weight": 3250,
+      "lap_s": 653.883,
+      "powertrain": "EV",
+      "pw_ratio": 0.3153846153846154,
+      "note": "越野皮卡，不参与量产回归"
+    }
+  ],
+  "proto_regression": {
+    "n": 4,
+    "r2": 0.7584067294020638,
+    "beta_hp": 0.11017703092942402,
+    "beta_kg": -0.013368557353193186,
+    "weight_penalty_ratio": 0.12133706309218542,
+    "pw_elasticity_k": -0.13070126480188257
+  },
+  "comparison_nbr": {
+    "track": "NBR",
+    "length_km": 20.83,
+    "n": 42,
+    "r2_adj": 0.735,
+    "r2_full": 0.907,
+    "pw_elasticity_k": 0.15,
+    "weight_penalty_ratio": 1.0,
+    "pw_elasticity_heavy": 0.08
+  }
+}

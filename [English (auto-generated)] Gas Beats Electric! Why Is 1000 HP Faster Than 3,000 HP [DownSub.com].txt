@@ -1,0 +1,410 @@
+6 minutes and 51 seconds. That's how
+long it took a gas car with over 1,000
+horsepower to go around the Nurburg
+Ring. But what if it had nearly 3,000
+horsepower? Yet, an electric car has
+done exactly that, but it took nearly 7
+minutes. Now, immediately this made me
+curious. Why would a car with nearly
+three times the power have a slower lap
+time? And there's no shade either.
+Anything under 7 minutes is incredibly
+respectable, but I'm still curious as to
+the why behind all of this. To figure it
+out, we're going to focus on two main
+questions. First, can both cars run an
+entire lap at full power? In other
+words, do they have enough energy stored
+on board? And second, can you actually
+use 3,00 horsepower? Can any tires out
+there actually put down this much power?
+And if so, what speed is required to do
+so? So, our first question, do we have
+enough energy stored on board for a full
+lap at full power? So, let's first
+compare our powertrains. Of course, with
+the ZR1, we've got our V8 engine
+producing 1,64 horsepower or about 873
+kW. With the U9X, we have four electric
+motors for a combined 2,220
+kW or about 2,977
+horsepower. Now, the Corvette has an
+18.5galon
+fuel tank and our U9X has an 80 kWh
+battery pack. So, we need to be able to
+compare these directly. So, we can
+convert gallons of gasoline into
+kilowatt hours. 1 gall of gasoline is
+roughly equivalent to 33.7 kwatt hours.
+So, 18.5 * 33.7 that gives us total
+energy stored on board of 623
+kwatt hours. Now, that sounds amazing.
+But of course, combustion engines are
+not very efficient. So, let's assume our
+combustion engine has a 25% efficiency.
+Of course, we're talking about operating
+at wide open throttle. And even if this
+number is a little high or a little low,
+it won't change our conclusion. So,
+don't worry too much about the
+efficiency number. But multiplying those
+together, we get a useful energy on the
+Corvette of about 155 kwatt hours
+versus, of course, electric motors are
+far more efficient. So, we're going to
+assume an efficiency of 92.5% here going
+from the battery getting to the wheels.
+And so, we are going to have a useful
+energy of about 74 kwatt hours. Now, you
+can already see the Corvette does have
+more energy, but does it actually
+matter? So, now that we know how much
+useful energy each car has with that
+amount of energy, how long could the car
+deliver full power? Now, this is a very
+simple thing to calculate. We're simply
+going to take energy and divide it by
+power. And so, that will give us time.
+So 155 kwatt hours divided by 873 kW.
+We'll multiply that by 60 minutes in an
+hour to convert it to minutes. And that
+gives us a time of 10.7 minutes. So the
+Corvette with this efficiency could run
+flat out for 10.7 minutes. Now, of
+course, it did the lap in less than 7
+minutes, which means it is never power
+limited for the entirety of that lap.
+Now, you might be thinking, well, of
+course, it's not going to be flat out
+for the entire lap. And you're
+absolutely right. So, I actually spoke
+with the Corvette team and asked them
+about how much time do these vehicles
+actually spend at wide openen throttle
+and they said for the Z06 it was 57% of
+the entire lap time going around the
+Nurburgane. For the ZR1 it was 40% and
+for the ZR1X it was 44%. So, what about
+the U9X? So, for the U9X 74 kW hours
+divided by 2220 multiplied by 60 and
+that gives us a total time of just 2
+minutes. 2 minutes that it can supply
+full power. Now, this may or may not be
+a problem. 2 minutes divided by 7. Well,
+that gives us 28.6%
+of the lap that could actually deliver
+that much power. But that means zero
+power for the rest of the lap. And
+considering the percentage which the ZR1
+is spending at wide openen throttle, I
+think this may actually be a concern.
+Another way of thinking about this is
+take that 2 over7 and multiply it by our
+power. That gives us 634
+kW. That's the average power that this
+vehicle can deliver throughout that
+entire lap. So at points it could be
+higher, at points it could be lower. But
+note that this average power is actually
+less than the average power that the
+Corvette could deliver because of course
+it is not energy limited. And actually
+when you look at the U9X going down the
+main straight, they lift once they hit
+350 km/h. So, they may be doing a little
+bit of energy saving there, and they may
+perhaps be doing a little bit of energy
+saving elsewhere on the track. A little
+bit of lifting coast. All right, so
+we've learned so far that it probably
+doesn't have enough energy to go all out
+on a full lap. But there's another big
+question, which is, can the tires even
+put down that much power? Did someone
+say tires?
+>> Who's that? Oh, hey there. This portion
+of the video is sponsored by
+Continental, who by the way never tells
+me I have a problem, but instead happily
+feeds my addiction. Today, we're talking
+about the True Contact Tour 54, a
+longlasting allseason touring tire for
+passenger cars and crossovers. Because
+the reality is, despite my personal
+preference for performance tires, most
+people want a tire that's comfortable
+and really, really longasting. And
+that's exactly where this sits as it is
+Continental's longest lasting tire they
+sell today with up to an 80,000mi
+warranty. It's got plenty of tread
+depth, a compound that helps reduce
+wear, and also focuses on excellent wet
+grip with deep main grooves to handle
+the rain, and cypes to help handle the
+snow. And there are helpful indicators
+that wear away, letting you know when
+your tire is no longer optimal for wet
+or snow. And if the D for dry
+disappears, it's time to replace the
+tire. And whether your car is gas or
+electric, it's built to handle the
+loads, while the compound optimizes both
+range and longevity. So, thanks,
+Continental. All right, back to the
+whiteboard. Sorry, I um just blacked out
+for a moment. Um where where were we?
+Oh, right. Tires. So, the real question
+is at what speed can you put down all of
+the car's power? Right. cuz obviously
+with nearly 3,000 horsepower, if you put
+it down immediately, you're just going
+to do a giant burnout. But eventually,
+you will reach a speed where you are no
+longer traction limited. So, what speed
+is that? Now, this is actually very easy
+to calculate with one simple equation.
+Power equals force time velocity.
+Velocity, that's what we're trying to
+figure out. At what speed can we apply
+that full power? So, because we're going
+with maximum power, we can set that
+equal to 2220. And we now need to know
+what is the maximum force these tires
+can apply. Where are they at the limit
+of friction? And so that is of course
+equal to the frictional coefficient 1.2
+multiplied by the normal force. So the
+mass of the vehicle 280 kg multiplied by
+gravity. So we plug in all these
+numbers. All we're left with is
+velocity. And that tells us a speed of
+76 m/s or about 274 km/h or about 170
+mph. So anything below that, anything
+below 170 mph, it won't be able to put
+the full power down. And then above
+that, it will be able to. All right. But
+170 mph, what does that even mean? We
+need some context, right? Well, the
+fastest car to ever go around the ring,
+a race car, by the way, was the Porsche
+919 Hybrid Evo, which did it in a
+blistering 5 minutes 19.55
+seconds. This was at an average speed of
+234 kmh or about 145 mph. So, the
+fastest car to ever do it was on average
+well under the speed at which the U9X
+can put down full power. What does that
+mean? Well, the U9X will rarely be
+putting down full power. Okay, but I
+have a confession. This is all
+completely wrong. Nonsense. Do you know
+why? Well, because we're assuming all of
+the power goes wherever it's needed. So
+in reality we need to take into
+consideration that each wheel has one
+motor. So for the front axle you have
+1100 kW and for the rear axle you have
+1100 kW and you can't send more than
+that to either axle. So why is this a
+problem? Well once you start
+accelerating that weight that load
+transfer is going to go to that rear
+tire. Now if you have more weight on
+that rear axle it means it has more
+available grip and so it can put down
+more power. On the flip side, if you
+have less weight on that front axle, it
+means it has less grip and it can put
+down less power. So, the speed at which
+the rear tire can finally put down the
+full amount of power it has, 1110 kW, is
+going to be less than this number we
+calculated earlier. And because the load
+is being taken away from the front and
+transferred to that rear axle, the front
+is going to have a much higher speed
+that it can put down that full 1110 kW
+than we calculated previously. So
+really, we need to calculate the speed
+at which each axle can finally put down
+full power. And when both axles can
+finally put down full power, we know the
+point at which we're no longer traction
+limited. All right. Well, we're going to
+need a few more variables to figure this
+out. All right, deep breaths, everyone.
+It's about to get a little bit gnarly.
+You're going to have to turn off Tik Tok
+brain. You're actually going to have to
+focus. But I believe in you. All right?
+Even if your parents never told you they
+did, I'm telling you right now, I
+believe in you. You can focus. You got
+this. The conclusion is really cool. So,
+here we go. What are we trying to figure
+out? We're trying to figure out the
+I don't know. We're trying to figure out
+the speed where we can apply full power
+on the rear axle. So, we've already
+learned this equation, right? Power
+equals force times velocity. We've
+already learned that force is equal to
+our frictional coefficient multiplied by
+our normal force. What's changed is now
+we have to take into consideration load
+transfer. So the normal force assuming
+this vehicle has a 50/50 weight
+distribution is going to be half the
+load of the vehicle of course plus
+whatever additional load we get to that
+axle from the acceleration. So mass time
+acceleration time the height of our
+center of gravity divided by our
+wheelbase. So as you can see this
+equation here as acceleration goes up
+the amount the of normal force that you
+have on your rear axle also goes up
+which means the speed at which you can
+apply full power goes down. So the
+question then becomes how much are we
+accelerating? Now we can figure out
+acceleration by looking at all of the
+forces acting on our car. So of course
+we have the force of traction. These
+tires are trying to accelerate the
+vehicle but some of that force has to go
+into aerodynamic losses. Some of that
+force has to go into rolling resistance
+losses. But where do we want it to go?
+We want it to go into linear
+acceleration. So the thing accelerates
+as quickly as possible. So we can say FT
+equals FA plus F arrow plus FRR. All
+right. Well, we can rearrange that and
+say the force of linear acceleration is
+equal to the traction force minus
+aerodynamic drag minus rolling
+resistance. Of course, we can fill in
+what these equations are. No problem.
+And then we can solve these equations
+for acceleration. So mass times
+acceleration, that's the acceleration
+we're solving for. And that gives us
+this long gnarly equation here. So we
+take this equation for acceleration. We
+plug it into our normal force equation
+right there. We plug that normal force
+equation into our tire force on the rear
+right here. We plug in that force at the
+rear into our power equation. And
+suddenly the only variable we're left
+with is velocity. So we simply solve for
+velocity. Wow, just like that. So easy.
+Cool. And what do we get? 56 m/s or
+about 202 km/h or about 126 mph. That is
+the speed at which the rear axle can
+apply full power. And look, just like I
+told you and predicted, it is less than
+the number we calculated earlier because
+you have more load on that rear axle. So
+you can apply the full power sooner.
+Okay. So now we know the speed at which
+the rear tops out and now becomes power
+limited instead of traction limited. And
+while it is actually high, there are a
+good number of times that the car is
+driving over 200 km/h. So it is in fact
+getting a decent bit of use on the lap.
+But what about the front axle? All
+right, so for the front axle, a little
+bit trickier, but we got this. There's
+only two changes we need to make versus
+our previous math in order to figure
+this out. The first one being our normal
+force, right? So, previously the normal
+force on the rear tire was half the
+weight of the vehicle plus some amount
+from acceleration. Now, it's going to be
+half the weight of the vehicle minus
+that same amount from acceleration.
+Right? So, we're just putting a minus
+there instead of a plus there. Which
+means as our acceleration goes up, the
+normal force on that front tire goes
+down. So, the speed at which you can
+apply full power goes up. All right. The
+second thing we need to figure out is
+this force of traction. So, previously
+we were traction limited, but now we're
+going to be at a speed where the rear is
+power limited. So, we're no longer
+traction limited. So, this FT is no
+longer going to be equal to mu mg, our
+traction limit. Instead, it's going to
+be reliant on our total power. So, we're
+going to be at the point where we can
+finally put down full power. So, this FT
+is going to be our total amount of power
+divided by our velocity. So in our
+acceleration equation, instead of mu mg,
+we're putting in our total power divided
+by a velocity. Now, of course, that
+means we're adding in another v, which
+makes solving for v more complicated,
+but that's what calculators are for. So
+you put a into n, you put n into f, you
+put f into p, you solve for b, boom,
+just like that. Easy peasy. What do you
+get? The front velocity at which you can
+finally put down full power. 99 m/s or
+about 357
+km/h or about 222
+mph. So below that speed, this car
+cannot put down its full power. Now, as
+we already mentioned, the driver was
+lifting at 350 kmh. So it is possible
+that they never during the entirety of
+the lap had the ability to put down the
+full 3,000 horsepower. Now, that said,
+if you take into consideration other
+variables like adding in the weight of
+the driver and then having some
+efficiency loss from your gears, that
+could bring this number down to about
+330 km/h where you start to be able to
+use that full power. And if you had
+meaningful downforce, that number would
+drop even further. So, it may be using
+its full power very briefly on the main
+straight, but that's about it. So, what
+have we learned? Well, there comes a
+point where power becomes meaningless.
+And for many scenarios, this car reaches
+that point. It's still difficult to get
+a sub 7minute lap time. But the reason
+why a 3,000 horsepower vehicle is slower
+than a 1,000 horsepower vehicle is
+because there's never really a time that
+it can actually use that 3,000
+horsepower. It's really all about grip,
+which is a mixture of aerodynamics and
+tires. And so what a delightful piece of
+information to close out on as the
+Porsche 911 GT3 RS with only 386 kW or
+about 520 horsepower, less than half
+that of the Corvette ZR1, is actually
+quicker than the ZR1 with a 649.3 lap
+time. Why? Well, it has more downforce
+and it weighs less, which means it has
+more grip, which means it can go around
+corners faster. And that's what's
+important on the Nurburg Green. And
+that's not throwing shade at the ZR1,
+especially when you consider that it's a
+lowerc cost vehicle and it's more
+obtainable than a GT3 RS. But the lesson
+here remains. For the Ring, grip is
+king. If you have any questions or
+comments, feel free to leave them below.
+Thanks for watching.
