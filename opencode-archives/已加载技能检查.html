@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>已加载技能检查</title>
+<style>
+body { font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; max-width: 920px; margin: 0 auto; padding: 24px 16px 60px; background: #f2f3f5; color: #1f2329; }
+h1 { font-size: 20px; }
+.header { color: #888; font-size: 13px; margin-bottom: 20px; }
+.msg { display: flex; margin: 14px 0; }
+.msg.user { justify-content: flex-start; }
+.msg.assistant { justify-content: flex-end; }
+.bubble { max-width: 78%; padding: 10px 14px; border-radius: 10px; line-height: 1.6; font-size: 14px; box-shadow: 0 1px 2px rgba(0,0,0,.06); word-break: break-word; }
+.msg.user .bubble { background: #e8f3ff; border: 1px solid #cfe5ff; border-top-left-radius: 2px; }
+.msg.assistant .bubble { background: #ffffff; border: 1px solid #e5e6eb; border-top-right-radius: 2px; }
+.meta { font-size: 12px; color: #a0a0a8; margin-bottom: 6px; }
+pre { background: #f7f8fa; border: 1px solid #ececec; border-radius: 6px; padding: 10px; overflow-x: auto; font-size: 13px; line-height: 1.5; }
+code { font-family: Consolas, Menlo, monospace; }
+</style>
+</head>
+<body>
+<h1>已加载技能检查</h1>
+<div class="header">📦 opencode 历史对话 · 导出 2026-08-14 01:51 · 🤖 deepseek/deepseek-v4-pro (max)</div>
+<div class="msg user"><div class="bubble"><div class="meta">🧑 我 · 2026-08-07 00:21</div><span style="white-space:pre-wrap">检查下目前有哪些技能加载了</span></div></div>
+<div class="msg assistant"><div class="bubble"><div class="meta">🤖 AI · 2026-08-07 00:21</div><span style="white-space:pre-wrap">当前可用的技能共 4 个（均为未加载状态）：
+
+| 名称 | 用途 | 位置 |
+|------|------|------|
+| `customize-opencode` | 编辑 opencode 自身配置 | 内置 |
+| `deep-talk` | 人际沟通场景分析与策略 | `~/.config/opencode/skills/deep-talk/` |
+| `deep-think` | 社会/文化/系统层面探讨 | `~/.config/opencode/skills/deep-think/` |
+| `grill-with-docs` | 项目文档审查与架构决策推敲 | `~/.config/opencode/skills/grill-with-docs/` |
+
+目前没有任何技能被加载。如需使用某个技能，告诉我技能名称即可。</span></div></div>
+</body></html>
