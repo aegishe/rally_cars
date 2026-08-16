@@ -1,2 +1,6 @@
 node_modules/
 cookies.txt
+.tools/
+
+# Conflict-resolution backups (dsh-sync v3)
+**/*.remote
