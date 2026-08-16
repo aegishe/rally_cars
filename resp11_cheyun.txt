@@ -1,0 +1,48 @@
+data: {"type":"STARTED","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","timestamp":"2026-08-16T12:08:16.709Z"}
+
+data: {"type":"STREAMING_URL","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","streaming_url":"https://ip-18-145-158-117.tetra-data.production.tinyfish.io/tf-c4d89083-1425-47a0-b2c9-5fad41989469/stream/0","timestamp":"2026-08-16T12:08:18.390Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"访问目标文章页面提取全文内容","timestamp":"2026-08-16T12:08:20.070Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"搜索文章\"长城炮战队实力斩获2026环塔T2.1、T2.3量产总冠军\"","tinyfish_api":"search","timestamp":"2026-08-16T12:08:22.273Z"}
+
+data: {"type":"TF_API_RESULT","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","tinyfish_api":"search","result":[{"position":1,"site_name":"youjia.baidu.com","snippet":"6月1日，2026年中国环塔国际拉力赛圆满收官，长城炮战队全程表现强势，最终成功斩获T2.1量产燃油组、T2.3俱乐部量产组双组别总冠军，以及T2.1厂商队杯总冠军、T2.3 ...","title":"环塔亮剑实力加冕！长城炮战队斩获2026环塔T2.1 - 有驾","url":"https://youjia.baidu.com/view/articleDetail/9641879040318710371?sa=%E9%9F%BB%E9%81%94%E5%BF%AB%E9%81%9E%E9%A6%99%E6%B8%AF_auto"},{"date":"May 29, 2026","position":2,"site_name":"auto.cctv.com","snippet":"... 长城炮战队全程稳定发挥。 T2.1量产燃油组中，车手额尼日勒图搭档领航敖布勒格驾驶V6火炮以总用时38小时59分56秒的成绩斩获SS1-SS9赛段总用时榜第一 ...","title":"环塔SS9赛段完赛长城炮战队双组别居总用时榜第一 - 汽车频道","url":"https://auto.cctv.com/2026/05/29/ARTIEroWoomz9ayOK0Y4D3xP260529.shtml"},{"date":"Jun 3, 2026","position":3,"site_name":"caifuhao.eastmoney.com","snippet":"据环塔拉力赛官方赛绩公示数据显示，在T2.1量产燃油组中，车手额尼日勒图与领航敖布勒格搭档，驾驶V6火炮战车驰骋全程，以38小时59分56秒的总用时斩获SS1- ...","title":"鏖战环塔魔鬼赛段长城炮双组别领跑彰显硬核越野实力 - 财富号","url":"https://caifuhao.eastmoney.com/news/20260603125422863440340"},{"date":"May 18, 2026","position":4,"site_name":"view.inews.qq.com","snippet":"... 长城炮战队从雪山环抱的绿谷港湾启程，向“东方达喀尔”极限赛道发起冲击。环塔赛事首日，车手额尼日勒图发挥出色，在短道排位赛中斩获T2.1组别第一名的 ...","title":"冠军车手集结长城炮战队迎战2026中国环塔国际拉力赛","url":"https://view.inews.qq.com/a/20260518A03ZPU00"},{"date":"Jun 2, 2026","position":5,"site_name":"auto.cctv.com","snippet":"6月1日，2026中国环塔国际拉力赛圆满收官。历经17天、总里程7500公里、特殊赛段3400公里的极限挑战，长城车队不仅顺利完成全赛程，更一举包揽T2.","title":"长城车队斩获2026环塔拉力赛量产组“大满贯” - 汽车频道- 央视网","url":"https://auto.cctv.com/2026/06/02/ARTI7I4jpoAQih8zl0DHXDb7260602.shtml"},{"position":6,"site_name":"h5.ifeng.com","snippet":"在竞争激烈的T2.E量产新能源组中，长城汽车车队车手保·纳瓦罗（Pau Navarro）与领航扬·罗萨（Jan Rosa）驾驶坦克700 Hi4-T赛车，夺得该组别冠军。其中，保·纳瓦罗是2026年 ...","title":"长城汽车环塔拉力赛SS1赛段首战告捷包揽三组别冠亚军","url":"https://h5.ifeng.com/c/vivo/v002EFComuC7qxsSFQguoSHNKLZwf9gHl7ocKp7iVUieR4Q__?isNews=1&showComments=0"},{"date":"Jun 6, 2025","position":7,"site_name":"www.sohu.com","snippet":"今年的环塔赛场，长城车队成绩出色，其中长城坦克Hi4车队获得厂商队杯T2.E量产新能源组冠军，长城哈弗车队二代哈弗H9获得T2.1量产燃油组总冠军，长城炮V6 ...","title":"环塔拉力赛长城获双组别冠军体验环塔冠军车型","url":"https://www.sohu.com/a/901703731_383324"},{"date":"2 weeks ago","position":8,"site_name":"www.youtube.com","snippet":"长城炮战队赢麻了！获2026环塔T21T23量产总冠军长城炮环塔再夺冠长城汽车环塔大满贯长城炮战队征战2026环塔2026长城汽车环塔 ... 1 like5 views10 days ago","title":"长城炮战队赢麻了！获2026环塔T21T23量产总冠军 ...","url":"https://www.youtube.com/watch?v=d8PmI8N7QaQ"},{"date":"Jun 1, 2026","position":9,"site_name":"zhuanlan.zhihu.com","snippet":"众所周知，2026 环塔难度被推至历史巅峰。赛事总里程高达7500km，特殊赛段3400km，全程穿越高温戈壁、松软沙漠、险峻河床与复杂雅丹地貌，极端 ...","title":"2026环塔拉力赛落幕，长城车队包揽冠亚军","url":"https://zhuanlan.zhihu.com/p/2044913254493852754"},{"position":10,"site_name":"www.atr123.com","snippet":"车号; 车手; 副驾驶; 俱乐部; 厂牌; 组别; 俱乐部杯; 总排名. 车号:257. 车手:梁志辉. 车号:257; 副驾驶:史泽森; 俱乐部:沙蜥减震器61车队; 厂牌:长城; 组别:T2.3 ...","title":"环塔拉力赛官方网站","url":"https://www.atr123.com/"}],"timestamp":"2026-08-16T12:08:23.277Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:08:38.278Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:08:53.279Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:09:08.281Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:09:23.281Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:09:38.281Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:09:53.282Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:10:08.282Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:10:23.283Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"访问目标文章页面提取全文内容","timestamp":"2026-08-16T12:10:25.827Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"尝试从备选新闻页面提取相同文章内容","timestamp":"2026-08-16T12:10:35.508Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"访问财富号上的备份文章以获取详细信息","timestamp":"2026-08-16T12:10:49.211Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:11:04.213Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"提取当前页面文章内容以检查是否包含SS10-SS12及总冠军详情","timestamp":"2026-08-16T12:11:05.139Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"访问任务指定的原始URL以提取完整内容","timestamp":"2026-08-16T12:11:18.453Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"获取包含SS10-SS12赛段信息的全文内容","timestamp":"2026-08-16T12:11:26.548Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:11:41.550Z"}
+
+data: {"type":"HEARTBEAT","timestamp":"2026-08-16T12:11:56.550Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"提取CCTV页面中关于SS10-SS12赛段及额尼日勒图的具体成绩和战术描述内容","timestamp":"2026-08-16T12:11:56.816Z"}
+
+data: {"type":"PROGRESS","run_id":"e34088ca-5775-4377-b2be-2b2d7211d0b9","purpose":"从CCTV收官报道中提取全文内容及具体成绩战术信息","timestamp":"2026-08-16T12:12:06.352Z"}
+
