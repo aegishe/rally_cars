@@ -44,7 +44,7 @@ marks = {
     '仰望 U9': (3019/2.48, 419.2, '仰望U9'),
     'GT2 RS Manthey': (700/1.44, 403.3, 'GT2 RS'),
     'Taycan GT Manthey': (1093/2.25, 415.5, 'Taycan'),
-    'SU7 Ultra': (1548/2.36, 424.9, 'SU7 Ultra'),
+    'SU7 Ultra': (1548/2.36, 424.9, 'SU7 Ultra 量产'),
     'YU7 GT': (1003/2.46, 442.8, 'YU7 GT'),
     '911 GT3': (510/1.456, 416.3, '911 GT3'),
     'Nevera': (1914/2.15, 425.3, 'Nevera'),
@@ -54,9 +54,17 @@ for key, (x, y, lab) in marks.items():
                 fontsize=9, fontweight='bold',
                 arrowprops=dict(arrowstyle='-', lw=0.6, color='#555'))
 
+# SU7 Ultra 原型车 —— 实心星标注
+ax.scatter([1548/1.9], [406.874], marker='*', s=260, facecolors='#e74c3c',
+           edgecolors='#e74c3c', linewidths=1.5, zorder=6)
+ax.annotate('SU7 Ultra 原型\n6:46.9 · 1548hp · ≈1900kg · 残差 -3.3%',
+            (1548/1.9, 406.874), textcoords='offset points', xytext=(10, -34),
+            fontsize=9, fontweight='bold', color='#c0392b',
+            arrowprops=dict(arrowstyle='->', lw=0.8, color='#c0392b'))
+
 ax.set_xlabel('账面功重比（hp/t）')
 ax.set_ylabel('纽北圈速（秒）')
-ax.set_title('42 车：功重比 vs 圈速（N=42，R²=0.907 加入质量分布+扭矩矢量后）')
+ax.set_title('43 车：功重比 vs 圈速（N=43，R²=0.901 加入质量分布+扭矩矢量后）')
 ax.invert_yaxis()
 ax.legend(loc='lower right')
 ax.grid(alpha=0.3, lw=0.5)
@@ -83,34 +91,34 @@ fig.savefig(os.path.join(OUT, 'fig2_k_value.png'), dpi=150)
 plt.close(fig)
 print('fig2 done')
 
-# ============ 图3：U9X 功率反推全圈曲线 ============
-df = pd.read_csv(os.path.join(ROOT, 'track', 'U9X_power_analysis.csv'))
+# ============ 图3：U9X 功率反推全圈曲线 (5fps 滑动回归口径) ============
+df = pd.read_csv(os.path.join(ROOT, 'track', 'u9x_5fps_power.csv'))
 t = df['t_s'].values
 p = df['power_kW'].values
 v = df['speed_kmh'].values
 
 fig, ax = plt.subplots(figsize=(11, 5.5))
-ax.plot(t, p, color='#2c3e50', lw=0.8, alpha=0.9, label='轮上功率反推（1秒采样）')
+ax.plot(t, p, color='#2c3e50', lw=0.6, alpha=0.9, label='轮上功率反推（5fps 滑动回归口径）')
 ax.fill_between(t, p, 0, where=(p > 0), color='#3498db', alpha=0.15)
 ax.fill_between(t, p, 0, where=(p < 0), color='#95a5a6', alpha=0.25, label='制动/回收（负值）')
 
 # 账面功率参考线
 ax.axhline(2220, color='#c0392b', ls='--', lw=1.2, label='账面峰值 2220kW（2977hp）')
 
-# 峰值标注
+# 峰值标注 (5fps 口径 + 1s 口径区间)
 imax = np.argmax(p)
-ax.annotate(f'实测峰值 {p[imax]:.0f}kW @ {v[imax]:.0f}km/h（账面 79%）',
-            xy=(t[imax], p[imax]), xytext=(t[imax] + 18, p[imax] + 220),
+ax.annotate(f'5fps 稳健口径峰值 {p[imax]:.0f}kW @ {v[imax]:.0f}km/h\n（1s 差分口径 1761kW；真实峰值在两者之间，\n兑现率 73-79%，账面从未兑现）',
+            xy=(t[imax], p[imax]), xytext=(t[imax] - 190, p[imax] + 300),
             fontsize=9.5, fontweight='bold', color='#c0392b',
             arrowprops=dict(arrowstyle='->', lw=1, color='#c0392b'))
 
 # 349 平台段高亮（375-405s）
 ax.axvspan(375, 405, color='#e67e22', alpha=0.12)
-ax.text(390, 1750, '349km/h\n限速平台', ha='center', fontsize=8.5, color='#a04000')
+ax.text(390, 1650, '349km/h\n限速平台', ha='center', fontsize=8.5, color='#a04000')
 
 ax.set_xlabel('时间（秒）')
 ax.set_ylabel('轮上功率（kW）')
-ax.set_title('U9X 纽北 7:03.5 全程轮上功率反推：峰值 1761kW，账面从未兑现')
+ax.set_title('U9X 纽北 7:03.5 全程轮上功率反推：实测峰值 1627-1761kW，账面从未兑现')
 ax.set_xlim(0, t.max())
 ax.set_ylim(-1200, 2600)
 ax.legend(loc='upper right', fontsize=9)
@@ -122,10 +130,10 @@ print('fig3 done')
 
 # ============ 图4：残差 Top/Bottom ============
 fig, ax = plt.subplots(figsize=(9, 5.5))
-top_names  = ['Taycan GT Manthey', 'AMG ONE', '911 GT3 RS Manthey', 'Taycan GT Weissach', 'YU7 GT Track Pkg']
-top_vals   = [-5.8, -4.7, -3.5, -3.0, -3.0]
-bot_names  = ['Model S Plaid', 'McLaren 720S', 'Golf R 20Y', '仰望 U9', 'Rimac Nevera']
-bot_vals   = [3.2, 3.3, 3.9, 4.8, 5.0]
+top_names  = ['Taycan GT Manthey', 'AMG ONE', '911 GT3 RS Manthey', 'Aventador SVJ', 'SU7 Ultra 原型']
+top_vals   = [-5.4, -4.3, -3.8, -3.3, -3.3]
+bot_names  = ['Model S Plaid', 'Golf R 20Y', 'McLaren 720S', '仰望 U9', 'Rimac Nevera']
+bot_vals   = [3.7, 3.8, 3.9, 5.4, 5.4]
 all_names = top_names[::-1] + bot_names
 all_vals = top_vals[::-1] + bot_vals
 bar_colors = ['#27ae60'] * 5 + ['#e74c3c'] * 5

@@ -6,17 +6,17 @@
 
 | 文件 | 内容 |
 |------|------|
-| `docs/U9X纽北实测功率反推.md` | U9X 逐帧反推（峰值 1761kW=账面 79%，349 限速实锤） |
-| `docs/SU7 Ultra纽北实测功率反推.md` | SU7 反推 + 两车全圈对照（弯道/分段账本/5fps 验证结论） |
+| `docs/U9X纽北实测功率反推.md` | U9X 逐帧反推（峰值 1627-1761kW=账面 73-79%，349 限速实锤） |
+| `docs/SU7 Ultra纽北实测功率反推.md` | SU7 反推 + 两车全圈对照（弯道/分段账本/5fps 定论） |
 | `docs/重采管道操作手册.md` | 抽帧→OCR→清洗→分析管道：配置、全圈模板、时间戳基准、坑清单、分诊表 |
 | `scripts/resample_config.json` | 重采管道唯一配置（16 段全圈区段表、lap_offset、OCR 参数） |
 | `scripts/resample_all.ps1` / `ocr_full.ps1` / `resample_clean.py` / `resample_analysis.py` | 一键抽帧+OCR / 全圈 OCR 批量 / 清洗校准 / 峰谷+减速度分析 |
-| `scripts/`（其余） | power_analysis*.py、straight_comparison.py、corner_comparison.py、segment_comparison.py、decel_comparison.py、data_audit_su7.py |
+| `scripts/`（其余） | power_analysis*.py、straight_comparison.py、corner_comparison.py、segment_comparison.py、decel_comparison.py、data_audit_su7.py、full_lap_5fps.py、braking_distance.py、decel_power.py |
 | `U9X clips.csv` / `SU7 Ultra clips.csv` | 原始逐秒采样（用户手工/OCR 抓取） |
-| `u9x_5fps.csv` / `su7_5fps.csv` | 5fps 重采清洗后数据（帧号口径+lap_offset 校准；全圈版 OCR 完成后更新） |
+| `u9x_5fps.csv` / `su7_5fps.csv` | 全圈 5fps 重采数据（帧号口径+lap_offset 校准） |
 | `corner_comparison.csv` | 两车距离域对齐曲线（s, v_u9x, v_su7, t, dt） |
 
-**已定论（5fps 全圈重采）**：全圈 25 减速段账本——U9X 平均 0.56g vs SU7 0.42g，13/25 段 U9X ≥1.2 倍；低速弯两车相当、中高速弯 U9X 显著更猛（动能回收，与 P=Fv 物理自洽）；16.8km 处两车相当（0.72 vs 0.77g）证实硬件同级别。直道账 0.6s（低谷口径）。篇2 已修正（加速段约 5.2s + 减速段约 1.8s + Döttinger 直道 0.6s）。**待办**：SU7 反推并入篇2 或单列姊妹篇（待定）。
+**已定论（5fps 全圈重采 + 43 车回归）**：全圈 25 减速段账本——U9X 平均 0.56g vs SU7 0.42g，13/25 段 U9X ≥1.2 倍；刹车点两车相同（±10m），U9X 是"高速入弯+重刹"V 型走线（回收仅占减速功率 1/4-2/5）。直道账 0.6s（低谷口径）。功率兑现率：U9X 1627-1761kW=73-79% vs SU7 1049kW=92%。43 车回归：β_hp -0.066（p=0.005）、β_kg +0.114、重量惩罚比 1.73；U9 残差 +5.4%（与 Rimac 并列榜尾）、SU7 量产 -1.4%、SU7 原型 -3.3%（高效 Top5）。残差敏感性：U9X 前轮减半仍 +3.5%，归零需 1317hp——马力虚高解释约 1/3。**待办**：SU7 反推并入篇2 或单列姊妹篇（待定）。
 
 ## 语言
 
