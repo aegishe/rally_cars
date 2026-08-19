@@ -1,0 +1,34 @@
+{
+  "videos": {
+    "u9x": "G:\\Capture\\youtube\\YANGWANG U9 Xtreme ｜ 6_59.157 official laptime ｜ Nordschleife [pcPraRlmi8s].mp4",
+    "su7": "G:\\Capture\\youtube\\Xiaomi SU7 Ultra ｜ Official uncut Nürburgring footage [I2EjtbqkZIU].mp4"
+  },
+  "regions": {
+    "u9x": "G:\\Capture\\youtube\\resample\\regions_u9x.json",
+    "su7": "G:\\Capture\\youtube\\resample\\regions_su7.json"
+  },
+  "lap_offset": { "u9x": -2.24, "su7": -2.06 },
+  "fps_div": 5,
+  "ocr_scale": 5,
+  "video_fps": 25,
+  "out_base": "G:\\Capture\\youtube\\resample",
+  "batch_ocr_script": "C:\\Users\\Administrator\\.agents\\skills\\batch-ocr\\batch_ocr.ps1",
+  "segments": [
+    { "car": "u9x", "name": "lap1", "frame_start": 55, "frame_end": 1555 },
+    { "car": "u9x", "name": "lap2", "frame_start": 1555, "frame_end": 3055 },
+    { "car": "u9x", "name": "lap3", "frame_start": 3055, "frame_end": 4555 },
+    { "car": "u9x", "name": "lap4", "frame_start": 4555, "frame_end": 6055 },
+    { "car": "u9x", "name": "lap5", "frame_start": 6055, "frame_end": 7555 },
+    { "car": "u9x", "name": "lap6", "frame_start": 7555, "frame_end": 9055 },
+    { "car": "u9x", "name": "lap7", "frame_start": 9055, "frame_end": 10555 },
+    { "car": "u9x", "name": "lap8", "frame_start": 10555, "frame_end": 10588 },
+    { "car": "su7", "name": "lap1", "frame_start": 50, "frame_end": 1550 },
+    { "car": "su7", "name": "lap2", "frame_start": 1550, "frame_end": 3050 },
+    { "car": "su7", "name": "lap3", "frame_start": 3050, "frame_end": 4550 },
+    { "car": "su7", "name": "lap4", "frame_start": 4550, "frame_end": 6050 },
+    { "car": "su7", "name": "lap5", "frame_start": 6050, "frame_end": 7550 },
+    { "car": "su7", "name": "lap6", "frame_start": 7550, "frame_end": 9050 },
+    { "car": "su7", "name": "lap7", "frame_start": 9050, "frame_end": 10550 },
+    { "car": "su7", "name": "lap8", "frame_start": 10550, "frame_end": 10933 }
+  ]
+}
