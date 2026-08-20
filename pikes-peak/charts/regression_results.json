@@ -316,11 +316,13 @@
   "comparison_nbr": {
     "track": "NBR",
     "length_km": 20.83,
-    "n": 42,
+    "n": 43,
     "r2_adj": 0.735,
-    "r2_full": 0.907,
+    "r2_full": 0.901,
     "pw_elasticity_k": 0.15,
-    "weight_penalty_ratio": 1.0,
-    "pw_elasticity_heavy": 0.08
+    "weight_penalty_ratio": 1.73,
+    "weight_penalty_ratio_note": "43车最终口径 β_hp=-0.066/β_kg=+0.114；旧口径1.0已作废（2026-08勘误）",
+    "pw_elasticity_heavy": 0.08,
+    "proto_weight_penalty_ratio": 4.34
   }
 }

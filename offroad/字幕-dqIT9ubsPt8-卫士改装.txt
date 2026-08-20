@@ -1,0 +1,731 @@
+Heat. Heat. [music]
+Good morning.
+&gt;&gt; Good morning.
+&gt;&gt; I'm looking for Paige.
+&gt;&gt; Hello.
+&gt;&gt; Nice to meet you.
+&gt;&gt; Right around with Jack. Let me grab him
+for you.
+&gt;&gt; Okay. Excellent.
+&gt;&gt; This is Jack, our head of tech
+integration. So everything to do with
+the car, the engineering of it,
+converting it from like standard doctor
+into the rally like race car, the 31 XR.
+&gt;&gt; Thank you very much.
+&gt;&gt; See you later.
+&gt;&gt; How much do you know about the program
+at the minute?
+&gt;&gt; Actually quite low.
+&gt;&gt; Nothing.
+&gt;&gt; So um if we go back a little bit, the um
+T2 has always been a real fundamental
+category within W2RC and the D car. So
+T2 has always been that productionbased
+category. So begin to be a car that's in
+production uh through a set of
+regulations to then compete. Um over the
+last let's say 2 years um we've been
+working really closely with the FIA with
+Toyota with other manufacturers [music]
+to start looking at what the first is
+all yours. You can pause
+&gt;&gt; sure just shout if you need any [music]
+go and have a comment while you do
+&gt;&gt; it's all right I can do it all. It's all
+good. Cheers m before we started talking
+to it was a case of what what do we want
+to do with defender? Is there anything
+we can do with Defender in a motorsport
+space? And and the answer is we have to
+really go for for the Everest Delro
+motorsport which is which is Dhakar.
+It's the toughest event, right? Um and
+that also comes with the opportunity to
+be a W2RC world championship competitor.
+Okay.
+&gt;&gt; Um but at the time um it's fair to say
+that the regulations didn't really fit
+for modern vehicles. And this is a very
+different vehicle concept to something
+like the Toyota Land Cruiser. We've
+[music] got a fully aluminium monog body
+and then the the chassis and suspension
+is mounted from the body. Whereas the
+Toyota and the Land Cruiser and other
+cars um the more traditional layout. So
+you've got like a ladder frame and then
+the body sits on the on the ladder frame
+and the ladder frame does all the work
+for the chassis. So [music] different
+vehicle concept
+&gt;&gt; and this started 2 years ago.
+&gt;&gt; Two years ago and actually less than 2
+years ago really is when we started out
+but the rear very short very very short.
+So we've gone from concept of what the
+program could be to this whole setup
+[music] in probably less than 18 months.
+&gt;&gt; That's crazy.
+&gt;&gt; Yeah. In engineering um it's around
+about 50 people.
+&gt;&gt; 50. Yeah. So if you look at um JLR
+engineering, it it es and flows. So that
+we get huge amount of support from our
+engineers at JLR because a lot of this
+car is still production. You know the
+body the body shell we'll go through the
+detail.
+&gt;&gt; What are the percentage maybe 30 to 20?
+&gt;&gt; No no no by weight it's about 65.
+&gt;&gt; Okay. Okay.
+&gt;&gt; So the body shell
+&gt;&gt; is standard. It's built in Nitra in
+Slovakia where all every defender on the
+road.
+&gt;&gt; It has to be stock.
+&gt;&gt; Yeah. Okay.
+&gt;&gt; Yeah. You can make some modifications.
+thing simple things like where there may
+be a bracket to hold a piece of trim
+panel on the production car you can take
+that bracket off. Okay.
+&gt;&gt; So we do all of those modifications on
+the line and nera that's where all the
+fenders are built. [music] So the body
+shell starts it life in exactly the same
+way as every other defender you see
+driving. So then they come to to us and
+they're handbuilt. So uh the rest of the
+vehicle the body shell is is stock is
+let's use the term stock cuz it works.
+&gt;&gt; Um the engine is stock the gearbox is
+stock. uh the transfer case that does
+all the four-wheel drive distribution is
+stock, the subframes are stock with some
+reinforcement. Um and then that's where
+we start to do the rally engineering.
+That's where we start to engineer for
+for the environment. That's the way the
+regulations are built. Mandates that you
+keep the let's call it like the
+fundamental architecture of the car.
+&gt;&gt; So the body shell engine drive
+&gt;&gt; concept and we also have to keep
+something called the kinematic principle
+which is the way that the suspension
+arms are mounted to the inboard of the
+body. we can change the outboard,
+&gt;&gt; but the suspension principles really
+governed by the inboard mounting. So,
+yeah, that's that's the package that
+we're working to. I mean, arguably, I I
+think it's the [music] case that that's
+a harder engineering challenge than
+building a prototype vehicle from
+scratch, you know, because you can
+engineer it exactly the way you want,
+whereas we have to start with a
+production car,
+&gt;&gt; find the limits of those systems, and
+then engineer them to work in this
+environment. So, it's been a it's been a
+really interesting project. It's just
+all about collaboration because we've
+got a great team with our technical
+partner Pro Drive.
+&gt;&gt; The part of Pro Drive.
+&gt;&gt; Yeah.
+&gt;&gt; So, is it just here or it's also
+engineering?
+&gt;&gt; Engineering as well.
+&gt;&gt; So, if you think that you've got to
+bring two big teams together, you need
+to bring a team that know um how to go
+to a rally raid event and build a rally
+raid car
+&gt;&gt; and then you need the team that designed
+[music] developed defender.
+&gt;&gt; Okay. And those are the the two teams
+that come together. And my my team is
+kind of the bridge between the two.
+Finding out how we engineer the
+production systems for this environment
+and then bringing that to life with the
+bespoke systems that we've built [music]
+to to bring the D7XR ready to race.
+&gt;&gt; Which one's the most difficult part to
+engineer?
+&gt;&gt; Uh it's a good question. There's been a
+few big challenges. Um software is one
+of the biggest challenges.
+&gt;&gt; Come on.
+&gt;&gt; Yeah. because the cuz [music] the car um
+the Octa is is a really really capable
+car and it's got huge amount of
+bandwidth of capability and a lot of
+that is supported by really complex
+software systems. [music] We need to
+simplify that but also keep all the
+systems happy. So if you think about the
+way this car is laid out the engine, the
+transmission, [music] the transfer case,
+the rear diff and the front diff are all
+mechanically connected.
+&gt;&gt; So if we want to put an installation in
+like this car has got like a hydraulic
+handbrake where [music] we can
+mechanically lock the rear axle that is
+that rear axle is linked all the way
+through to the engine permanently. So we
+have to be able to in software [music]
+make the gearbox and the engine think
+when the rear axle's locked to release
+the torque. Otherwise we end up damaging
+the [music] systems ourselves. Right. So
+it's little bits like that trying to
+make a production car that's designed
+for the road and customer use be able to
+survive the demands that it needs to be
+a rally car.
+&gt;&gt; Yeah. Can you tell us about
+specification [music]
+maybe horsepower?
+&gt;&gt; Yeah, sure. So way so the the
+regulations define all of that. So stock
+regs are there's a few fundamental
+principles. First is your base
+somigation car. The rally car is born
+from you have to make 1,000 units at
+least over a 12 month period. So for us
+that's the defender octa [snorts]
+&gt;&gt; only octa counts not the standard ones
+&gt;&gt; only octa. Well we we can select so
+because octa already has a wider track
+width different kinematics it's already
+got the big V8 engine that's the right
+car for us to start from and also it's
+the halo product
+&gt;&gt; and I guess to build the octa was on
+purpose because of the rally.
+&gt;&gt; No no octa was octa was first. So Octa
+is our the most capable Defender ever
+built and it is Halo product for
+Defender at Land Ro and it's [music]
+already it's got the V8 engine. It's got
+the 60 kinematic suspension. It's got
+amazing capability both off-road and
+onroad. Then we asked the question now
+how do we bring Octa into a rally car.
+So the Octa was born before the rally
+car. Okay. Yeah. [music] But the rally
+program isn't just Octa. The rally
+program is Defender. It's the motorsport
+halo for all of our Defender brand. So
+that's the first portion of the race.
+Thousand cars over 12 months. tick that
+box easily with auto production. The
+second is that uh we're governed by a
+power toweight ratio. So all of the
+cars, any car that enters stock [music]
+category is governed by 6.5 kg per
+horsepower. So if you have let's say you
+have a 2 and 1 half ton car, it works
+[music] out to around about 400
+horsepower. We're homologated now. Our
+homologation weight is published on the
+FIA website. Uh just under 2 and 1/2
+tons. Yeah.
+&gt;&gt; Ben, this is Gus. So Gus is our program
+director at Pro Drive.
+&gt;&gt; Gus and I work together, manage the
+team. invest pro drive side me JLR
+motorsport side and we yeah put [music]
+all the right pieces together the right
+people together to do the car and all
+the infrastructure around it you can see
+that it's a defender right got an octa
+nose and the [music] reason that it's
+got an octa nose is two two form the
+design of this car was done by our
+creative team at JLR the guys that
+designed [music] defender and are
+designing the new defender and design
+all of our rovers but the regulations
+also say that [music] we can't change
+this
+&gt;&gt; oh okay
+&gt;&gt; so we can't put a new bumper on the car
+what we can do is chop the bumper to
+improve the approach angle which we've
+done only slightly when you look at the
+octa [music] it's only about this this
+much has been cut off and then we
+replace the geometry of the nose with
+the bash guard.
+&gt;&gt; So that's mean so all of this is between
+6 and 10 [music] mil aluminium
+underneath the car. These features are
+all defender features that we've built
+into the bash guard to give the car the
+really distinctive nose that everyone
+knows. You look at it and go it's also
+[music] a design element.
+&gt;&gt; Yes, exactly. It's a design element. All
+of the um underfloor structure has
+become part of the design of the car. So
+then behind here is the first part where
+it gets to a bespoke rally unit which is
+our cooling system. So the engine
+itself, all that [music] you can see
+under here is a stock engine. It's
+exactly the same. If you lift the bonnet
+on Oxa, it looks exactly the same. Yeah,
+it's our V engine. So it's a twin turbo
+V8. Turbos sit [music] in the middle.
+Air boxes are all stock. All that we've
+done is fit underneath here a restrictor
+&gt;&gt; and the restrictor is from the FIA and
+that governs the powers, the weight
+ratio. Where it gets unique is this
+section here. So this is the main
+cooling. All of this is bespoke for the
+rally car.
+&gt;&gt; Okay. Because we're in high ambient,
+high demand on the car, really high um
+thermal uh inertia running through the
+vehicle, we need that unique cooling
+pack and we drive it with fans.
+&gt;&gt; Yeah. So, you are not allowed to put
+this in the back?
+&gt;&gt; No.
+&gt;&gt; The regs are written to say it has to
+remain in the location of the road.
+&gt;&gt; Yeah. Is it a challenge to protect it?
+&gt;&gt; Yeah.
+&gt;&gt; Okay.
+&gt;&gt; Yeah, it is.
+&gt;&gt; So, you can see the protection that
+we've got. So, we've got kind of two
+grills. We've got the big bash guard is
+doing a lot of protection and what we're
+trying to do is get as much air flow
+through this radiator as possible. Uh,
+but make sure that we're not overheating
+the next part of the drive line, which
+is the transmission. This engine's
+really hot. We need to be able to pull
+the air back out before it gets to the
+transmission. Yeah. So, that's why the
+venting in the bonnet. The bonnet looks
+stock underneath. If [music] you pull it
+down, you can see all the exits. They
+come through and the air paths are back
+up through the bonnet through each of
+these exits here. And this nose exit
+creates a level of negative pressure
+over the bonnet. Pulls the [music]
+position.
+&gt;&gt; That's interesting. Oh, okay. So, the
+air comes like this and makes a
+&gt;&gt; Yeah, it's just a negative negative. The
+idea is to pull the air out of the
+engine before it gets to the
+transmission. This car lived in the
+virtual world before it lived in the
+physical world. So we're doing a lot of
+work in CE driven tools. So CFDCA try
+and understand the limits of the
+production hardware. We have a lot of
+information about that from JLR. And
+then we need to bring together the teams
+the rally specific engineering to say
+okay where do we need to find those
+limits and what do we need to do to
+engineer for them.
+&gt;&gt; So this is a stock component. All of
+this is as it is in defender. By
+regulation we can give it some support.
+So we bring the cage forward. We put a
+stay across the the bonnet. The dampers
+are mounted directly into into here
+underneath. If you look under the
+corner, you know, we talked about the
+kinematic principle. [music]
+So all the mounting positions, top arm,
+forward, lower arm, and the lateral arm
+are in exactly the same place as the
+[music] road car. We have just
+re-engineered them for the specifics of
+this environment to be able to withstand
+impact and give us some more rally
+specific durability. And then we've got
+a Billstein Blackhawk damper. We
+partnered with Billstein. Billstein are
+a partner and supplier to JLR um across
+all of our Defender vehicles and wider
+Land Rover.
+&gt;&gt; So we've had a great existing
+relationship with Billstein and this is
+a really good opportunity for them to
+demonstrate [music] their technology
+outside of production and more of this
+&gt;&gt; but they also develop further.
+&gt;&gt; You've got it.
+&gt;&gt; Yeah. Yeah. So it's [music] a Blackhawk
+system um compression rebound damping
+hydraulic bump and rebound stops. Really
+really capable unit and we've done a lot
+of development. So that's just the
+external reservoir. So that's where the
+oil lives and all the settings.
+&gt;&gt; A massive protection.
+&gt;&gt; Uh it's a it's a reservoir. So it's
+where the oil comes through.
+&gt;&gt; I mean the the outside
+&gt;&gt; Oh, the outside is protective. [music]
+&gt;&gt; It looks massive.
+&gt;&gt; Yeah. Yeah. It's big. And obviously it's
+quite a thermal challenge to to keep the
+dampers [music] cool.
+&gt;&gt; Yeah. So that's the corner. Combined
+with that is a brake package. That's
+again a rally specific grade package.
+And we've got hydraulic braking,
+hydraulic steering as well. It's the big
+challenges.
+&gt;&gt; Pistle exhaust notes.
+&gt;&gt; Yeah. These are all unique. So these are
+fabricated uprights. But if you look at
+the geometry of them and you looked at a
+Defender one, very similar. All we've
+changed is the way they go together. So
+we've now got a multi-piece upright. So
+if we break one part, we just replace
+one part. We don't
+&gt;&gt; Do you have plans to bring something
+back from the rally car into Octa?
+&gt;&gt; We have plans not into Octa, but into
+possibly another vehicle.
+&gt;&gt; Okay. Okay. Well,
+&gt;&gt; call this part one.
+&gt;&gt; Okay.
+&gt;&gt; Yeah. So moving backwards, you can't see
+it, is the transmission. The
+transmission is exactly the same as the
+transmission in in Octa. And actually is
+the transmission in all the [music]
+Defenders you can see driving around.
+It's a ZF 8-speed transmission. What
+we've done is redesign software in
+collaboration with ZF. They worked
+really closely with us and with the
+teams at JLR. So we split the work
+between the three organizations to
+[music] develop that new software. And
+there's lots of functionality as we
+discussed like your handbrake
+functionality, wheels free
+functionality.
+&gt;&gt; And if you work together, is it
+physically on the same building or is
+there spread around the country?
+&gt;&gt; It varies. So Jarmine Pro are very very
+close. So they're in Bambbury, we're in
+Gaden. So we work really close with the
+teams there. And that's really
+fundamental to make this project go as
+quickly [music] as we have. Um and then
+when we work with suppliers like ZF, a
+lot of it is done um virtually between
+Germany
+&gt;&gt; Germany and we come together to go
+testing.
+&gt;&gt; So they'll always be with us on test
+whether that's Dubai, Morocco, in the
+UK, in Wales, wherever we go, we'll
+always have some support.
+&gt;&gt; Do you know how many hours of testing
+[music] you did?
+&gt;&gt; I can give you in kilometers. So we've
+done we've done just over 6,000 km of
+test and that's combined [music] from
+what we call mule car testing. So early
+early prototypes all the way through to
+rally car [music] test. And the first
+prototype we built was in February,
+March time last year. Then we built a
+second one in May. Then we built the
+first rally car in August.
+&gt;&gt; So it was a rally to test [music] it.
+Yeah.
+&gt;&gt; We finished testing in Dubai. We did
+Dubai Baja in November. And now we're in
+crazy rest of the drive line. One of the
+biggest changes that we've made is the
+front and rear diffs.
+&gt;&gt; So on a production [music] car, we have
+an electronically controlled rear diff
+and an open front diff. We've now got
+mechanical limited split differentials.
+&gt;&gt; Okay. Both front and rear.
+&gt;&gt; Okay. So simplification.
+&gt;&gt; Yeah. I have this in my Defender as well
+at home.
+&gt;&gt; Yeah. Yeah. In your old Defender.
+&gt;&gt; Yeah. Exactly. Yeah.
+&gt;&gt; Yeah.
+&gt;&gt; So, it's going back to that kind of
+mechanical controls. Yeah. Okay. So, no
+no [music] electronic control on the
+split from left to right.
+&gt;&gt; Pop shafts are stock. They're all the
+same. And then the half shafts are are
+unique because of the increase in
+torque, but we've got a 35 in [music]
+wheel and tire package. Much bigger
+rolling radius, bigger torque through
+the axle. We've got a lower final drive
+ratio. Again, all of that is just
+building [music] more and more torque
+stack. Um, and we need to be able to
+protect the drive line for that. The
+rear axle is where it gets really
+interesting. Yeah.
+&gt;&gt; So, by part of the regulations, we're
+allowed to [music] make modification to
+the body to mount the dampers. The
+regulations are written, you're allowed
+a maximum of two dampers per corner. So,
+we've got to what we've done is [music]
+we've created a new structure in the
+back of the car to enhance the already
+stiff fender body. Reason [music] being
+that if you look forward here, you can
+see the carbon fiber under floor for the
+fuel tank. So, we have to take some
+material out of the body to allow the
+fuel tank to come through. We then
+reinforce that with [music] some more
+steel structure and that allows us to
+mount the two dampers. Really
+interestingly, this like we [music] say
+the kinematics have to remain the same.
+The inboard mounting of the lower arm
+and the upper arm are all in exactly the
+same position as the road car, which
+means we've got the same suspension
+layout as the road car. We've just
+designed it to be wider and heavier,
+stronger really. You can see the
+suspension, the dampers are mounted on
+different parts. So, normally your
+dampers are mounted on the same part.
+So, we've got the forward mount on the
+upright and the rearwood mount is on the
+lower arm.
+&gt;&gt; And that's because the regulation allows
+you to adjust this [music] mounting
+point. Exactly. So, not the upper one,
+but the lower one.
+&gt;&gt; Yeah. They're both on the rear. We can
+change the upper damper positions are
+free.
+&gt;&gt; The only bits that have to be the same
+with the road car are the inboard
+suspension bits. So, we can put the
+dampers where we want.
+&gt;&gt; But this position, this damper here,
+it's in the same position as on the road
+car.
+&gt;&gt; Mhm. Okay.
+&gt;&gt; Back of the car, you won't be a surprise
+to you. Fuel tank, 550 L of fuel. It's a
+really big fuel tank, but the fuel
+[music] tank drops through the floor.
+Then we've got a really nice design in
+the middle that gives us extra capacity
+for [music] the fuel, but also brings
+the uh spare wheel and tires in. How
+long does it take to replace? something
+longer than in the T1 Plus. So, [music]
+&gt;&gt; we actually did some tests yesterday.
+Sarah and Sean drawn on his own. Um, did
+it in just over a minute.
+&gt;&gt; Wow. [music] Okay.
+&gt;&gt; So, down the hydraulic jack is here. So,
+activate hydraulic jack from the driver
+[music] side. Har up, wheel off, wheel
+on, wheel back in, ready to go in a
+minute.
+&gt;&gt; That's crazy.
+&gt;&gt; I mean, that's without putting helmet
+up.
+&gt;&gt; That's it. Yeah.
+&gt;&gt; Yeah. Really impressive.
+&gt;&gt; So, you have two spare wheels, I guess.
+Three. An additional one in the back
+here.
+&gt;&gt; Okay.
+&gt;&gt; Yeah. Fuel tanks as central and as low
+in the car as we can get it because of
+the weight. [music] give us the mass
+balance.
+&gt;&gt; Are they any double pump just for
+security reason that one is failing?
+&gt;&gt; Yes, FuelTech has auxiliary and the
+primary and pumps. Yeah. And what we've
+got here which is quite a nice little
+thing to talk about is [music] this is
+all the compressed air for the tire
+inflation.
+&gt;&gt; But that tank the air suspension tank
+from any Defender you drive. Okay.
+&gt;&gt; So that that normally drives your
+suspension up and down on your already
+in the already there. It's in the
+factory. Just use it. Just use it. Yeah.
+&gt;&gt; Okay.
+additional jack, sand shovel, additional
+spare wheel, cooling channels, driver
+[music] water, the helmet bags,
+utilizing the space as best we can
+without putting weight up height really
+is the is the name of the game in the
+back.
+&gt;&gt; Quite different compared to a T1 Plus.
+&gt;&gt; Very different.
+&gt;&gt; Very very different. Yeah.
+&gt;&gt; So you have plenty of space for
+&gt;&gt; T1 [music] Plus is the chassis is
+designed, the drivers are in it and then
+just shrink wrap them in whereas this is
+the body space is defined by the
+casters. We'll look at the interior now
+[music] and there's loads of space in
+the interior.
+What we've tried to do with the interior
+design is very similar to what we've
+[music] done with the exterior design,
+and that's keep Defender look and feel.
+So, if you look at these graph patterns
+here, yes, they're done in carbon fiber,
+but they're exactly the same joined into
+your Defender. Same with the [music]
+center console. So, we've got what we
+call a hockey stick. So, in Defender,
+the hockey stick is a really fundamental
+part of the way the interior feels. And
+we've kept that same with the hydraulic
+handbrake. It's [music] in the same
+position as the shifter. The production
+vents,
+&gt;&gt; the dash is unique, but the production
+vents are kept. All the all the air
+conditioning is done by the same unit
+that's in the road car. You know, we
+talked about that 65%. [music] A lot of
+this is contributing to that. So, we try
+and use the production components where
+we can, even if the regulations tell us
+we don't have to. Okay.
+&gt;&gt; Because it's the best thing to do. So,
+air conditioning is one of them.
+Steering column is all the same. You can
+see all the all the switch gear is
+[music] all Defender switch gear. Yeah.
+Yeah. And we've also done some really
+nice interior touches like all the bags.
+these bags for holding parts and tools,
+everything the drivers and co-drivers
+need. All of these were designed by our
+interior design team, Jaguar Land Rover.
+So, we're trying to bring everyone
+together to make sure that we don't lose
+the assets of Defender. [music] That's
+the point.
+&gt;&gt; Is there a story about the the design?
+&gt;&gt; Yeah. So, I don't know the specifics,
+but it's our desert geo palette for
+Defender. So, it's a series of colors
+that was defined by each environment
+that Defender exists in. Okay.
+&gt;&gt; So, the desert geop palette is part of
+our overall design language for
+Defender, and then you get the splash of
+color with the roof. One of the biggest
+changes we made from an engine point of
+view, all the calibrations are unique.
+Car's running on sustainable fuel, so it
+runs on a 100% sustainable fuel and then
+we've just managed the calibrations
+around that fuel. [music] You'll notice
+underneath here as well, there's a
+rather big side exit exhaust.
+&gt;&gt; So that means you bring your own fuel
+here to Saudi and it stays
+refueling area. Yeah. Yeah. If you look
+underneath here, side exit exhaust.
+&gt;&gt; All right. Yeah.
+&gt;&gt; There's two reasons for that really.
+There's the fact that it's really cool.
+We love it. It's great. And also it
+moves the exhaust out of the way of any
+impact. So if you run the exhaust end to
+end of the vehicle, [music] you've got
+what 2 and 1 half 3 m of exhaust pipe
+that any impact you could be crushing
+that pipe and it affects the engine
+before. So we just get it out as quick
+as we can. That combined with all the
+underlo protection. So big [music] sills
+stills are there to help with rock
+sliding and also protect the rear axle
+and also you've got all of the underlo
+uh trays. [music] They're about between
+6 and 10 mil aluminium. What's the part
+where you're most proud of but nobody
+will see it?
+&gt;&gt; Oo the like I said that software.
+&gt;&gt; The software complexity of it. It's a
+real difficult challenge because you've
+got a complicated set of requirements,
+but you need to simplify it. So, I'm not
+a software developer, but there are some
+amazing people in our team that have
+been able to bring the software of this
+car to life and, you know, make it think
+and also just controlling [music] that,
+driving the systems and mechanically.
+What we've been able to do with the
+Defender platform really shows how good
+the car is. The suspension is
+kinematically the same. It's just
+stronger and and simplified again. So,
+all [music] of those systems trying to
+make them fit for this environment is
+where we're all very proud of. I think
+overall we're very proud of this car.
+It's really difficult to try and pull
+one thing out.
+&gt;&gt; And what is pain point where you have to
+deal almost every day? Let's call it
+management of the environment. So the
+car is incredibly capable,
+&gt;&gt; but it's still a road car. Still got a
+nose and a and a tail that make it
+difficult for breakover angles over big
+jeans. It's managing the production
+parts of the car to make it survive and
+make it performant environment. We've
+done it through testing and this is this
+is where it gets a bit serious.
+&gt;&gt; All right, cool. Hey, thank you very
+much. Really interesting. Have a nice
+day. Me too. Thank you. Thank you very
+much.
+&gt;&gt; Thank you.
+&gt;&gt; See you later.
+&gt;&gt; Perfect.
+&gt;&gt; Thank you very much. Appreciate
+&gt;&gt; it.

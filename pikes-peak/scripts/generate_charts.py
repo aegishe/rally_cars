@@ -230,7 +230,7 @@ if wpr_reg is None:
     wpr_reg = 1.89
 # 计算 Pikes Peak ICE WPR
 wpr_scenes = ['Pikes Peak<br>量产', 'NBR<br>全量', 'NBR<br>ICE', 'NBR<br>Proto']
-wpr_values = [wpr_reg, 1.0, 1.6, 3.6]
+wpr_values = [wpr_reg, 1.73, 1.61, 4.34]
 wpr_colors = ['#e74c3c', '#3498db', '#3498db', '#3498db']
 
 fig4.add_trace(go.Bar(
@@ -381,7 +381,7 @@ html = f"""<!DOCTYPE html>
     <div class="card">
         <div class="value">{reg['weight_penalty_ratio']:.1f}x</div>
         <div class="label">重量惩罚比</div>
-        <div class="compare">纽北全量: 1.0x</div>
+        <div class="compare">纽北全量: 1.73x</div>
     </div>
     <div class="card">
         <div class="value">{reg['pw_elasticity_k']:.3f}</div>
@@ -395,16 +395,17 @@ html = f"""<!DOCTYPE html>
     <div class="chart" id="chart2"></div>
 
     <div class="key-findings" style="margin-top:-10px;">
-        <p><b>看图说话</b>：派克峰下车重与圈速几乎是<b>单调递增</b>——越重越慢，无一反例。这是爬坡功率税（m·g·sinθ·v）的直接体现：<b>每多100kg，无论马力多大，先被扣2-3hp用于克服重力</b>，没有下坡可以"回本"。对比纽北——起伏赛道上下坡重力互相抵消，重量只在弯道中造成二阶惩罚，因此重量-圈速关系远不如派克峰干净。这就是为什么派克峰的重量惩罚比（1.75）显著高于纽北全量（1.0）。</p>
+        <p><b>看图说话</b>：派克峰下车重与圈速几乎是<b>单调递增</b>——越重越慢，无一反例。这是爬坡功率税（m·g·sinθ·v）的直接体现：<b>每多100kg，无论马力多大，先被扣2-3hp用于克服重力</b>，没有下坡可以"回本"。对比纽北——起伏赛道上下坡重力互相抵消，重量只在弯道中造成二阶惩罚，因此重量-圈速关系远不如派克峰干净。注意：这笔税是<b>常数项减法</b>，它没有把回归弹性推高（派克峰惩罚比 1.75 ≈ 纽北全量 1.73），却让车重-圈速关系比纽北干净得多——税在"绝对功率口径"杀伤，不在"弹性口径"。</p>
     </div>
 
     <div class="key-findings">
-        <h3>核心发现 #1: 派克峰重量惩罚是纽北的 <span class="highlight">{reg['weight_penalty_ratio']:.1f} 倍</span></h3>
+        <h3>核心发现 #1: 重量惩罚比 <span class="highlight">{reg['weight_penalty_ratio']:.1f}（点估计）</span> 与纽北全量 1.73 几乎相同</h3>
         <ul>
-            <li>重量惩罚比 = <span class="highlight">{reg['weight_penalty_ratio']:.1f}</span>，纽北全量仅 1.0</li>
-            <li>成因：<b>全程上坡 7.2%</b> — 每公斤车重都持续消耗爬坡功率 (P_gravity = m·g·sinθ·v)</li>
-            <li>每多 100kg，在派克峰需要比纽北多付出 ~90% 的马力才能弥补</li>
-            <li><b>纯电车在派克峰的重量劣势被放大</b> — 同重量区间内纯电残差和纯油打平 (0.0% vs 0.0%)，高海拔免疫刚好抵消重量惩罚</li>
+            <li>重量惩罚比 = <span class="highlight">{reg['weight_penalty_ratio']:.1f}</span>（N=13，两系数均不显著）；纽北 43 车全量 1.73（双显著）——<b>"上坡放大惩罚"的直觉被数据否定</b>（2026-08 勘误：早期以过时口径"纽北 1.0"为基准的"1.75 倍"结论已作废）</li>
+            <li>成因：爬坡税 P=m·g·sinθ·v 是<b>常数项减法</b>（不改变功重比排序），且 ln(重量) 项已隐式吸收爬坡惩罚——重车慢 → 均速低 → 爬坡扣除小（负反馈）</li>
+            <li>每多 100kg 先被扣 2-3hp 克服重力——这笔税在<b>绝对功率口径</b>杀伤，不在弹性口径</li>
+            <li>派克峰真正的独特：<b>马力弹性腰斩</b>（-0.036 vs 纽北 -0.066，p=0.46 不显著）+ <b>车重-圈速单调递增无一反例</b></li>
+            <li><b>纯电在派克峰与纯油打平</b> (0.0% vs 0.0%)——高海拔免疫刚好抵消重量劣势，与纽北"控制重量后打平"的原因不同</li>
         </ul>
     </div>
 
@@ -450,7 +451,7 @@ html = f"""<!DOCTYPE html>
     <div class="key-findings">
         <h3>核心发现 #5: 派克峰 ≠ 纽北 × 高原 — <span class="highlight">它是独立物理场景</span></h3>
         <ul>
-            <li>派克峰的重量惩罚比 ({reg['weight_penalty_ratio']:.1f}x) 远大于纽北 (1.0x)，但小于纽北极限组 (3.6x)</li>
+            <li>派克峰的重量惩罚比 ({reg['weight_penalty_ratio']:.1f}x，不显著估计) 与纽北全量 (1.73x) 几乎相同，小于纽北极限组 (4.34x)——差异在马力弹性与统计性质，不在惩罚比</li>
             <li>功重比转化效率更低 (k={pw_elasticity_k:.3f} vs 0.15) — 爬坡消耗了账面马力的可用部分</li>
             <li>和越野高原山路不同：派克峰不需要考虑保电/散热（7-10分钟一圈），核心约束是 <b>爬坡重力 + 高海拔功率衰减 + 悬架-路面耦合</b></li>
             <li>样本量小 (N=13) 是所有结论的 caveat — 后续需要更多量产车来验证这些初步发现</li>

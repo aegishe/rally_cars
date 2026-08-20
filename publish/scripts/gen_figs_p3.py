@@ -1,0 +1,181 @@
+# -*- coding: utf-8 -*-
+"""
+publish/篇3 配图生成（派克峰篇）
+数据源：pikes-peak/charts/regression_results.json（权威回归结果）
+输出：publish/assets/fig*_pp_*.png（静态配图，中文标注，150dpi）
+"""
+import json, os
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+plt.rcParams['axes.unicode_minus'] = False
+
+ROOT = r'D:\Project\dsh_rally_cars'
+OUT = os.path.join(ROOT, 'publish', 'assets')
+os.makedirs(OUT, exist_ok=True)
+
+with open(os.path.join(ROOT, 'pikes-peak', 'charts', 'regression_results.json'), encoding='utf-8') as f:
+    res = json.load(f)
+
+cars = res['cars']
+protos = res['protos']
+truck = res['truck_ref'][0]
+
+pt_cn = {'ICE': '纯油', 'EV': '纯电', 'PHEV': 'PHEV'}
+pt_colors = {'ICE': '#27ae60', 'EV': '#e74c3c', 'PHEV': '#f39c12'}
+
+hp = np.array([c['hp'] for c in cars])
+kg = np.array([c['weight'] for c in cars])
+lap = np.array([c['lap_s'] for c in cars])
+pw = hp / (kg / 1000.0)
+pt = [c['powertrain'] for c in cars]
+aero = [c['aero'] for c in cars]
+names = [c['name'] for c in cars]
+resid = np.array([c['residual_pct'] for c in cars])
+
+def fmt_lap(s):
+    m = int(s // 60)
+    return f"{m}:{s - m*60:04.1f}"
+
+# ============ 图1：功重比 vs 圈速 ============
+fig, ax = plt.subplots(figsize=(10, 6.5))
+
+for p, lab in [('ICE', '纯油'), ('PHEV', 'PHEV'), ('EV', '纯电')]:
+    m = [x == p for x in pt]
+    if not any(m):
+        continue
+    ax.scatter(pw[m], lap[m], c=pt_colors[p], label=lab, s=42, alpha=0.85,
+               edgecolors='white', linewidths=0.5, zorder=3)
+
+# 改装空力：加圈标注
+m_mod = [x == 'Modified' for x in aero]
+ax.scatter(pw[m_mod], lap[m_mod], facecolors='none', edgecolors='#333',
+           s=200, linewidths=1.2, zorder=4, label='改装空力')
+
+# 极限组原型（星）
+ppw = np.array([p['hp'] for p in protos]) / (np.array([p['weight'] for p in protos]) / 1000.0)
+plap = np.array([p['lap_s'] for p in protos])
+ax.scatter(ppw, plap, marker='*', s=420, facecolors='black', edgecolors='gold',
+           linewidths=1.2, zorder=5, label='Unlimited 原型')
+
+# 皮卡参照（X）
+ax.scatter([truck['pw_ratio']], [truck['lap_s']], marker='x', s=140, c='#8e44ad',
+           linewidths=2.5, zorder=5, label='Rivian R1T（参照，不入回归）')
+
+# 关键标注
+marks = [
+    ('VW I.D. R', 680/1.1, 477.148, 'I.D. R 7:57.1\n680hp/1100kg', 8, -10),
+    ('Peugeot 208 T16', 875/0.875, 493.878, '208 T16 8:13.9\n875hp/875kg', 8, -10),
+    ('Hyundai Ioniq 5 N TA', 641/2.1, 570.852, 'Ioniq 5 N TA 9:30.9\n残差冠军 −3.5%', 8, -16),
+    ('911 Turbo S', 650/1.65, 593.74, '911 Turbo S 9:53.7', 8, -14),
+    ('Bentayga W12', 635/2.44, 649.902, 'Bentayga 10:49.9', 8, 6),
+]
+for _, x, y, lab, dx, dy in marks:
+    ax.annotate(lab, (x, y), textcoords='offset points', xytext=(dx, dy),
+                fontsize=9, fontweight='bold',
+                arrowprops=dict(arrowstyle='-', lw=0.6, color='#555'))
+
+ax.set_xscale('log')
+ax.set_xlabel('账面功重比（hp/t，对数轴）')
+ax.set_ylabel('派克峰圈速（秒）')
+ax.set_title('派克峰：功重比 vs 圈速（N=13 量产 + 4 原型 + 1 皮卡参照）')
+ax.invert_yaxis()
+ax.legend(loc='lower left', fontsize=9)
+ax.grid(alpha=0.3, lw=0.5)
+fig.tight_layout()
+fig.savefig(os.path.join(OUT, 'fig1_pp_pw_laptime.png'), dpi=150)
+plt.close(fig)
+print('fig1 done')
+
+# ============ 图2：车重 vs 圈速（单调性） ============
+fig, ax = plt.subplots(figsize=(10, 6.5))
+
+for p, lab in [('ICE', '纯油'), ('PHEV', 'PHEV'), ('EV', '纯电')]:
+    m = [x == p for x in pt]
+    if not any(m):
+        continue
+    ax.scatter(kg[m], lap[m], c=pt_colors[p], label=lab, s=42, alpha=0.85,
+               edgecolors='white', linewidths=0.5, zorder=3)
+
+ax.scatter(np.array([p['weight'] for p in protos]), plap, marker='*', s=420,
+           facecolors='black', edgecolors='gold', linewidths=1.2, zorder=5,
+           label='Unlimited 原型')
+ax.scatter([truck['weight']], [truck['lap_s']], marker='x', s=140, c='#8e44ad',
+           linewidths=2.5, zorder=5, label='Rivian R1T（参照）')
+
+# 单调性说明箭头
+ax.annotate('越重越慢，无一反例\n（爬坡功率税：每 100kg 先扣 2-3hp）',
+            xy=(2440, 649.902), xytext=(2050, 700),
+            fontsize=11, fontweight='bold', color='#c0392b',
+            arrowprops=dict(arrowstyle='->', lw=1.2, color='#c0392b'))
+
+ax.set_xlabel('车重（kg）')
+ax.set_ylabel('派克峰圈速（秒）')
+ax.set_title('派克峰：车重与圈速几乎单调递增——与纽北的起伏赛道形成对比')
+ax.invert_yaxis()
+ax.legend(loc='upper left', fontsize=9)
+ax.grid(alpha=0.3, lw=0.5)
+fig.tight_layout()
+fig.savefig(os.path.join(OUT, 'fig2_pp_weight_laptime.png'), dpi=150)
+plt.close(fig)
+print('fig2 done')
+
+# ============ 图3：跨场景对比（k 值与重量惩罚比） ============
+fig, axes = plt.subplots(1, 2, figsize=(12, 4.8))
+
+scenes_k = ['派克峰\n量产', '纽北\n全量', '纽北\n≥2200kg']
+k_vals = [0.110, 0.15, 0.08]
+k_cols = ['#e74c3c', '#3498db', '#3498db']
+bars = axes[0].bar(scenes_k, k_vals, color=k_cols, width=0.55)
+for b, v in zip(bars, k_vals):
+    axes[0].text(b.get_x() + b.get_width()/2, v + 0.008, f'{v:.3f}',
+                 ha='center', va='bottom', fontsize=11, fontweight='bold')
+axes[0].set_ylabel('功重比弹性 k（功重比 +1% → 圈速缩短 k%）')
+axes[0].set_title('马力是软通货：派克峰 k 仅 0.110')
+axes[0].set_ylim(0, 0.2)
+axes[0].grid(axis='y', alpha=0.3, lw=0.5)
+
+scenes_w = ['派克峰\n量产', '纽北\n全量', '纽北\n极限组']
+w_vals = [1.75, 1.73, 4.34]
+w_cols = ['#e74c3c', '#3498db', '#2c3e50']
+bars = axes[1].bar(scenes_w, w_vals, color=w_cols, width=0.55)
+for b, v in zip(bars, w_vals):
+    axes[1].text(b.get_x() + b.get_width()/2, v + 0.08, f'{v:.2f}',
+                 ha='center', va='bottom', fontsize=11, fontweight='bold')
+axes[1].set_ylabel('重量惩罚比（重量每 +1% 需马力 +?% 弥补）')
+axes[1].set_title('惩罚比 1.75 ≈ 纽北 1.73：上坡没有把它推高')
+axes[1].set_ylim(0, 5)
+axes[1].grid(axis='y', alpha=0.3, lw=0.5)
+
+fig.suptitle('派克峰 vs 纽北：同一套对数回归，换一个场景得到的两个数字', fontsize=13, fontweight='bold')
+fig.tight_layout(rect=[0, 0, 1, 0.94])
+fig.savefig(os.path.join(OUT, 'fig3_pp_cross_scene.png'), dpi=150)
+plt.close(fig)
+print('fig3 done')
+
+# ============ 图4：残差排行 ============
+fig, ax = plt.subplots(figsize=(9, 6.5))
+idx = np.argsort(resid)
+snames = np.array(names)[idx]
+sres = resid[idx]
+cols = [pt_colors[x] for x in np.array(pt)[idx]]
+ax.barh(range(len(snames)), sres, color=cols, height=0.62)
+for i, v in enumerate(sres):
+    ax.text(v + (0.08 if v > 0 else -0.08), i, f'{v:+.1f}%',
+            va='center', ha='left' if v > 0 else 'right', fontsize=9, fontweight='bold')
+ax.set_yticks(range(len(snames)))
+ax.set_yticklabels(snames, fontsize=9)
+ax.axvline(0, color='#333', lw=0.8)
+ax.set_xlabel('残差（ln 实际 − ln 预测，负 = 高效）')
+ax.set_title('派克峰全量回归残差排行：Ioniq 5 N TA 夺冠（改装空力 + 纯电免疫 + AWD）')
+ax.set_xlim(-4.5, 3.5)
+ax.grid(axis='x', alpha=0.3, lw=0.5)
+fig.tight_layout()
+fig.savefig(os.path.join(OUT, 'fig4_pp_residual.png'), dpi=150)
+plt.close(fig)
+print('fig4 done')
+
+print('ALL DONE ->', OUT)
