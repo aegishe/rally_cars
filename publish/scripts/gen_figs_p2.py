@@ -64,7 +64,7 @@ ax.annotate('SU7 Ultra 原型\n6:46.9 · 1548hp · ≈1900kg · 残差 -3.3%',
 
 ax.set_xlabel('账面功重比（hp/t）')
 ax.set_ylabel('纽北圈速（秒）')
-ax.set_title('43 车：功重比 vs 圈速（N=43，R²=0.901 加入质量分布+扭矩矢量后）')
+ax.set_title('44 车：功重比 vs 圈速（N=44，R²=0.901 加入质量分布+扭矩矢量后）')
 ax.invert_yaxis()
 ax.legend(loc='lower right')
 ax.grid(alpha=0.3, lw=0.5)
@@ -130,10 +130,10 @@ print('fig3 done')
 
 # ============ 图4：残差 Top/Bottom ============
 fig, ax = plt.subplots(figsize=(9, 5.5))
-top_names  = ['Taycan GT Manthey', 'AMG ONE', '911 GT3 RS Manthey', 'Aventador SVJ', 'SU7 Ultra 原型']
-top_vals   = [-5.4, -4.3, -3.8, -3.3, -3.3]
+top_names  = ['Taycan GT Manthey', 'AMG ONE', '911 GT3 RS Manthey', 'SU7 Ultra 原型', 'Aventador SVJ']
+top_vals   = [-5.6, -4.2, -3.8, -3.4, -3.3]
 bot_names  = ['Model S Plaid', 'Golf R 20Y', 'McLaren 720S', '仰望 U9', 'Rimac Nevera']
-bot_vals   = [3.7, 3.8, 3.9, 5.4, 5.4]
+bot_vals   = [3.5, 3.8, 3.9, 5.3, 5.3]
 all_names = top_names[::-1] + bot_names
 all_vals = top_vals[::-1] + bot_vals
 bar_colors = ['#27ae60'] * 5 + ['#e74c3c'] * 5

@@ -52,6 +52,7 @@ data = [
     [1548, 2360, 424.9, 1, 0, 0, 1, 'SU7 Ultra'],
     [1093, 2250, 427.6, 1, 0, 0, 1, 'Taycan GT Weissach'],
     [1020, 2190, 455.6, 1, 0, 0, 1, 'Model S Plaid'],
+    [1020, 2190, 445.2, 1, 0, 0, 1, 'Model S Plaid TP'],
     [650,  2231, 455.4, 1, 0, 0, 1, 'Ioniq 6 N'],
     [1548, 1900, 406.9, 1, 0, 0, 1, 'SU7 Ultra 原型'],
 
@@ -344,7 +345,7 @@ mass_dist = [
     3, 3, 3,                     # 720S, 718 GT4 RS, Aventador SVJ (3辆)
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, # M4 CSL ~ Golf R 20Y (10辆 四门纯油)
     1,                           # GT63 S E Perf (1辆 PHEV)
-    5, 5, 5, 5, 5, 5,            # Taycan GT M ~ SU7 Ultra 原型 (6辆 纯电四门)
+    5, 5, 5, 5, 5, 5, 5,         # Taycan GT M ~ SU7 Ultra 原型 (7辆 纯电四门)
     5,                           # YU7 GT
     1, 1, 1, 1, 1, 1,             # RS Q8 P ~ Cayenne Turbo S (6辆 SUV纯油)
 ]
@@ -355,7 +356,7 @@ torque_vec = [
     3, 4, 3,                     # 720S=液压TV≈机械TV, 718 GT4 RS=后驱LSD, Aventador=机械TV
     4, 5, 4, 5, 5, 5, 3, 6, 6, 5,  # M4 CSL=RWD+LSD, XE=AWD无TV, M2 CS=RWD+LSD, M3 CS=AWD无TV, M5 CS=AWD无TV, M3T=AWD无TV, RS3=机械TV, Civic=FWD+LSD, Golf GTI=FWD+LSD, Golf R=AWD无TV
     3,                           # GT63 S E=机械TV
-    2, 1, 2, 1, 2, 1,            # Taycan GT M=双轴, SU7=全矢量, Taycan W=双轴, Plaid=全矢量, Ioniq 6N=双轴, SU7原型=全矢量
+    2, 1, 2, 1, 1, 2, 1,         # Taycan GT M=双轴, SU7=全矢量, Taycan W=双轴, Plaid=全矢量, Plaid TP=全矢量, Ioniq 6N=双轴, SU7原型=全矢量
     2,                           # YU7 GT=双轴
     3, 3, 3, 3, 5, 3,             # RS Q8 P=机械TV, Cayenne GT=机械TV, RS Q8=机械TV, GLC63=机械TV, Stelvio=AWD无TV, Cayenne TS=机械TV
 ]
