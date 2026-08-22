@@ -26,99 +26,45 @@ for fp in [r'C:\Windows\Fonts\msyh.ttc', r'C:\Windows\Fonts\simhei.ttf']:
         break
 plt.rcParams['axes.unicode_minus'] = False
 
-# ---------- U9X / 量产 ----------
-s_g, v_u, v_s = [], [], []
-with open(os.path.join(ROOT, 'track', 'corner_comparison.csv'), encoding='utf-8') as f:
-    for r in csv.DictReader(f):
-        s_g.append(float(r['s_m']))
-        v_u.append(float(r['v_u9x']))
-        v_s.append(float(r['v_su7']))
-s_g = np.array(s_g); v_u = np.array(v_u); v_s = np.array(v_s)
+# ---------- 三车 25fps 同源轨道（各自锚校正距离） ----------
+S_POS = [240,530,1000,1490,2280,3560,3850,5220,5920,6180,6460,6700,6930,7400,7860,8100,8590,8900,9320,9780,10500,10750,11190,11550,12000,12480,12980,13500,14120,14340,14630,15200,15780,16600,16860,17200,17400,20460]
 
-# ---------- 原型 OCR 轨道（高清 mp4 1s） ----------
-raw = {}
-for line in open(os.path.join(ROOT, 'publish', 'assets', '_p622', 'mp4s_ocr.txt'), encoding='utf-8'):
-    parts = line.rstrip('\n').split('\t')
-    if len(parts) < 2:
-        continue
-    m = re.match(r's(\d+)\.jpg', parts[0])
-    if not m:
-        continue
-    n = int(m.group(1))
-    text = re.sub(r'\d{1,2}[:：]\d{2}\s*[,，.]?\s*\d*', ' ', parts[1])
-    nums = [int(x) for x in re.findall(r'\d{1,3}', text)]
-    if nums:
-        raw[n] = nums
-# 连续性+百位补全
-seq = []
-prev = None
-for n in sorted(raw):
-    cands = [x for x in raw[n] if 10 <= x <= 400]
-    if not cands:
-        seq.append((n, None))
-        continue
-    if prev is None:
-        big = [x for x in cands if x >= 60]
-        v = max(big) if big else (max(cands) + 200 if max(cands) < 60 else max(cands))
-    else:
-        c2 = []
-        for x in cands:
-            c2.append(x)
-            if x < 100 and 100 + x <= 400 and abs(100 + x - prev) < 60:
-                c2.append(100 + x)
-            if x < 100 and 200 + x <= 400 and abs(200 + x - prev) < 60:
-                c2.append(200 + x)
-        v = min(c2, key=lambda x: abs(x - prev))
-    seq.append((n, v))
-    prev = v
-tp = np.array([n for n, v in seq], dtype=float)
-vp = np.array([v if v is not None else np.nan for n, v in seq], dtype=float)
-valid = ~np.isnan(vp)
-for i in range(1, len(vp) - 1):
-    if valid[i] and (valid[i-1] or valid[i+1]):
-        ref = vp[i-1] if valid[i-1] else vp[i+1]
-        if abs(vp[i] - ref) > 45:
-            vp[i] = np.nan
-valid = ~np.isnan(vp)
-idx = np.where(valid)[0]
-vpi = np.interp(tp, tp[idx], vp[idx])
+def load_clean(path):
+    t, v = [], []
+    with open(path, encoding='utf-8') as f:
+        for r in csv.DictReader(f):
+            t.append(float(r['lap_t']))
+            v.append(float(r['speed_kmh']))
+    return np.array(t), np.array(v)
 
-# ---------- 38 谷人工读数（t, v）与量产弯谷位置 s ----------
-corners = [
-    (7.0, 85, 240), (14.0, 182, 530), (24.0, 124, 1000), (35.6, 104, 1490),
-    (49.3, 205, 2280), (65.0, 232, 3560), (71.7, 109, 3850), (95.0, 84, 5220),
-    (109.0, 187, 5920), (113.9, 115, 6180), (121.0, 101, 6460), (132.0, 159, 6700),
-    (139.0, 139, 6930), (142.0, 76, 7400), (153.1, 120, 7860), (158.0, 117, 8100),
-    (169.0, 216, 8590), (172.0, 111, 8900), (178.0, 215, 9320), (180.0, 244, 9780),
-    (198.0, 246, 10500), (200.0, 203, 10750), (205.2, 237, 11190), (214.0, 92, 11550),
-    (224.5, 91, 12000), (234.3, 198, 12480), (245.7, 119, 12980), (261.0, 133, 13500),
-    (271.2, 125, 14120), (276.6, 117, 14340), (284.1, 105, 14630), (295.5, 155, 15200),
-    (306.0, 213, 15780), (319.8, 133, 16600), (326.4, 112, 16860), (333.6, 153, 17200),
-    (337.9, 183, 17400), (376.0, 91, 20460),
-]
+def anchors_from_csv(tkey, endt):
+    rows = {}
+    for r in csv.DictReader(open(os.path.join(ROOT, 'track', 'corner_comparison.csv'), encoding='utf-8')):
+        rows[int(float(r['s_m']))] = r
+    return [0.0] + [float(rows[s][tkey]) for s in S_POS] + [endt]
 
-# 人工谷覆盖进轨道：先插值到 1s 连续网格，再按时间覆盖（弯谷不被平滑掉）
-t_grid = np.arange(0, 383, 1.0)
-v_grid = np.interp(t_grid, tp, vpi)
-for tt, vv, ss in corners:
-    i = int(round(tt))
-    if 0 <= i < len(t_grid):
-        v_grid[i] = vv
-        v_grid[max(0, i-1)] = min(v_grid[max(0, i-1)], vv)  # 邻帧下拉，保谷形
-        v_grid[min(len(t_grid)-1, i+1)] = min(v_grid[min(len(t_grid)-1, i+1)], vv)
-tp = t_grid
-vpi = v_grid
+t_u, v_u = load_clean(os.path.join(ROOT, 'publish', 'assets', '_u9x', 'u9x_clean.csv'))
+t_s, v_s = load_clean(os.path.join(ROOT, 'publish', 'assets', '_su7f', 'su7_clean.csv'))
+_t_p, _v_p = load_clean(os.path.join(ROOT, 'publish', 'assets', '_p622', 'pot_clean.csv'))
 
-# ---------- 弯谷序号对齐：t_proto → s 分段线性 ----------
-anchors_t = [0.0] + [c[0] for c in corners] + [382.09]
-anchors_s = [0.0] + [c[2] for c in corners] + [20600.0]
-s_proto = np.interp(tp, anchors_t, anchors_s)
+# 原型锚（人工读出 38 谷 t）
+PROTO_T = [7.0,14.0,24.0,35.6,49.3,65.0,71.7,95.0,109.0,113.9,121.0,128.0,132.0,142.0,153.1,158.0,169.0,172.0,178.0,180.0,198.0,200.0,205.2,214.0,224.5,234.3,245.7,261.0,271.2,276.6,284.1,295.5,306.0,319.8,326.4,333.6,337.9,376.0]
+at_p = [0.0] + PROTO_T + [382.09]
+
+def correct(t, at):
+    return np.interp(t, at, [0.0] + S_POS + [20600.0])
+
+s_u = correct(t_u, anchors_from_csv('t_u9x', 419.2))
+s_s = correct(t_s, anchors_from_csv('t_su7', 424.9))
+s_p = correct(_t_p, at_p)
+tp = _t_p
+vpi = _v_p
 
 # ---------- 画图 ----------
 fig, ax = plt.subplots(figsize=(14, 5.6), dpi=150)
-ax.plot(s_g, v_u, color='#c0392b', lw=1.1, label='仰望 U9 Xtreme（6:59.157）')
-ax.plot(s_g, v_s, color='#2471a3', lw=1.1, label='SU7 Ultra 量产（7:04.957）')
-ax.plot(s_proto, vpi, color='#e67e22', lw=1.5, alpha=0.9, label='SU7 Ultra 原型（6:22.091）')
+ax.plot(s_u, v_u, color='#c0392b', lw=1.1, label='仰望 U9 Xtreme（6:59.157）')
+ax.plot(s_s, v_s, color='#2471a3', lw=1.1, label='SU7 Ultra 量产（7:04.957）')
+ax.plot(s_p, vpi, color='#e67e22', lw=1.5, alpha=0.9, label='SU7 Ultra 原型（6:22.091）')
 
 landmarks = [
     (240, 'Antoniusbuche'), (530, 'Hatzenbach'), (1490, 'Hocheichen'),
@@ -143,9 +89,13 @@ fig.tight_layout()
 fig.savefig(OUT)
 print(f'[完成] {OUT}')
 
-# 快速自检：几个地标处三车速度
-print('自检（地标处速度）:')
+# 快速自检：几个地标处三车速度（±40m 窗口谷）
+print('自检（地标处速度，±40m 窗口谷）:')
 for pos, name in [(3560,'Flugplatz'), (6700,'AdenauerForst'), (8590,'Wehrseifen'), (9320,'Ex-Mühle'), (16600,'Pflanzgarten')]:
-    iu = np.argmin(np.abs(s_g - pos))
-    ip = np.argmin(np.abs(s_proto - pos))
-    print('  %-14s U9X %5.1f | 量产 %5.1f | 原型 %5.1f' % (name, v_u[iu], v_s[iu], vpi[ip]))
+    mu = np.abs(s_u - pos) <= 40
+    ms = np.abs(s_s - pos) <= 40
+    mp = np.abs(s_p - pos) <= 40
+    vu = v_u[mu].min() if mu.sum() else np.nan
+    vs = v_s[ms].min() if ms.sum() else np.nan
+    vp = vpi[mp].min() if mp.sum() else np.nan
+    print('  %-14s U9X %5.1f | 量产 %5.1f | 原型 %5.1f' % (name, vu, vs, vp))

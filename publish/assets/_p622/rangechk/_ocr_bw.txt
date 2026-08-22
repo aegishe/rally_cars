@@ -1,0 +1,2 @@
+_bw_s015_zoom.png	GPS Speed km/h 0 0
+_bw_s016_zoom.png	GPS Speed km/h 199

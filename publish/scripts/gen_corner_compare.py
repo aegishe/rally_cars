@@ -28,12 +28,12 @@ P622_OFFSET = 1.77  # mp4 原版：视频时间 = Laptime + 1.77s
 # 三车统一赛道位置（s_m），速度从 CSV/人工读数取；刹车点差异在正文文字说明
 U9X_SPOTS = [(8400, '弯前'), (8590, '弯心1'), (8900, '弯心2'), (9100, '出弯')]
 SU7_SPOTS = [(8400, '弯前'), (8590, '弯心1'), (8900, '弯心2'), (9100, '出弯')]
-# 原型帧（Laptime, 标注）——t 由相邻弯锚分段插值到同一位置
+# 原型帧（Laptime, 标注）——标注值 = 25fps 轨道同帧读数；弯心1 位置≈8700m（刹车点比两车晚约100m）
 PROTO_SPOTS = [
-    (165.0, '257 km/h（弯前）'),
-    (169.0, '216 km/h（弯心1）'),
+    (165.0, '256 km/h（弯前）'),
+    (169.0, '220 km/h（弯心1，≈8700m）'),
     (172.0, '111 km/h（弯心2）'),
-    (177.0, '194 km/h（出弯）'),
+    (177.0, '192 km/h（出弯）'),
 ]
 
 ROW_LABELS = [
@@ -41,7 +41,7 @@ ROW_LABELS = [
     'SU7 Ultra 量产（1548hp / 2360kg / 656hp/t）',
     'SU7 Ultra 原型（1548hp / ≈1860kg / 832hp/t，6:22.091）',
 ]
-COL_TITLES = ['弯前（8400m）', '弯心1（Wehrseifen 8590m）', '弯心2（Breidscheid 8900m）', '出弯（9100m）']
+COL_TITLES = ['弯前（8400m）', '弯心1（Wehrseifen，各自弯心）', '弯心2（Breidscheid 8900m）', '出弯（9100m）']
 FONT_PATH = r'C:\Windows\Fonts\msyh.ttc'
 FRAME_W, FRAME_H = 480, 270
 LABEL_H = 26
@@ -110,7 +110,7 @@ def main():
     H = TITLE_H + ROW_H * 3 + ROW_GAP * 2
     canvas = Image.new('RGB', (W, H), (255, 255, 255))
     d = ImageDraw.Draw(canvas)
-    d.text((8, 8), 'Wehrseifen 8.6km 极高速弯：三车同弯对照（复合弯四帧）', fill=(0, 0, 0), font=font(24))
+    d.text((8, 8), 'Wehrseifen 8.6km 极高速弯：三车同弯对照（复合弯四帧；原型刹车点更晚、弯心1 靠后约 100m）', fill=(0, 0, 0), font=font(22))
 
     for ci, ct in enumerate(COL_TITLES):
         x = ci * (FRAME_W + COL_GAP)
