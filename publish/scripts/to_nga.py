@@ -67,8 +67,7 @@ IMG_URL_MAP = {
     'chapter1s-5-mason-trophy-truck.jpg': './mon_202608/21/-7da9Q70-l34qK1cT3cSsg-cr.jpg',
     # 篇2s 弯道截图对比（待上传后回填）
     # 'chapter2s-c1-kesselchen.png': '待上传',
-    # 'chapter2s-c2-lowspeed.png': '待上传',
-    # 'chapter2s-c3-highspeed.png': '待上传',
+    # 'chapter2s-4-speed-profiles.png': '待上传',
     # 篇2/篇3 待上传后补充
 }
 
