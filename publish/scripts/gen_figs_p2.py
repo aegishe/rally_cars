@@ -54,13 +54,21 @@ for key, (x, y, lab) in marks.items():
                 fontsize=9, fontweight='bold',
                 arrowprops=dict(arrowstyle='-', lw=0.6, color='#555'))
 
-# SU7 Ultra 原型车 —— 实心星标注
+# SU7 Ultra 原型车 —— 实心星标注（2024 版，回归样本）
 ax.scatter([1548/1.9], [406.874], marker='*', s=260, facecolors='#e74c3c',
            edgecolors='#e74c3c', linewidths=1.5, zorder=6)
-ax.annotate('SU7 Ultra 原型\n6:46.9 · 1548hp · ≈1900kg · 残差 -3.3%',
-            (1548/1.9, 406.874), textcoords='offset points', xytext=(10, -34),
+ax.annotate('SU7 Ultra 原型（2024 版，回归样本）\n6:46.874 · 1548hp · 1900kg · 残差 -3.4%',
+            (1548/1.9, 406.874), textcoords='offset points', xytext=(10, -40),
             fontsize=9, fontweight='bold', color='#c0392b',
             arrowprops=dict(arrowstyle='->', lw=0.8, color='#c0392b'))
+
+# SU7 Ultra 原型车 —— 空心星标注（2025 升级版，未纳入回归）
+ax.scatter([1548/1.86], [382.091], marker='*', s=260, facecolors='none',
+           edgecolors='#c0392b', linewidths=1.5, zorder=6)
+ax.annotate('SU7 Ultra 原型（2025 升级版，未纳入回归）\n6:22.091 · 1548hp · ≈1860kg · 参数未公开',
+            (1548/1.86, 382.091), textcoords='offset points', xytext=(10, 18),
+            fontsize=9, fontweight='bold', color='#8a4b2a',
+            arrowprops=dict(arrowstyle='->', lw=0.8, color='#8a4b2a'))
 
 ax.set_xlabel('账面功重比（hp/t）')
 ax.set_ylabel('纽北圈速（秒）')
@@ -103,7 +111,7 @@ ax.fill_between(t, p, 0, where=(p > 0), color='#3498db', alpha=0.15)
 ax.fill_between(t, p, 0, where=(p < 0), color='#95a5a6', alpha=0.25, label='制动/回收（负值）')
 
 # 账面功率参考线
-ax.axhline(2220, color='#c0392b', ls='--', lw=1.2, label='账面峰值 2220kW（2977hp）')
+ax.axhline(2220, color='#c0392b', ls='--', lw=1.2, label='账面峰值 2220kW（3019hp）')
 
 # 峰值标注 (5fps 口径 + 1s 口径区间)
 imax = np.argmax(p)

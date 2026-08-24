@@ -178,7 +178,7 @@ U9 和 SU7 Ultra 的同门对照把分歧讲得更清楚：
 [tr][td]路线[/td][td]代表[/td][td]策略[/td][td]圈速[/td][td]残差[/td][/tr]
 [tr][td]马力压制[/td][td]仰望 U9[/td][td]3019hp 四电机 + 云辇-X[/td][td]6:59.157[/td][td]+5.3%[/td][/tr]
 [tr][td]均衡轻量[/td][td]SU7 Ultra[/td][td]1548hp 三电机 + 被动悬架[/td][td]7:04.9[/td][td]-1.5%[/td][/tr]
-[tr][td]极致轻量[/td][td]SU7 Ultra 原型[/td][td]1548hp 三电机 ≈1900kg[/td][td]6:46.9[/td][td]-3.4%[/td][/tr]
+[tr][td]极致轻量[/td][td]SU7 Ultra 原型（2024 版；2025 版 6:22.091 未纳入回归）[/td][td]1548hp 三电机 ≈1900kg[/td][td]6:46.9[/td][td]-3.4%[/td][/tr]
 [tr][td]老牌巨头[/td][td]Model S Plaid TP[/td][td]1020hp 三电机 + 赛道包[/td][td]7:25.2[/td][td]+1.2%[/td][/tr]
 [/table]
 
