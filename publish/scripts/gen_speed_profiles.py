@@ -62,9 +62,9 @@ vpi = _v_p
 
 # ---------- 画图 ----------
 fig, ax = plt.subplots(figsize=(14, 5.6), dpi=150)
-ax.plot(s_u, v_u, color='#c0392b', lw=1.1, label='仰望 U9 Xtreme（6:59.157）')
-ax.plot(s_s, v_s, color='#2471a3', lw=1.1, label='SU7 Ultra 量产（7:04.957）')
-ax.plot(s_p, vpi, color='#e67e22', lw=1.5, alpha=0.9, label='SU7 Ultra 原型（6:22.091）')
+ax.plot(s_u, v_u, color='#e74c3c', lw=1.1, label='仰望 U9 Xtreme（6:59.157）')
+ax.plot(s_s, v_s, color='#27ae60', lw=1.1, label='SU7 Ultra 量产（7:04.957）')
+ax.plot(s_p, vpi, color='#2471a3', lw=1.5, alpha=0.9, label='SU7 Ultra 原型（6:22.091）')
 
 landmarks = [
     (240, 'Antoniusbuche'), (530, 'Hatzenbach'), (1490, 'Hocheichen'),

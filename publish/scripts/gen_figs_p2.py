@@ -66,7 +66,7 @@ ax.annotate('SU7 Ultra 原型（2024 版，回归样本）\n6:46.874 · 1548hp �
 ax.scatter([1548/1.86], [382.091], marker='*', s=260, facecolors='none',
            edgecolors='#c0392b', linewidths=1.5, zorder=6)
 ax.annotate('SU7 Ultra 原型（2025 升级版，未纳入回归）\n6:22.091 · 1548hp · ≈1860kg · 参数未公开',
-            (1548/1.86, 382.091), textcoords='offset points', xytext=(10, 18),
+            (1548/1.86, 382.091), textcoords='offset points', xytext=(-185, 2),
             fontsize=9, fontweight='bold', color='#8a4b2a',
             arrowprops=dict(arrowstyle='->', lw=0.8, color='#8a4b2a'))
 
