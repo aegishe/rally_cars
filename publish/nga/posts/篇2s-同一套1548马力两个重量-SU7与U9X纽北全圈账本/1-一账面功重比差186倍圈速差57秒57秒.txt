@@ -7,8 +7,8 @@
 
 [table]
 [tr][td][/td][td]账面马力[/td][td]车重[/td][td]功重比[/td][td]圈速[/td][td]残差（44 车回归）[/td][/tr]
-[tr][td]仰望 U9 Xtreme[/td][td]3019hp[/td][td]2480kg[/td][td]1217 hp/t[/td][td]6:59.157[/td][td][b]+5.3%[/b]（榜尾）[/td][/tr]
-[tr][td]SU7 Ultra 量产[/td][td]1548hp[/td][td]2360kg[/td][td]656 hp/t[/td][td]7:04.9[/td][td][b]-1.5%[/b]（四门纯电组最高效之一）[/td][/tr]
+[tr][td]比亚迪仰望 U9 Xtreme[/td][td]3019hp[/td][td]2480kg[/td][td]1217 hp/t[/td][td]6:59.157[/td][td][b]+5.3%[/b]（榜尾）[/td][/tr]
+[tr][td]小米 SU7 Ultra 量产[/td][td]1548hp[/td][td]2360kg[/td][td]656 hp/t[/td][td]7:04.9[/td][td][b]-1.5%[/b]（四门纯电组最高效之一）[/td][/tr]
 [/table]
 
 功重比差 1.86 倍，圈速只差 5.7 秒。这 5.7 秒的每一秒，都能在两车官方车载视频的逐帧数据里找到去向。先给结论，两个口径互相印证：
