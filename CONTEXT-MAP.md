@@ -28,6 +28,7 @@
 | `offroad/docs/adr/` | 4 个架构决策（场景一维化、竞技强化等） |
 | `offroad/docs/context-detail/柴油混动-架构适配性分析.md` | 柴油混动在越野场景的架构适配性 |
 | `offroad/docs/context-detail/悬架技术全景-从巴哈到达喀尔到F1.md` | 被动位敏/模式解耦/液压互联/主动悬架全谱系对比 + 三条线框架 |
+| `offroad/docs/context-detail/长城3.0T柴油混动-纵置双电机架构观察.md` | 纵置双电机（P2+变速箱后电机）串并联架构观察，与柴油混动适配性碰撞表，待实锤参数清单 |
 | `offroad/字幕-*.txt` | BV1W1JG6fEVX（科曼访谈）/ BV12WorBTEhG（前杠拆解）/ dqIT9ubsPt8（卫士官方）字幕 |
 | `offroad/环塔2026_总成绩.csv` | 42 车 × 12 赛段用时（Excel 转换，含罚时字段） |
 | `offroad/环塔2026_赛段成绩.csv` | 374 行赛段明细 |
