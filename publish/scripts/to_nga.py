@@ -73,7 +73,16 @@ IMG_URL_MAP = {
     # 篇2s 弯道截图对比 + 三车速度曲线
     'chapter2s-c1-kesselchen.png': './mon_202608/25/-7da9Q51-dljfK1pT3cSsg-bd.jpg',
     'chapter2s-4-speed-profiles.png': './mon_202608/25/-7da9Q51-g37dZcT3cSsg-ds.jpg',
-    # 篇3 待上传后补充
+    # 篇3 待上传后补充（9 张，按正文顺序）：
+    # 'chapter3-1-g700-baiwanpo.jpg': '',
+    # 'chapter3-2-paddle-tire.jpg': '',
+    # 'chapter3-3-zeekr7x-moreeb.jpg': '',
+    # 'chapter3-4-uphill-sand-race.jpg': '',
+    # 'chapter3-5-uphill-sand-fail.jpg': '',
+    # 'chapter3-6-pw-laptime.png': '',
+    # 'chapter3-7-weight-laptime.png': '',
+    # 'chapter3-8-cross-scene.png': '',
+    # 'chapter3-9-residual.png': '',
 }
 
 # ---------- 行内格式 ----------
