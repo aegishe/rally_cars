@@ -70,9 +70,9 @@ IMG_URL_MAP = {
     'chapter2-2-k-value.png': './mon_202608/24/-7da9Q66-k2kiK1qT3cSxc-ku.jpg',
     'chapter2-3-u9x-power.png': './mon_202608/24/-7da9Q66-fqx9K24T3cSsg-e8.jpg',
     'chapter2-4-residual.png': './mon_202608/24/-7da9Q66-85ksK1hT3cSsg-hd.jpg',
-    # 篇2s 弯道截图对比（待上传后回填）
-    # 'chapter2s-c1-kesselchen.png': '待上传',
-    # 'chapter2s-4-speed-profiles.png': '待上传',
+    # 篇2s 弯道截图对比 + 三车速度曲线
+    'chapter2s-c1-kesselchen.png': './mon_202608/25/-7da9Q51-dljfK1pT3cSsg-bd.jpg',
+    'chapter2s-4-speed-profiles.png': './mon_202608/25/-7da9Q51-g37dZcT3cSsg-ds.jpg',
     # 篇3 待上传后补充
 }
 
