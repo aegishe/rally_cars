@@ -139,14 +139,14 @@ axes[0].set_ylim(0, 0.2)
 axes[0].grid(axis='y', alpha=0.3, lw=0.5)
 
 scenes_w = ['派克峰\n量产', '纽北\n全量', '纽北\n极限组']
-w_vals = [1.75, 1.73, 4.34]
+w_vals = [1.75, 1.72, 4.34]
 w_cols = ['#e74c3c', '#3498db', '#2c3e50']
 bars = axes[1].bar(scenes_w, w_vals, color=w_cols, width=0.55)
 for b, v in zip(bars, w_vals):
     axes[1].text(b.get_x() + b.get_width()/2, v + 0.08, f'{v:.2f}',
                  ha='center', va='bottom', fontsize=11, fontweight='bold')
 axes[1].set_ylabel('重量惩罚比（重量每 +1% 需马力 +?% 弥补）')
-axes[1].set_title('惩罚比 1.75 ≈ 纽北 1.73：上坡没有把它推高')
+axes[1].set_title('惩罚比 1.75 ≈ 纽北 1.72：上坡没有把它推高')
 axes[1].set_ylim(0, 5)
 axes[1].grid(axis='y', alpha=0.3, lw=0.5)
 
