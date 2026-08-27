@@ -136,7 +136,7 @@ for combo in sorted(set(combo_labels)):
         x=kg[mask], y=lap[mask],
         mode='markers', name=combo,
         marker=dict(size=11, color=color, line=dict(width=0.5, color='white')),
-        text=[f"{n}<br>{hp[mask][i]:.0f}hp / {kg[mask][i]:.0f}kg<br>PW={pw[mask][i]:.1f}<br>{fmt_lap(lap[mask][i])}<br>改装: {mod_levels[mask][i]}" for i, n in enumerate(np.array(names)[mask])],
+        text=[f"{n}<br>{hp[mask][i]:.0f}hp / {kg[mask][i]:.0f}kg<br>PW={pw[mask][i]:.1f}<br>{fmt_lap(lap[mask][i])}<br>改装: {mod_levels[mask][i]} - {mod_details[mask][i]}" for i, n in enumerate(np.array(names)[mask])],
         hoverinfo='text'
     ))
 
@@ -158,8 +158,19 @@ if truck_ref:
         hoverinfo='text'
     ))
 
+# 改装空力车：空心圈标注（打破"越重越慢"的主力）
+mod_mask = np.array([a == 'Modified' for a in aero_labels])
+if any(mod_mask):
+    fig2.add_trace(go.Scatter(
+        x=kg[mod_mask], y=lap[mod_mask],
+        mode='markers', name='改装空力',
+        marker=dict(size=16, color='rgba(255,255,255,0)', line=dict(width=1.6, color='#333')),
+        text=[f"{n}<br>改装空力<br>{mod_details[mod_mask][i]}" for i, n in enumerate(np.array(names)[mod_mask])],
+        hoverinfo='text'
+    ))
+
 fig2.update_layout(
-    title=dict(text='<b>图2: 车重 vs 派克峰圈速</b><br><sub>动力+车体双定义着色 | 星=原型 X=皮卡参照 | 皮卡不参与回归</sub>', font=dict(size=14)),
+    title=dict(text='<b>图2: 车重 vs 派克峰圈速</b><br><sub>动力+车体着色 | 空心圈=改装空力 | 星=原型 X=皮卡参照 | 原厂同车手口径下才大致越重越慢</sub>', font=dict(size=14)),
     xaxis_title='车重 (kg)', yaxis_title='圈速',
     yaxis=dict(autorange='reversed'),
     legend=dict(x=0.98, y=0.98, xanchor='right', yanchor='top'), height=600,
@@ -395,7 +406,7 @@ html = f"""<!DOCTYPE html>
     <div class="chart" id="chart2"></div>
 
     <div class="key-findings" style="margin-top:-10px;">
-        <p><b>看图说话</b>：派克峰下车重与圈速几乎是<b>单调递增</b>——越重越慢，无一反例。这是爬坡功率税（m·g·sinθ·v）的直接体现：<b>每多100kg，无论马力多大，先被扣2-3hp用于克服重力</b>，没有下坡可以"回本"。对比纽北——起伏赛道上下坡重力互相抵消，重量只在弯道中造成二阶惩罚，因此重量-圈速关系远不如派克峰干净。注意：这笔税是<b>常数项减法</b>，它没有把回归弹性推高（派克峰惩罚比 1.75 ≈ 纽北全量 1.73），却让车重-圈速关系比纽北干净得多——税在"绝对功率口径"杀伤，不在"弹性口径"。</p>
+        <p><b>看图说话</b>：派克峰下车重与圈速在原厂、同车手口径下大致<b>越重越慢</b>，但不是无一反例——几辆"重却快"的车（ZR1X、Ioniq 5 N TA、Model S Plaid改、宾利刷纪录的 Continental GT）都是改装空力或职业车手在起作用，图里已用空心圈标出改装空力。爬坡功率税（m·g·sinθ·v）是重量的直接体现：<b>每多100kg，无论马力多大，先被扣2-3hp用于克服重力</b>，没有下坡可以"回本"。对比纽北——起伏赛道上下坡重力互相抵消，重量只在弯道中造成二阶惩罚，因此重量-圈速关系远不如派克峰干净。注意：这笔税是<b>常数项减法</b>（相对海拔衰减的比例打折而言），它没有把回归弹性推高（派克峰惩罚比 1.75 ≈ 纽北全量 1.73）——税在"绝对功率口径"杀伤，不在"弹性口径"。</p>
     </div>
 
     <div class="key-findings">
@@ -404,7 +415,7 @@ html = f"""<!DOCTYPE html>
             <li>重量惩罚比 = <span class="highlight">{reg['weight_penalty_ratio']:.1f}</span>（N=13，两系数均不显著）；纽北 43 车全量 1.73（双显著）——<b>"上坡放大惩罚"的直觉被数据否定</b>（2026-08 勘误：早期以过时口径"纽北 1.0"为基准的"1.75 倍"结论已作废）</li>
             <li>成因：爬坡税 P=m·g·sinθ·v 是<b>常数项减法</b>（不改变功重比排序），且 ln(重量) 项已隐式吸收爬坡惩罚——重车慢 → 均速低 → 爬坡扣除小（负反馈）</li>
             <li>每多 100kg 先被扣 2-3hp 克服重力——这笔税在<b>绝对功率口径</b>杀伤，不在弹性口径</li>
-            <li>派克峰真正的独特：<b>马力弹性腰斩</b>（-0.036 vs 纽北 -0.066，p=0.46 不显著）+ <b>车重-圈速单调递增无一反例</b></li>
+            <li>派克峰真正的独特：<b>马力弹性腰斩</b>（-0.036 vs 纽北 -0.066，p=0.46 不显著）+ <b>原厂同车手口径下车重-圈速单调递增</b>（改装空力/车手会打穿）</li>
             <li><b>纯电在派克峰与纯油打平</b> (0.0% vs 0.0%)——高海拔免疫刚好抵消重量劣势，与纽北"控制重量后打平"的原因不同</li>
         </ul>
     </div>

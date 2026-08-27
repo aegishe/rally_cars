@@ -90,7 +90,7 @@ fig.savefig(os.path.join(OUT, 'chapter3-6-pw-laptime.png'), dpi=150)
 plt.close(fig)
 print('fig1 done')
 
-# ============ 图2：车重 vs 圈速（单调性） ============
+# ============ 图2：车重 vs 圈速（原厂组单调，改装空力/车手打穿） ============
 fig, ax = plt.subplots(figsize=(10, 6.5))
 
 for p, lab in [('ICE', '纯油'), ('PHEV', 'PHEV'), ('EV', '纯电')]:
@@ -100,21 +100,38 @@ for p, lab in [('ICE', '纯油'), ('PHEV', 'PHEV'), ('EV', '纯电')]:
     ax.scatter(kg[m], lap[m], c=pt_colors[p], label=lab, s=42, alpha=0.85,
                edgecolors='white', linewidths=0.5, zorder=3)
 
+# 改装空力：空心圈标注（打破"越重越慢"的主力）
+m_mod = [x == 'Modified' for x in aero]
+ax.scatter(kg[m_mod], lap[m_mod], facecolors='none', edgecolors='#333',
+           s=260, linewidths=1.4, zorder=4, label='改装空力')
+
 ax.scatter(np.array([p['weight'] for p in protos]), plap, marker='*', s=420,
            facecolors='black', edgecolors='gold', linewidths=1.2, zorder=5,
            label='Unlimited 原型')
 ax.scatter([truck['weight']], [truck['lap_s']], marker='x', s=140, c='#8e44ad',
            linewidths=2.5, zorder=5, label='Rivian R1T（参照）')
 
-# 单调性说明箭头
-ax.annotate('越重越慢，无一反例\n（爬坡功率税：每 100kg 先扣 2-3hp）',
-            xy=(2440, 649.902), xytext=(2050, 700),
-            fontsize=11, fontweight='bold', color='#c0392b',
-            arrowprops=dict(arrowstyle='->', lw=1.2, color='#c0392b'))
+# 重却快的反例：点出空力与车手
+driver_marks = [
+    ('Corvette ZR1X', 1884, 570.104, 'ZR1X\n改装空力+职业车手', -30, -18),
+    ('Hyundai Ioniq 5 N TA', 2100, 570.852, 'Ioniq 5 N TA\n改装空力+WRC车手', 18, 22),
+    ('Tesla Model S Plaid改', 2200, 594.901, 'Model S Plaid改\n改装空力(私人)', 26, -30),
+    ('Bentley Continental GT', 2244, 618.488, 'Continental GT\n宾利刷纪录+职业车手', -36, -46),
+]
+for _, x, y, lab, dx, dy in driver_marks:
+    ax.annotate(lab, (x, y), textcoords='offset points', xytext=(dx, dy),
+                fontsize=8.5, fontweight='bold', color='#c0392b',
+                arrowprops=dict(arrowstyle='-', lw=0.8, color='#c0392b'))
+
+# 单调性说明（诚实口径）
+ax.annotate('原厂、同车手口径下才大致越重越慢\n（爬坡税：每 100kg 先扣 2-3hp）',
+            xy=(2440, 649.902), xytext=(1750, 700),
+            fontsize=11, fontweight='bold', color='#333',
+            arrowprops=dict(arrowstyle='->', lw=1.2, color='#333'))
 
 ax.set_xlabel('车重（kg）')
 ax.set_ylabel('派克峰圈速（秒）')
-ax.set_title('派克峰：车重与圈速几乎单调递增——与纽北的起伏赛道形成对比')
+ax.set_title('派克峰：车重与圈速——原厂组内大致单调，改装空力/车手会打穿排序')
 ax.invert_yaxis()
 ax.legend(loc='upper left', fontsize=9)
 ax.grid(alpha=0.3, lw=0.5)
@@ -123,34 +140,34 @@ fig.savefig(os.path.join(OUT, 'chapter3-7-weight-laptime.png'), dpi=150)
 plt.close(fig)
 print('fig2 done')
 
-# ============ 图3：跨场景对比（k 值与重量惩罚比） ============
+# ============ 图3：跨场景对比（马力软通货） ============
 fig, axes = plt.subplots(1, 2, figsize=(12, 4.8))
 
-scenes_k = ['派克峰\n量产', '纽北\n全量', '纽北\n≥2200kg']
-k_vals = [0.110, 0.15, 0.08]
-k_cols = ['#e74c3c', '#3498db', '#3498db']
-bars = axes[0].bar(scenes_k, k_vals, color=k_cols, width=0.55)
-for b, v in zip(bars, k_vals):
-    axes[0].text(b.get_x() + b.get_width()/2, v + 0.008, f'{v:.3f}',
+scenes_hp = ['派克峰\n+10% 马力', '纽北\n+10% 马力']
+hp_vals = [0.36, 0.67]
+hp_cols = ['#e74c3c', '#3498db']
+bars = axes[0].bar(scenes_hp, hp_vals, color=hp_cols, width=0.55)
+for b, v in zip(bars, hp_vals):
+    axes[0].text(b.get_x() + b.get_width()/2, v + 0.02, f'{v:.2f}%',
                  ha='center', va='bottom', fontsize=11, fontweight='bold')
-axes[0].set_ylabel('功重比弹性 k（功重比 +1% → 圈速缩短 k%）')
-axes[0].set_title('马力是软通货：派克峰 k 仅 0.110')
-axes[0].set_ylim(0, 0.2)
+axes[0].set_ylabel('圈速缩短（%）')
+axes[0].set_title('马力是软通货：+10% 马力只换 0.36% 圈速')
+axes[0].set_ylim(0, 0.8)
 axes[0].grid(axis='y', alpha=0.3, lw=0.5)
 
-scenes_w = ['派克峰\n量产', '纽北\n全量', '纽北\n极限组']
-w_vals = [1.75, 1.72, 4.34]
-w_cols = ['#e74c3c', '#3498db', '#2c3e50']
-bars = axes[1].bar(scenes_w, w_vals, color=w_cols, width=0.55)
-for b, v in zip(bars, w_vals):
-    axes[1].text(b.get_x() + b.get_width()/2, v + 0.08, f'{v:.2f}',
+scenes_k = ['派克峰\n量产', '纽北\n全量']
+k_vals = [0.110, 0.15]
+k_cols = ['#e74c3c', '#3498db']
+bars = axes[1].bar(scenes_k, k_vals, color=k_cols, width=0.55)
+for b, v in zip(bars, k_vals):
+    axes[1].text(b.get_x() + b.get_width()/2, v + 0.008, f'{v:.3f}',
                  ha='center', va='bottom', fontsize=11, fontweight='bold')
-axes[1].set_ylabel('重量惩罚比（重量每 +1% 需马力 +?% 弥补）')
-axes[1].set_title('惩罚比 1.75 ≈ 纽北 1.72：上坡没有把它推高')
-axes[1].set_ylim(0, 5)
+axes[1].set_ylabel('功重比弹性 k（功重比 +1% → 圈速缩短 k%）')
+axes[1].set_title('功重比效率也低一档')
+axes[1].set_ylim(0, 0.2)
 axes[1].grid(axis='y', alpha=0.3, lw=0.5)
 
-fig.suptitle('派克峰 vs 纽北：同一套对数回归，换一个场景得到的两个数字', fontsize=13, fontweight='bold')
+fig.suptitle('派克峰 vs 纽北：同样加马力，这座山上贬了值', fontsize=13, fontweight='bold')
 fig.tight_layout(rect=[0, 0, 1, 0.94])
 fig.savefig(os.path.join(OUT, 'chapter3-8-cross-scene.png'), dpi=150)
 plt.close(fig)
