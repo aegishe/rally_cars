@@ -1,0 +1,48 @@
+So I'm standing here with Adam Thompson and I'm really excited to get to know you and learn a little bit about what you're working on.
+So to start with, can you just tell us a little bit about yourself and what you've worked on previously?
+Yep, so my current responsibility is Chief Engineer and the Technical Director for the Vehicle Integration Centre in GWM.
+And I lead the program team that are developing this platform that you see in front of you and the cars that come on that.
+My background primarily in sports cars and performance vehicles and I spent a long period of my career at McLaren
+leaving there as a Chief Engineer for the GT.
+Fantastic. Are you able to delve a little bit into the GF platform, explain to us what that means and what kind of exciting things we expect to see from that area of GWM in the future?
+So if you take a look at what we've got on display today, there's three key components of the platform that we're coming here to talk about.
+The first one of those in the centre of the car is the carbon monocoque.
+So you can see here the first element of that which is the floor which supports the seat structures for the passengers
+but also the rest of the main body structure of the vehicle.
+The second element at the front of the vehicle is the P4 electric motor.
+That motor drives the front axle of the vehicle.
+It's made of magnesium, super lightweight alloy and it's then coupled and driven by a high energy dense battery
+that will be elsewhere in the vehicle.
+The last element is the all new 4-litre V8 petrol engine at the back of the vehicle.
+That's combined with an all new 9-speed transmission and a P2 motor at the rear.
+So you've got an electric motor at the front, a combustion engine in the centre of the vehicle,
+so it's a mid-engine vehicle combined with a P2 that combines to give the overall power output of the vehicle.
+That is a whole lot of impressive tech.
+Can I jump back to the first one?
+Can you walk us through some of the advantages that you get with the carbon fibre platform
+versus a generic or standard platform?
+The main reason to introduce composites into a vehicle, in this case carbon fibre,
+is one, it gives a much better weight to strength ratio
+and it allows us to generate a very stiff and stable vehicle structure.
+That gives us a very stable and solid platform for high performance vehicles.
+There's a lot of stiffness in the platform for control
+and carbon's a very effective way of taking weight out, but adding stiffness in.
+That's awesome.
+And the V8 engine that you touched on, do we have any figures yet around output for this?
+Not yet, but I can tell you they're pretty exciting.
+Okay, that's awesome.
+And that will work in conjunction with the electric P4 motor that you mentioned, right?
+That's right.
+There will come in a variety of different configurations and layouts
+depending on what its usage is going to be for,
+but one of those is going to be a hybrid version.
+So our main, like I said, big power dense battery that helps drive the electric motors,
+the P4 at the front, the P2 in conjunction with the combustion engine at the rear of the vehicle
+will work together, combined, to deliver power to the rear axle.
+Fantastic.
+So this would be not just a sports platform, this could be a platform for many different types of models.
+It's been developed with potential to do a lot of different things.
+Could it be a full battery electric vehicle as well with this platform?
+The platform is not intended to be fully electric.
+We don't believe that the technology is there available at the moment
+to deliver the performance that you need in this kind of product only using EV.

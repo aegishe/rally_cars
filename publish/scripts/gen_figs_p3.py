@@ -141,12 +141,16 @@ plt.close(fig)
 print('fig2 done')
 
 # ============ 图3：跨场景对比（马力软通货） ============
-fig, axes = plt.subplots(1, 2, figsize=(12, 4.8))
+fig, axes = plt.subplots(1, 2, figsize=(6, 4.8))
 
 scenes_hp = ['派克峰\n+10% 马力', '纽北\n+10% 马力']
 hp_vals = [0.36, 0.67]
 hp_cols = ['#e74c3c', '#3498db']
-bars = axes[0].bar(scenes_hp, hp_vals, color=hp_cols, width=0.55)
+hp_x = np.array([0, 0.45])
+bars = axes[0].bar(hp_x, hp_vals, color=hp_cols, width=0.28)
+axes[0].set_xticks(hp_x)
+axes[0].set_xticklabels(scenes_hp)
+axes[0].set_xlim(-0.3, 0.75)
 for b, v in zip(bars, hp_vals):
     axes[0].text(b.get_x() + b.get_width()/2, v + 0.02, f'{v:.2f}%',
                  ha='center', va='bottom', fontsize=11, fontweight='bold')
@@ -158,7 +162,11 @@ axes[0].grid(axis='y', alpha=0.3, lw=0.5)
 scenes_k = ['派克峰\n量产', '纽北\n全量']
 k_vals = [0.110, 0.15]
 k_cols = ['#e74c3c', '#3498db']
-bars = axes[1].bar(scenes_k, k_vals, color=k_cols, width=0.55)
+k_x = np.array([0, 0.45])
+bars = axes[1].bar(k_x, k_vals, color=k_cols, width=0.28)
+axes[1].set_xticks(k_x)
+axes[1].set_xticklabels(scenes_k)
+axes[1].set_xlim(-0.3, 0.75)
 for b, v in zip(bars, k_vals):
     axes[1].text(b.get_x() + b.get_width()/2, v + 0.008, f'{v:.3f}',
                  ha='center', va='bottom', fontsize=11, fontweight='bold')
@@ -172,27 +180,5 @@ fig.tight_layout(rect=[0, 0, 1, 0.94])
 fig.savefig(os.path.join(OUT, 'chapter3-8-cross-scene.png'), dpi=150)
 plt.close(fig)
 print('fig3 done')
-
-# ============ 图4：残差排行 ============
-fig, ax = plt.subplots(figsize=(9, 6.5))
-idx = np.argsort(resid)
-snames = np.array(names)[idx]
-sres = resid[idx]
-cols = [pt_colors[x] for x in np.array(pt)[idx]]
-ax.barh(range(len(snames)), sres, color=cols, height=0.62)
-for i, v in enumerate(sres):
-    ax.text(v + (0.08 if v > 0 else -0.08), i, f'{v:+.1f}%',
-            va='center', ha='left' if v > 0 else 'right', fontsize=9, fontweight='bold')
-ax.set_yticks(range(len(snames)))
-ax.set_yticklabels(snames, fontsize=9)
-ax.axvline(0, color='#333', lw=0.8)
-ax.set_xlabel('残差（ln 实际 − ln 预测，负 = 高效）')
-ax.set_title('派克峰全量回归残差排行：Ioniq 5 N TA 夺冠（改装空力 + 纯电免疫 + AWD）')
-ax.set_xlim(-4.5, 3.5)
-ax.grid(axis='x', alpha=0.3, lw=0.5)
-fig.tight_layout()
-fig.savefig(os.path.join(OUT, 'chapter3-9-residual.png'), dpi=150)
-plt.close(fig)
-print('fig4 done')
 
 print('ALL DONE ->', OUT)

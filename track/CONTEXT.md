@@ -8,6 +8,7 @@
 |------|------|
 | `docs/U9X纽北实测功率反推.md` | U9X 逐帧反推（峰值 1627-1761kW=账面 73-79%，349 限速实锤） |
 | `docs/SU7 Ultra纽北实测功率反推.md` | SU7 反推 + 两车全圈对照（弯道/分段账本/5fps 定论） |
+| `docs/腾势Z纽北圈速预测.md` | 腾势 Z 量产/特别版预测（2290kg 口径，回归 + 布局光谱对照，待实测对标） |
 | `docs/重采管道操作手册.md` | 抽帧→OCR→清洗→分析管道：配置、全圈模板、时间戳基准、坑清单、分诊表 |
 | `scripts/resample_config.json` | 重采管道唯一配置（16 段全圈区段表、lap_offset、OCR 参数） |
 | `scripts/resample_all.ps1` / `ocr_full.ps1` / `resample_clean.py` / `resample_analysis.py` | 一键抽帧+OCR / 全圈 OCR 批量 / 清洗校准 / 峰谷+减速度分析 |
