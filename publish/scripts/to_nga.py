@@ -73,16 +73,20 @@ IMG_URL_MAP = {
     # 篇2s 弯道截图对比 + 三车速度曲线
     'chapter2s-c1-kesselchen.png': './mon_202608/25/-7da9Q51-dljfK1pT3cSsg-bd.jpg',
     'chapter2s-4-speed-profiles.png': './mon_202608/25/-7da9Q51-g37dZcT3cSsg-ds.jpg',
-    # 篇3 待上传后补充（9 张，按正文顺序）：
-    # 'chapter3-1-g700-baiwanpo.jpg': '',
-    # 'chapter3-2-paddle-tire.jpg': '',
-    # 'chapter3-3-zeekr7x-moreeb.jpg': '',
-    # 'chapter3-4-uphill-sand-race.jpg': '',
-    # 'chapter3-5-uphill-sand-fail.jpg': '',
-    # 'chapter3-6-pw-laptime.png': '',
-    # 'chapter3-7-weight-laptime.png': '',
-    # 'chapter3-8-cross-scene.png': '',
-    # 'chapter3-9-residual.png': '',
+    # 篇3 派克峰/沙坡（8 张，按正文顺序）
+    'chapter3-1-g700-baiwanpo.jpg': './mon_202608/28/-7da9Q42-6u8oZcT3cSjo-n8.jpg',
+    'chapter3-2-paddle-tire.jpg': './mon_202608/28/-7da9Q42-6zngZdT1kShc-jy.jpg',
+    'chapter3-3-zeekr7x-moreeb.jpg': './mon_202608/28/-7da9Q42-6b0pK1vT3cSo9-hs.jpg',
+    'chapter3-4-uphill-sand-race.jpg': './mon_202608/28/-7da9Q42-fscuK1qT3cSig-af.jpg',
+    'chapter3-5-uphill-sand-fail.jpg': './mon_202608/28/-7da9Q42-6zb6K15T1kSa3-hs.jpg',
+    'chapter3-6-pw-laptime.png': './mon_202608/28/-7da9Q42-edz7KvT3cSku-dj.jpg',
+    'chapter3-7-weight-laptime.png': './mon_202608/28/-7da9Q42-4itiKzT3cSku-dj.jpg',
+    'chapter3-8-cross-scene.png': './mon_202608/28/-7da9Q42-590kKrT1kSci-a0.jpg',
+    # 篇4 布局、重量和其他
+    'chapter4-1-denza-z-announce.jpg': './mon_202608/28/-7da9Q50-kbsuK1rT1kSbe-on.jpg',
+    'chapter4-2-denza-z-special-edition-wing.jpg': './mon_202608/28/-7da9Q50-7fggK1mT1kSe8-9h.jpg',
+    'chapter4-3-great-wall-v8.jpg': './mon_202608/28/-7da9Q50-k32yZaT3cSj5-ar.jpg',
+    'chapter4-4-geely-lotus.jpg': './mon_202608/28/-7da9Q50-g5y7KyT1kSeg-a0.jpg',
 }
 
 # ---------- 行内格式 ----------
@@ -201,6 +205,19 @@ def convert(text):
 
     return '\n'.join(out)
 
+def load_header(out_path: str) -> str:
+    """NGA 发布前言合并：publish/nga/_headers/<篇名>.header.txt 存在时前置拼接。
+    前言是发布时手写内容（吃瓜段、红字钩子等），不属于文章 md，
+    抽到 header 文件后，to_nga 重跑不再覆盖它。"""
+    header_dir = os.path.join(OUT_DIR, '_headers')
+    base = os.path.basename(out_path).replace('-nga.txt', '.header.txt')
+    hf = os.path.join(header_dir, base)
+    if os.path.isfile(hf):
+        with open(hf, encoding='utf-8') as fh:
+            return fh.read().rstrip('\n') + '\n\n'
+    return ''
+
+
 def main():
     if len(sys.argv) < 2:
         print('用法: python publish/scripts/to_nga.py <篇*.md ...>')
@@ -224,7 +241,7 @@ def main():
         base = os.path.splitext(os.path.basename(f))[0]
         out_path = os.path.join(OUT_DIR, base + '-nga.txt')
         with open(out_path, 'w', encoding='utf-8') as fh:
-            fh.write(bb)
+            fh.write(load_header(out_path) + bb)
         print(f'[完成] {os.path.basename(f)} -> {out_path} ({len(bb)} 字符)')
 
 if __name__ == '__main__':
