@@ -1,0 +1,228 @@
+All right, here we go. We got something special for you guys
+We're over here at Mason Motorsports still and we are taking a look at this gen 2
+We got Neil here to tell us all about it
+You guys are pretty stoked on this thing so far what so far. Yeah, it's been a lot of work
+Yeah, I bet how many years is it taken to get to this point with this a little over two little over two years
+There's a there was a solid
+Two years and just design stuff in the computer. That's pretty cool
+Once you take us around a little bit show us about it
+So let's kind of talk about kind of the main idea behind the truck first. Okay
+So one of the all-wheel drive and we wanted to maintain the same sort of front to rear balance that we currently run
+But we wanted to keep that balance
+Balanced throughout fuel load and burns. So so we really wanted to figure out
+how to take all the fixed weight
+And move it back to where we wanted
+to get the rear tail weight instead of using fuel and
+Then move the fuel up to the center of mass of the vehicle so that as the fuel load burns off
+The balance of the truck percentage wise does not change the truck might change ride height slightly or get slightly lighter or heavier
+But it doesn't disrupt the balance of it all makes sense because all this is going to stay the same pretty much unless you're
+Minus a tire or something correct. So now with with
+Making that balance not change as much not only is it more consistent when you drive it, but now that means you can also
+use more fuel
+Because it's not gonna upset the balance as much so that yeah
+We can go farther
+So our goal with this truck is to be able to do Sam Felipe
+With no stops and the Baja 500 with one stop and that's that's a huge difference only stopping once or no stops
+That's that's huge the easiest place to pass people's when they're stopped
+That's when they make the least dust and these races are literally coming down to seconds nowadays
+So if you say 30 seconds in a pit that could be the difference between winning or losing a race
+Especially if you lost track position while you were in the pit true because now you're in the dust
+You can then you might get a flat or who knows what yeah
+So there's there's several things that we have to not only do you need more fuel to go farther
+But we also have to figure out how to get the tires to go a little bit farther than what we've we've done
+So we've done some geometry stuff with the rear to try and
+Promote a little longer tire wear a little longer tire life. Yep make the wear more even across the tire
+We've done things in the front to get even a little more traction and I'll use a little bit more
+Forward bite out of the front end than our current gen one
+Does to
+Elibiate some more from the rear because currently we get a lot longer life out of the front tires in the rear
+So trying to balance that
+To get a longer fuel or a longer mileage before tires are needed to replace
+So with all that being said we'll start looking at some individual parts. Yeah, so this is your front drivetrain cooler
+This cools our our transmission which is
+It's all designed and built-in house. It's a the transmission transfer case is all one unit
+It the torque converter and the front diff are all lubricated with the same oils
+Yeah, and they're all a dry sump system. So it all all that oil is
+Maintained and kept in the same tank. So this cooler cools all of the drivetrain cools the transmission the front diff and
+Not all the drivetrain cools the transmission front diff
+Converter and transfer case
+The portals don't require a cooler and the rear gear does not rear gears do not require a cooler. Okay
+We move up to here, this is we've done the billet upper control arm for a long time
+That's nothing new a very similar design to our gen one
+The portal upright uses all the same internals is our current portal upright
+It's just the housing is different for some geometry changes that we did in the front of the truck
+Yeah, these things are massive too. So you guys like that's a hand. They're like these things are huge
+Yeah, yeah massive and then but the newest thing to this front suspension is
+The machine lower control arm. I've wanted to do one for a while and struggled to
+Figure out how to cost effectively do one
+Not that these are cost-effective
+Yeah
+But it's part of the problem is you need enough steering clearance out at the wheel
+So you can't really make that center section with the uniball aluminum
+It you can't make it large enough and still have enough clearance with your kind of your space constraints
+Okay, so what we did on this is it not only is more efficient with material to make it this way
+But you can now this center section is a 40 340
+And then is sandwiched with dowels
+To a front 70 75 and a rear 70 75 leg
+So you can use the aluminum where you want the aluminum and you can have the steel strength where you want the steel
+And you're also don't have to start with a piece this big. Yeah, it's it's broken up into sections
+Those are three-piece lower arm basically correct correct
+Nice thing about it now is it's easier for us to keep parts on the shelf for
+Customers that are machine parts other than fabricated parts. Yeah, so if they damage something
+It's much more likely that we can have it ready for them to go
+The other nice thing about them is with the three-piece if you damage
+This front section you can just replace that front section
+That's actually pretty big because before that that would get damaged quite not quite often
+But if you're gonna hit something it's probably gonna be that before you used to buy a whole new arm
+Correct, so now you can just buy that one section or if or if you from taking uniballs in and out over time and wear and tear
+If you damage that uniball cup instead of having to cut them out of the fabricated arms and have us
+Well new ones in it and post machine them
+You can just order that center section and we can send it to you and you bolt it right back together
+That makes a lot of sense. Yeah, and they look cool. They do they do I mean, I haven't seen one like that before, right?
+Yeah, it's definitely pretty cool
+So this is
+The fuel cell in the race truck all these carbon panels you see here, so this is a carbon Kevlar
+Mostly Kevlar actually just carbon on the outsides and a Kevlar line box that the fuel bladder will go into
+the tricky part about that was figuring out how to
+Get a hundred and forty five gallons of fuel inside the cab and
+Still make it come in and out
+Yeah, so there's there's tubs
+that are first
+Put into the truck the lower parts of the fuel cell can that are put into the truck
+Then the bladder is inserted into the truck and then the tops are all put into the truck and then the seat mounts
+going over
+the can which
+Double is a hold down for the fuel cell. Yeah, that's quite a bit of
+How long did it take you to come up with all that?
+That's quite a bit of design you have to think of so when I first did it
+I you know I drew the first tank and I'm like oh that should that should be good
+Oh, I can barely get it out and then I did the calculations on it was like 86 gallons
+I was like oh, I got to figure out how to fit a lot more
+So the nice thing about this fuel is
+One it's center mass of the vehicle
+to
+Most of it is very low in the chassis. Yeah
+Three it's actually in the safest part of the chassis
+Okay
+When you have the rear mounted fuel cell not that it's a necessarily extremely dangerous
+But if you get in an action if you crash one of these if you're hit by another vehicle
+90% of the time there's damage to the front and to the rear and those are the parts of the chassis that are built to
+Not be as sturdy the 30th part of the cab is designed to be around the drivers for safety reasons and it's the most centrally located and away from
+Crash incidents trees rocks, so I know a lot of people have gone all the fuels
+You know, it's it's near the drivers. You're sitting in field
+If you rupture the fuel cell can in the back
+And it catches fire
+It's gonna catch you on fire and you're more likely to rupture it in the back and you are here in the center of the truck
+That's true. Yeah, most collisions are the front or the back like you said
+Yep with cars or or trees or anything on the horse. Yeah
+So we feel like we've taken the fuel moved it to the strongest area of the entire chassis and the most centrally located and out of the way
+I see you have cupholders too
+Those will be for the battery and alternator switch. That is like a couple there's every picture
+They put that more than half of the comments on Instagram or Facebook are mentioned the couple there's yeah
+Yeah, nice couple there's so so the other thing you have to do with be able to get this fuel cell in and out is
+You have to make sure that components don't get in the way
+So that's why our steering column has to be able to unbolt from the chassis or you can't get the fuel cans out
+Yeah, so there's there was lots of planning and lots of design and and lots of stuff that we had to do to make that work
+That's that's the gnarliest fuel cell I've ever seen in an off-road vehicle. I'm just to say that right now
+Yeah, I can't wait to see what a Harmon says when they make the bladder. Yeah
+Good luck
+So so then this will all be meshed and it'll be carbon also. Yep
+And the way this truck's designed is this design to take all the air that's gone into the cab and
+funnel it back to
+Both the intake of the engine so we have fresh cool air coming to the engine and fresh cool air going to the coolers
+So this truck is a little different than our current it's from the outside
+It'll be all smooth. You won't really see any any of this stuff
+So that'll be paneled this whole top actually Mike Tucker in our
+Walk-around video was making the carbon mold for this top panel. Okay while we were over there
+But that'll all be so that this is all paneled so you basically have a wind tunnel through the center of the truck
+that
+Comes in exits through that so anything that comes into the cab has to come to that back window
+It's funneled to this rear coolers and then all the air will exhaust around and out the back of the truck around
+this very tire
+Very cool, and that's a massive cooler on there too. Yes
+A new design we did with PWR
+the top portion of it is
+The radiator and then the bottom portion of it is the engine oil cooler
+You got three fans on it and then we also did some stuff the way these panels in here work to keep all the
+Header heat out and away from fresh air coolers
+Coils this all has a return on it that mates cleanly to the engine
+So the headers everything is sealed off to the outside of the car. Okay. Yeah, try to keep the heat out of it. Yep
+How long does it take to get an engine out of this thing?
+Not bad as long as you have like a fork lift or a fairly tall lift it comes right out through the top
+Okay, it comes out the top. Yep
+Yeah, our other ones dropped out of the bottom this one actually comes out through the top
+Okay
+Well, that's probably even easier because before you had to kind of lift the truck up to make enough clearance
+Now you can just lift the engine up and out
+And come back here some of the fixed-weight stuff we've moved back here jack tanks jack pumps
+This one we have this is a transmission
+The oil for the transmission and drivetrain dry sump. Yep. The opposite side is the engine oil
+Backup jack
+Batteries
+Coolers
+Components that before we're toward the front side of the truck
+Yeah, so this is all come back and then the motor's actually another 26 inches further back than in our other mid-engine truck
+I was gonna say it looks like it's actually farther from where you're sitting now too
+Which actually is good for a driver because it might keep a little bit more
+So this this used to be right behind your shoulder. Okay, so it's literally 26 inches further back in the chassis
+Then then our current gen one all-wheel-drive truck
+And so that also helps move more fixed-weight to the rear
+Yeah, so this is gonna have the jacks up here as well. Correct
+Yeah, so the jack
+Hydraulic jack on part of it mounts there mounts here. Oh, yeah, there we go
+Lots of people asking questions about how all this works and driveshafts and is it independent
+So all I'll say right now is no it's not independent
+It is a more of a live axle suspension setup
+And that's all we'll go with perfect it uses the same trailing arm as the current gen one truck
+All right current trailing arm gen one truck. Well, we might be something a little special later
+And you can adjust camber and toe. Oh
+Yep. All right
+There you go. You guys heard it from the man himself
+Not independent not independent not independent
+But something special maybe
+Trying to think if there's any
+Anything else? I mean that this pedal looks cool. That's same pedal that we've always used
+That's one of the very few interchangeable parts. How often do you have to change the fluid the shock?
+Well, yeah SDG wants you to do it every every race like every, you know
+Does it do you know what the spring rate is? No, it is it depends on the driver. Yeah
+You know the the most finicky driver I've ever had when it came to gas pedals was for sure Andy McMillan
+Yep, every time he ever bought a new driving shoe
+He would insist that we made a new
+Pedal portion or foot portion of the pedal to fit it perfectly
+I always had to have a quarter inch gap all the way around the shoe and the same shape as the shoe
+Hey, whatever works, right?
+I mean Andy's famous for doing the you know the blipping rattle tool. I said it definitely gets used a lot
+Yep, is everything up here pretty much the same
+Kind of a different steering setup on this
+We're doing it's a swing set. It's not a rack
+But it also doesn't have
+Call it your normal sort of box with a sector shaft
+So so we're using kind of a linear steering that we're doing with double hydraulic rams that power the swingers
+So it's almost like if you took a full hydraulic steering
+But then you put a mechanical link in between so that you don't get drift
+It's something new that we're we're playing with that. I think it's gonna have a lot of advantages
+Awesome, it'll do some really cool stuff with it. Well, that'll be cool to see once it's once it's on there. Yeah
+Well, very cool. I think that covers the the vehicle if someone let's ask if someone wants to buy one of these right now
+What kind of weight is it? So one of these right now the we are only gonna build the first two
+until they have
+Run for a year, okay, and then we'll then we'll begin to deliver or make build other ones, okay
+You want to make sure they're proven get get out there get some time on them
+And I want to finish them before we see how much they're really gonna cost
+Yeah, cuz you don't know if you're not done yet, right? Correct
+We have ballpark ideas and estimates and prices that we've committed to
+But you lose a lot of money on the first couple. Yeah, I'm sure and we know it's no secret
+Who's this first one is yeah, it's already been said before this is prices truck
+So yeah cool to see so maybe later this this year. We'll see this thing in the dirt. Yeah
+Awesome. Well, I'll see you in the dirt sooner than later. I want to drive it real bad. Yeah, I'm sure you do
+This thing is gonna be pretty cool. It'll be cool to see when it's finished
+Yeah, thank you guys for giving us an awesome shop tour today a cool walk around of the new gen 2 anything else
+You want to talk about on it or is that about it? I think it's about it for now. All right
+Well, there you got any questions. No, I think that's it
+We don't we got to keep people guessing on some of this stuff
+So we can't tell you all the secrets yet
+We have to have something to show you later if we showed you everything right now
+You're not gonna come back and check it out later. Yeah, it's all about views. It's all about you. Yeah, right?
+We all care about that so much
+All right, well cool that that's the new the new gen 2 being built by Mason Motorsports for Bryce Menzies
+Thanks for tuning in guys. Hopefully you like the tour if you didn't check out the shop tour
+Go check out the shop tour tour of this whole this whole place. We'll see you on the next one

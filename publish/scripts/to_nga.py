@@ -89,6 +89,12 @@ IMG_URL_MAP = {
     'chapter4-4-geely-lotus.jpg': './mon_202608/28/-7da9Q50-g5y7KyT1kSeg-a0.jpg',
 }
 
+# ---------- 发布强调配置 ----------
+# NGA 表格表头无底色可用 → 表头行统一 [size=130%] + 加粗（所有表格生效）。
+# 关键行/关键句标红（[color=red]）：发布前按篇按需增删（篇5 指定两处）。
+RED_ROW_MARKERS = ['后置对调方案']          # 表格行第一格包含该词 → 整行每个单元格标红
+RED_HIGHLIGHTS = ['911 用半个世纪验证过的 RR，配上 959 用达喀尔双冠验证过的后置四驱，如今以混动硬派越野车的形式出击']  # 段落内子句 → 标红
+
 # ---------- 行内格式 ----------
 def inline_to_bbcode(s):
     s = latex_to_text(s)
@@ -114,6 +120,9 @@ def inline_to_bbcode(s):
     # NGA 平台适配：★ 与 ● 均被论坛内容过滤吞掉（2026-08 PC 端实测），星号记法改为文字"n星"
     s = re.sub(r'★+', lambda m: f'{len(m.group())}星', s)
     s = re.sub(r'●+', lambda m: f'{len(m.group())}星', s)
+    # 发布强调：关键子句标红（在加粗等转换之后，嵌套 [b][color=red]…[/color][/b]）
+    for h in RED_HIGHLIGHTS:
+        s = s.replace(h, f'[color=red]{h}[/color]')
     return s
 
 # ---------- 块级转换 ----------
@@ -144,9 +153,17 @@ def convert(text):
             # 去掉分隔行（第二个元素形如 |---|---|）
             data_rows = [r for r in rows if not re.match(r'^\|[\s:|-]+\|$', r)]
             out.append('[table]')
-            for r in data_rows:
+            for ri, r in enumerate(data_rows):
                 cells = [c.strip() for c in r.strip('|').split('|')]
-                out.append('[tr]' + ''.join(f'[td]{inline_to_bbcode(c)}[/td]' for c in cells) + '[/tr]')
+                if ri == 0:
+                    # 表头：无底色可用，130% 字号 + 加粗
+                    cells = [f'[size=130%][b]{inline_to_bbcode(c)}[/b][/size]' for c in cells]
+                elif any(marker in cells[0] for marker in RED_ROW_MARKERS):
+                    # 关键行：整行每个单元格标红
+                    cells = [f'[color=red]{inline_to_bbcode(c)}[/color]' for c in cells]
+                else:
+                    cells = [inline_to_bbcode(c) for c in cells]
+                out.append('[tr]' + ''.join(f'[td]{c}[/td]' for c in cells) + '[/tr]')
             out.append('[/table]')
             continue
 

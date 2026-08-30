@@ -30,7 +30,7 @@ SERIES_ORDER = [
     ('篇2-',  '2977 马力的真相：纽北圈速回归与 U9X 功率反推'),
     ('篇2s-', '同一套 1548 马力，两个重量：SU7 与 U9X 的纽北全圈账本'),
     ('篇3-',  '爬坡的两副面孔：沙地陡坡与派克峰'),
-    ('篇5-',  '如果我来造一台终极越野车：从纯增程到功率分流的纸上推演'),
+    ('篇5-',  '如果我来造一台终极越野车：把发动机搬到车尾的后置四驱布局纸上推演'),
     ('篇6-',  '买车之前，先问自己五个问题：家用选车的需求自知'),
     ('篇4-',  '不存在一种架构统治所有场景（收官）'),
 ]
@@ -67,18 +67,26 @@ def parse_md(text):
         else:
             break
 
+    # 游离正文（标题/引言之后、第一个 ## 之前：自述/铺垫段），并入正文第一楼
+    prelude = []
+    j = i
+    while j < len(lines) and not re.match(r'^##\s+', lines[j]):
+        prelude.append(lines[j])
+        j += 1
+    prelude = [l for l in prelude if l.strip() and l.strip() != '---']
+
     # 章节（^## 切分）
     cur_title = None
     cur_lines = []
-    for j in range(i, len(lines)):
-        m = re.match(r'^##\s+(.*)$', lines[j])
+    for k in range(j, len(lines)):
+        m = re.match(r'^##\s+(.*)$', lines[k])
         if m:
             if cur_title is not None:
                 chapters.append((cur_title, '\n'.join(cur_lines)))
             cur_title = m.group(1).strip()
             cur_lines = []
         else:
-            cur_lines.append(lines[j])
+            cur_lines.append(lines[k])
     if cur_title is not None:
         chapters.append((cur_title, '\n'.join(cur_lines)))
 
@@ -90,7 +98,7 @@ def parse_md(text):
         last_content = last_content[:nav_match.start()].rstrip()
         chapters[-1] = (last_title, last_content)
 
-    return title, intro, chapters, nav
+    return title, intro, prelude, chapters, nav
 
 
 def main():
@@ -103,7 +111,7 @@ def main():
     with open(src, encoding='utf-8') as fh:
         text = fh.read()
 
-    title, intro, chapters, nav = parse_md(text)
+    title, intro, prelude, chapters, nav = parse_md(text)
     base = os.path.splitext(os.path.basename(src))[0]
     out_dir = os.path.join(OUT_ROOT, base)
     os.makedirs(out_dir, exist_ok=True)
@@ -183,6 +191,9 @@ def main():
         single_lines.append('')
     single_lines += head_block()
     single_lines += intro_block()
+    if prelude:
+        single_lines.append(convert('\n'.join(prelude)))
+        single_lines.append('')
     for ch_title, ch_content in body_chapters:
         single_lines.append(convert(f'## {ch_title}\n' + ch_content))
         single_lines.append('')
@@ -205,6 +216,8 @@ def main():
         parts = []
         if idx == 1:
             parts += intro_block()
+            if prelude:
+                parts.append(convert('\n'.join(prelude)))
         parts.append(convert(f'## {ch_title}\n' + ch_content))
         if idx == len(body_chapters):
             parts += decl_block()
