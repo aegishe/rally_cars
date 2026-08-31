@@ -30,13 +30,19 @@ SERIES_ORDER = [
     ('篇2-',  '2977 马力的真相：纽北圈速回归与 U9X 功率反推'),
     ('篇2s-', '同一套 1548 马力，两个重量：SU7 与 U9X 的纽北全圈账本'),
     ('篇3-',  '爬坡的两副面孔：沙地陡坡与派克峰'),
+    ('篇4-',  '布局、重量和“其他”——腾势Z你嘛时候纽北纯电量产车第一啊'),
     ('篇5-',  '如果我来造一台终极越野车：把发动机搬到车尾的后置四驱布局纸上推演'),
     ('篇6-',  '买车之前，先问自己五个问题：家用选车的需求自知'),
-    ('篇4-',  '不存在一种架构统治所有场景（收官）'),
 ]
 
 # 首发帖链接（发帖后回填，空=输出占位提示）
 SERIES_HOME_URL = ''
+
+# 已发布各帖链接（key=篇名前缀，发布后回填；用于系列导航"上一篇/下一篇"真实链接）
+SERIES_POST_URLS = {
+    '篇4-': 'https://bbs.nga.cn/read.php?tid=47456620&_ff=-343809',
+    '篇5-': 'https://bbs.nga.cn/read.php?tid=47473129&_ff=-343809',
+}
 
 
 def parse_md(text):
@@ -160,10 +166,14 @@ def main():
         home = f'[url={SERIES_HOME_URL}]{SERIES_HOME_URL}[/url]' if SERIES_HOME_URL else '（链接后补）'
         lines.append(f'系列总帖（前言/声明/全部文章目录）：{home}')
         idx = next((i for i, (p, _) in enumerate(SERIES_ORDER) if base.startswith(p)), -1)
+        def _link(pair):
+            p, t = pair
+            u = SERIES_POST_URLS.get(p, '')
+            return f'[url={u}]{t}[/url]' if u else f'{t}（链接后补）'
         if idx > 0:
-            lines.append(f'上一篇：《{SERIES_ORDER[idx-1][1]}》（链接后补）')
+            lines.append(f'上一篇：《{_link(SERIES_ORDER[idx-1])}》')
         if 0 <= idx < len(SERIES_ORDER) - 1:
-            lines.append(f'下一篇：《{SERIES_ORDER[idx+1][1]}》（链接后补）')
+            lines.append(f'下一篇：《{_link(SERIES_ORDER[idx+1])}》')
         lines.append('[/quote]')
         lines.append('')
         return lines

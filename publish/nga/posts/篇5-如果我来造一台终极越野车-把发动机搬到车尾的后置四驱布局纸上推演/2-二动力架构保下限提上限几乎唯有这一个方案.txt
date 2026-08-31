@@ -1,6 +1,6 @@
 [size=130%][b]二、动力架构：保下限提上限，几乎唯有这一个方案[/b][/size]
 
-[img]assets/chapter5-7-perfect-e-offroad-engine.jpg[/img]
+[img]./mon_202608/31/-7da9Q46-k150K1tT3cSqh-e7.jpg[/img]
 本文方案的架构示意：后桥直驱 + 前桥电驱，发动机后置
 
 四角缺一块的老问题先摆上台（环塔体检报告）：

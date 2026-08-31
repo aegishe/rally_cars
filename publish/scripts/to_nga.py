@@ -87,6 +87,15 @@ IMG_URL_MAP = {
     'chapter4-2-denza-z-special-edition-wing.jpg': './mon_202608/28/-7da9Q50-7fggK1mT1kSe8-9h.jpg',
     'chapter4-3-great-wall-v8.jpg': './mon_202608/28/-7da9Q50-k32yZaT3cSj5-ar.jpg',
     'chapter4-4-geely-lotus.jpg': './mon_202608/28/-7da9Q50-g5y7KyT1kSeg-a0.jpg',
+    # 篇5 后置四驱（按正文出现顺序）
+    'chapter5-1-audi-rsq-etron.jpg': './mon_202608/31/-7da9Q46-hwryZbT3cSos-dy.jpg',
+    'chapter5-2-amg-one-cutaway.jpg': './mon_202608/31/-7da9Q46-a0u4K2pT3cSos-dy.jpg',
+    'chapter5-3-rsq-etron-cutaway.jpg': './mon_202608/31/-7da9Q46-5irkZbT3cSqo-iv.jpg',
+    'chapter5-4-993-aircooled.jpg': './mon_202608/31/-7da9Q46-gyqaK1sT1kSh8-b0.jpg',
+    'chapter5-5-991-watercooled.jpg': './mon_202608/31/-7da9Q46-brzxK21T1kSh8-cx.jpg',
+    'chapter5-6-959-paris-dakar.jpg': './mon_202608/31/-7da9Q46-3j85K11T3cSsg-g0.jpg',
+    'chapter5-7-perfect-e-offroad-engine.jpg': './mon_202608/31/-7da9Q46-k150K1tT3cSqh-e7.jpg',
+    'chapter5-8-perfect-e-offroad.jpg': './mon_202608/31/-7da9Q46-7rveK1vT3cSsg-g0.jpg',
 }
 
 # ---------- 发布强调配置 ----------
