@@ -1,3 +1,0 @@
-# Netscape HTTP Cookie File
-.bilibili.com	TRUE	/	FALSE	0	buvid3	q950lDczgUBjLEKLJVbDX8kC1zqubj9C
-.bilibili.com	TRUE	/	FALSE	0	buvid4	250789-961919687-748327279-65396
