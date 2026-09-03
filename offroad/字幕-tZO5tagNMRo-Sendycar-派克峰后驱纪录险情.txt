@@ -1,0 +1,408 @@
+﻿标题: What happened to Sendycar at Pikes Peak?
+发布者: The Sendy Club
+链接: https://www.youtube.com/watch?v=tZO5tagNMRo
+提取方式: youtube-transcript-api (en, auto-generated)
+
+[00:12] Come on,
+[00:17] >> brother.
+[00:18] >> Dude,
+[00:20] >> how was the run? It was a tough one. It
+[00:23] was eventful. Um, dealing with
+[00:26] temperatures from the start of the run,
+[00:28] actually. So I really had to back off
+[00:29] and by the time I got to Devil's I was
+[00:31] like idling her up for a bit. She got to
+[00:33] like 11 115 C. So I cooled her off and
+[00:37] then the last bit was pretty good. The
+[00:39] road today was absolutely perfect
+[00:40] though. So what a beautiful day. I'm
+[00:42] stroked stoked to be at the top. This is
+[00:46] I mean first year of this car. It got
+[00:48] finished exactly a month ago. Um so yeah
+[00:51] just to be at the top looks like we got
+[00:53] P2. I am absolutely stoked.
+[00:56] Now, if you had told me before Pikes
+[00:58] Peak this year how well it would go, I
+[01:01] wouldn't have believed you. Siciar was a
+[01:03] groundup build, untested and finished in
+[01:05] the 11th hour. This usually isn't the
+[01:07] recipe for success. Yet, here I sit with
+[01:10] a class win, second overall, a new rear
+[01:13] wheel drive record, and a personal best
+[01:15] at Pikes Peak. I should be satisfied,
+[01:18] but actually, I'm not. There was so much
+[01:20] more in me and the car that day. 2026
+[01:23] was never supposed to be a record-
+[01:25] setting year for Sandy car. This is a
+[01:27] multi-year program with the goal of
+[01:29] setting the outright mountain record.
+[01:31] Our aim for this year was to run every
+[01:32] day of testing to continually learn and
+[01:35] prove the car and come race day make it
+[01:37] to the top. And we did that. Between you
+[01:39] and me, I had a sneaky suspicion if we
+[01:42] made it to the top, the time would be
+[01:44] competitive. But I came very close to
+[01:46] not making it. So, let's get into it.
+[01:52] If you're new here, I'm Robin Shoots.
+[01:55] I'm that guy who has won Pikes Peak
+[01:56] overall four times with cars made in my
+[01:58] garage. I designed and built Sandy car
+[02:01] from scratch with one goal, to beat the
+[02:03] outright mountain record. These videos
+[02:06] are about bringing you along for that
+[02:07] journey and showing you exactly how and
+[02:09] why we're doing it. If you're enjoying
+[02:11] the videos, then may I ask you to like
+[02:13] and subscribe. It makes a huge
+[02:15] difference and helps me produce more
+[02:17] content for you. Thank you.
+[02:19] So, let's start at the beginning. Wheels
+[02:21] first rolled May 17th with two days on
+[02:24] the chassis dyno. This was to both dial
+[02:27] in the fuel and also get the vehicle
+[02:29] systems fully functioning. In
+[02:31] particular, it was getting a solid
+[02:32] baseline for the shifting throttle pedal
+[02:35] mapping and transient fueling. This was
+[02:37] also the first time the chassis and
+[02:38] suspension experienced real loading
+[02:40] through the tires. So, a great
+[02:42] shakeddown on the drive line and the
+[02:44] rear suspension. The biggest challenge
+[02:46] turned out to be strapping the car down.
+[02:48] Under full boost in fourth gear, the
+[02:50] front was actually lifting off the
+[02:52] ground. So along with the straps, we
+[02:54] implemented a ballast boy in the form of
+[02:56] Ryan sitting on the front of the car. We
+[02:58] ended up running the car at 2.1 bar
+[03:01] manifold pressure absolute and that
+[03:03] yielded us 700 wheel horsepower
+[03:05] uncorrected. The engine has been
+[03:07] designed to run 2.4 bar. So there's
+[03:09] about another 100 horsepower available
+[03:11] when we are ready for it. As it turn
+[03:13] would turn out, we would not need it
+[03:15] this year. From the dyno, we went to
+[03:17] Buttonwheeler to complete a full vehicle
+[03:19] shakedown. I was pleasantly surprised
+[03:21] with the balance out of the box. The
+[03:22] chassis setup was in the window. We only
+[03:25] made a small rear wing change to help
+[03:27] with the balance, but what did get
+[03:29] uncovered was an alternator that
+[03:31] couldn't keep up with the electrical
+[03:32] load and some fastest that had pulled
+[03:34] through the carbon work on the floor.
+[03:36] Unfortunately, the alternator stopped us
+[03:38] doing more than about three laps at a
+[03:39] time, so really quite limiting. Overall,
+[03:42] we made seven laps and about 10 minutes
+[03:44] of moderately placed running. Not
+[03:46] exactly ideal, but it would have to do.
+[03:49] The mounting scheme for the floor was
+[03:50] revised and a more potent Wasp
+[03:53] alternator was fitted and we packed
+[03:54] ourselves up for Colorado. Leaving May
+[03:57] 27th, we departed Roondo Beach for
+[03:59] Colorado Springs. First up would be
+[04:01] another shakedown, this time at Pikes
+[04:03] Peak International Raceway. Not related
+[04:05] to the hill climb, it's a small oval
+[04:07] course with an infield track that has
+[04:09] been the go-to for Pike Speed
+[04:10] competitors to test away from the
+[04:12] mountain. As a team, we started to feel
+[04:14] on top of things and ready to have some
+[04:16] meaningful running in the car. Of
+[04:18] course, this is exactly the moment you
+[04:20] get bit in the ass. One of the dumbest
+[04:23] things I've done today and something so
+[04:25] simple that really set us back. I set
+[04:28] off the fire suppression system
+[04:29] accidentally. This is what happened.
+[04:33] So, the car master power switch had been
+[04:36] placed next to the fire button bottle.
+[04:38] Both of those were out of sight behind
+[04:41] the steering wheel when I was sat in the
+[04:42] car. I was requested a power cycle by
+[04:45] the team and a fat finger later, I had
+[04:47] extinguishing in my face and all over
+[04:50] the car. Of course, my visor was open at
+[04:52] the time. This wasn't just any fire
+[04:56] bottle either. It's an F1 spec lifeline
+[04:58] bottle. There were no spares locally and
+[05:01] f the filling process would with the
+[05:03] manufacturer would take about a week
+[05:05] with shipping. So we had to complete a
+[05:07] much lighter run plan than hoped at
+[05:08] Pikes Peak International Raceway without
+[05:10] the fire suppression system. We also had
+[05:13] to rig up another fire system with parts
+[05:15] available locally so we could continue
+[05:17] testing on the mountain over the next
+[05:18] couple days. An absolute pain. Ask any
+[05:21] race team mechanic how much cleanup
+[05:23] comes from letting off a fire bottle and
+[05:25] they won't look happy. By design, it
+[05:28] goes everywhere and the powder is highly
+[05:30] corrosive. It's full-on crevice cleaning
+[05:33] three times over. Definitely the low
+[05:35] point for me during the month, but the
+[05:37] team performed a miracle overnight and
+[05:39] we were testing on the mountain the
+[05:40] following morning. A huge apology and
+[05:42] thank you goes to all of them. From
+[05:44] there, things started to improve
+[05:46] dramatically. Our first day on the
+[05:48] mountain was on the lower section. The
+[05:50] focus was more on quality rather than
+[05:52] quantity as we were dialing in the high
+[05:54] altitude tuning. Even so, we ended up
+[05:56] faster than Roma Dumas and the Ford on
+[05:59] that day and about 7 seconds off our PB
+[06:01] on that section. Other highlights
+[06:03] included a top speed at picnic ground of
+[06:06] 167 mph. That's a good 12 mph faster
+[06:10] than we had ever been before. She was a
+[06:13] rocket ship. We definitely hit the
+[06:15] ground running and this was the story
+[06:16] for the next couple weeks. Learning
+[06:18] about the car, steady progress and times
+[06:21] improving. We did have a couple of
+[06:23] problems to deal with, notably the shift
+[06:25] system. What appeared as two separate
+[06:27] problems ended up being caused by the
+[06:29] same thing. The high RPM nature of the
+[06:31] engine, which revs to 13,000 RPM, brings
+[06:34] with it some high frequency vibration.
+[06:36] That was oscillating these tiny pilot
+[06:39] valves in the shift solenoid, partially
+[06:41] opening them enough to both leak air and
+[06:43] also activate the shift solenoid
+[06:45] occasionally. We were seeing this
+[06:47] initially as a huge air demand on the
+[06:49] shift system, which we put down to the
+[06:51] increased amounts of shifts we were
+[06:53] doing with the extra straight line
+[06:54] performance. The problem got worse as I
+[06:56] started to consistently use all of the
+[06:58] rev range, especially above 12,000 RPM.
+[07:01] The problem came to a head in qualifying
+[07:03] where it essentially became an auto
+[07:05] money shift function, preloading the
+[07:07] shift barrel for a downshift before I
+[07:09] requested an upshift from the Cossworth
+[07:10] wheel. Both upshifts and downshifts
+[07:13] start with an unloading of the dog rings
+[07:15] in the gearbox. And as the upshift cut
+[07:17] was enough for a downshift also several
+[07:20] times I went from fourth to third rather
+[07:22] than fourth to fifth. It turns out the
+[07:24] engine and gearbox are quite willing to
+[07:26] spin at 15,000 RPM.
+[07:34] As this was happening for such short
+[07:37] periods of time, no real damage was
+[07:38] sustained. I think that's a testament to
+[07:41] the durability of the Protoipo engine.
+[07:43] This really screwed with my qualifying
+[07:45] runs, though. My fastest run came with a
+[07:48] big moment early on in a rather high
+[07:50] speed part of the course. I was asking a
+[07:52] little too much from the car and in a
+[07:54] high-speed turn, a big wobble ensued and
+[07:56] that pulled me a couple cars offline.
+[07:59] This combined with that auto money shift
+[08:02] meant I actually gave up pushing on the
+[08:04] run. Times like these, you stop pushing,
+[08:06] check the car over before going again.
+[08:08] But I did take the opportunity to drive
+[08:10] the second half of the qualifying
+[08:11] section cleanly and efficiently to see
+[08:13] if I could learn something for next
+[08:15] time. And that was good enough for a PB
+[08:17] and second place overall. Who knew? That
+[08:20] was the typical story of race week.
+[08:22] Dealing with small problems throughout,
+[08:24] not topping the time sheets, but still
+[08:25] setting PBs, demonstrating pace in the
+[08:28] car, whilst having a whole lot of time
+[08:30] still left on the table. Also consider
+[08:32] at the same time we were doing one huge
+[08:35] tire test. Yoga brought completely
+[08:37] custom tires for us. A total of seven
+[08:39] compounds to try. However, each compound
+[08:42] only had three sets, so we couldn't pick
+[08:44] our favorite and then run them for the
+[08:46] rest of the month. There just wouldn't
+[08:47] be enough. So, each day we ran practice.
+[08:50] We were choosing tires to learn and
+[08:52] develop rather than to top the time
+[08:54] sheets. Thursday afternoon, we took the
+[08:56] hard decision to focus on fixing the
+[08:58] shifting issue rather than running the
+[09:00] optional practice on the mountain
+[09:01] Friday. This involved implementing two
+[09:03] fixes to be sure. Firstly was to replace
+[09:06] the spherical bearing on the shift
+[09:08] actuator to the gearbox with a rubber
+[09:10] bushing to help isolate vibrations.
+[09:13] Secondly was to lengthen the tail pipe
+[09:15] and that would move the exhaust pulses
+[09:17] away from the shift actuator. We then
+[09:19] went to Pikes Peak International Raceway
+[09:21] again where we could run the car in more
+[09:23] control conditions at our own pace. A
+[09:27] few laps around there and we are able to
+[09:28] confirm the countermeasures had solved
+[09:30] the issue with the actuator. The air
+[09:33] usage had also greatly decreased. But
+[09:36] still, the two pumps we added earlier in
+[09:37] the month, we were not willing to risk
+[09:40] removing one of those for race day.
+[09:43] Also of note, I was not driving hard
+[09:46] that day as I did not want to put the
+[09:48] car in any sort of risk before the race
+[09:49] on Sunday. Even so, we ran a 49.32
+[09:54] around there. I believe that's the track
+[09:56] record for that layout, which is the
+[09:58] road course without using the turn one
+[10:00] banking. There's a record quoted online
+[10:02] for the Ferrari 333 SP, but that used
+[10:05] the turn one banking to do a 49.238. So
+[10:08] very close. Sadly, that place is getting
+[10:11] closed down. So we will never know what
+[10:13] Sicar could do if we really tried on the
+[10:15] full track. Now remember, everything up
+[10:18] to this point did not count towards race
+[10:20] day. Pikes Peak is a unique event. Once
+[10:23] a year, one run, no redoss, and this
+[10:26] year came with the expected unexpected
+[10:28] gremlins. This particular one was was a
+[10:31] weird one, a really complex issue
+[10:34] without a clear root cause. It's
+[10:36] something we are still investigating as
+[10:38] a team. Essentially, what happened was
+[10:40] an arbitrary tire diameter was indexed
+[10:43] inside the ECU for just one of the rear
+[10:45] tires, and this caused a miscalculation
+[10:48] in wheel slip for the traction control.
+[10:50] Only slightly so, though, not enough to
+[10:52] require a full ignition cut, but enough
+[10:55] for the ECU to ignition to create
+[10:57] a torque reduction. Now, this softened
+[11:00] the acceleration considerably. I was
+[11:02] 7/10 slower to the first turn than in
+[11:05] qualifying. My estimation is that it
+[11:07] cost us around a second a minute.
+[11:10] Considerable, but not the worst knock-on
+[11:11] effect of this issue. A heavily
+[11:14] ignition dramatically increases exhaust
+[11:16] gas temperatures and creates a lot of
+[11:19] heat buildup in the engine. My second
+[11:22] clue that something was a miss was the
+[11:24] warning lights coming on my dash for the
+[11:26] exhaust gas temperatures around the
+[11:28] 2minut mark. I could see that they were
+[11:31] already about 1,000° centigrade and
+[11:33] continually climbing. I could also see
+[11:36] that the engine cooling temperature was
+[11:38] higher than it should be at that point
+[11:40] on the mountain. Knowing that there was
+[11:41] a lot of the run still to go, I had to
+[11:43] do something about it. Previous
+[11:45] experience in the car had taught me
+[11:47] reducing traction control intervention
+[11:49] dramatically reduced these turns and I
+[11:51] did try turning down traction control to
+[11:53] see if that helped. Unfortunately, I
+[11:55] didn't completely disable it and I was
+[11:58] left with both considerable wheel spin
+[12:00] and the exhaust temp still not
+[12:02] improving. If id had completely turned
+[12:04] it off, I think I would have stopped the
+[12:06] issue. But I was a little busy driving
+[12:08] at the time to figure that one out. So,
+[12:11] I went full to the top. What I
+[12:14] did do is implement some short shifting,
+[12:16] which is where you shift up before the
+[12:18] optimal point. I also performed a lift
+[12:20] and coast, which is where you lift off
+[12:22] about halfway down a straight and coast
+[12:24] until the braking zone. This is the most
+[12:26] timeeffective way to keep the car cool.
+[12:28] It also is great for saving fuel, and
+[12:31] that's why it is commonly used in
+[12:32] endurance racing.
+[12:34] I was having to drive like this more and
+[12:36] more as I went up the mountain, but it
+[12:38] still wasn't doing enough. By the time I
+[12:41] got to Devil's Playground, which is the
+[12:43] worst sport for cooling on the mountain,
+[12:44] I was about 115° C on the engine coolant
+[12:48] and needed to take more drastic
+[12:50] measures. I accelerated up to about 100
+[12:53] mph and coasted all the way down the
+[12:55] hill to bottomless pit. This is one of
+[12:57] the few places on the mountain which is
+[12:59] downhill. Doing that dramatically helped
+[13:02] to cool off the car. I was back down to
+[13:03] 100°. I was able to resume racing at a
+[13:06] more usual pace. That one lift alone
+[13:09] cost me another 7 seconds according to
+[13:12] the data. Add that into the short shifts
+[13:15] and the lift and coast. There was
+[13:16] definitely 15 to 20 seconds left on the
+[13:18] table.
+[13:20] And there's the fact I hit a marmmet.
+[13:27] To be clear, I break for marmets. You
+[13:29] can see that in the data. But the poor
+[13:31] fella didn't stand a chance and it made
+[13:34] a huge mess.
+[13:36] Oh my god, there is so much dead mama.
+[13:39] They grabbed his hair.
+[13:40] >> Oh no.
+[13:42] >> The front wing main plane was completely
+[13:44] crunch and looked like it had the
+[13:46] appetite to go full Laguna seeker
+[13:48] airplane mode on me again. So all in all
+[13:51] a bit of a disaster of a run, but it was
+[13:54] also a personal best for me at an 8
+[13:56] minute 29.427
+[13:58] and good enough for a new rearwheel
+[14:00] drive record. What stung for me was the
+[14:03] wind was on the cars that day. Not in my
+[14:05] wildest dreams did I think that would be
+[14:07] possible at the start of the month.
+[14:09] There was a legitimate 8minute 10 run in
+[14:12] me and the car that day. And more
+[14:13] importantly, there is a lot more pace to
+[14:16] be unleashed. Especially considering the
+[14:18] spec of car I brought to the mountain
+[14:20] this year was a testing spec, not the
+[14:22] full sendi car. With the Wolf, I had to
+[14:25] accept that the record wasn't going to
+[14:27] be achievable. But in this car, I know
+[14:29] we can do it. What excites me the most
+[14:32] is bringing the car to its full
+[14:33] specification and having some proper
+[14:35] development time with it. With that, I
+[14:38] am confident we will be going for the
+[14:39] mountain record in 2027. Of course, with
+[14:43] the usual disclaimer, weather and
+[14:44] conditions dependent. I hope you are
+[14:47] enjoying this in-depth motorsport
+[14:49] content. And if you want to learn even
+[14:51] more about the inner workings of race
+[14:53] cars and how to work on them yourself,
+[14:55] may I suggest checking out HP Academy.
+[14:57] The courses they provide have been
+[14:59] helping us in our Pike Speak journey
+[15:00] since 2018. It's also been a great place
+[15:03] to share our story. Even better is that
+[15:06] we have partnered with them to provide
+[15:08] 55% off their courses and $500 off their
+[15:11] VIP membership. Check out the link in
+[15:13] the description below for more
+[15:14] information on the offer. Thank you.

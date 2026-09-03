@@ -1,0 +1,529 @@
+链接: https://www.youtube.com/watch?v=h9-RIBHhVCU
+提取方式: youtube-transcript-api (en, auto-generated)
+
+[00:01] All right, here we go. We got something
+[00:02] special for you guys. We're over here at
+[00:04] Mesa Motorsports still and we are taking
+[00:06] a look at this Gen 2. We got Neil here
+[00:09] to tell us all about it.
+[00:11] >> You guys uh pretty stoked on this thing
+[00:12] so far or what?
+[00:13] >> So far. Oh, it's been a lot of work.
+[00:15] >> Yeah, I bet. How many years has it taken
+[00:17] to get to this point with this?
+[00:18] >> Uh, a little over two.
+[00:19] >> Little over two years.
+[00:20] >> There's a there was a solid two years
+[00:23] and just design stuff in the computer.
+[00:26] >> That's That's pretty cool. Why don't you
+[00:27] take us around it a little bit? Show us
+[00:29] about So, let's we'll kind of talk about
+[00:30] kind of the main idea behind the truck
+[00:32] first.
+[00:33] >> Okay.
+[00:34] >> So, we wanted an all-wheel drive and we
+[00:36] wanted to maintain the same sort of
+[00:38] front torear balance that we currently
+[00:40] run. Um, but we wanted to keep that
+[00:43] balance balanced throughout fuel load
+[00:46] and and burns. So, so we really wanted
+[00:48] to figure out how to take all the fixed
+[00:51] weight
+[00:53] um and move it back to where we wanted
+[00:56] to get the rear tail weight instead of
+[00:57] using fuel. and then move the fuel up to
+[01:00] the center of mass of the vehicle so
+[01:02] that as the fuel load burns off um the
+[01:06] balance of the truck percentage wise
+[01:08] does not change. The truck might change
+[01:10] ride height slightly or get slightly
+[01:11] lighter or heavier um but it doesn't uh
+[01:14] disrupt the balance of it all.
+[01:15] >> Makes sense cuz all this is going to
+[01:16] stay the same pretty much unless you're
+[01:18] minus a tire or something.
+[01:19] >> Correct.
+[01:20] >> Yeah.
+[01:20] >> So now with with uh making that balance
+[01:24] not change as much. Not only is it more
+[01:26] consistent when you drive it, but now
+[01:29] that means you can also
+[01:31] use more fuel
+[01:34] because it's not going to upset the
+[01:35] balance as much so that uh we can go
+[01:38] farther. So, our goal with this truck is
+[01:40] to be able to do Sam Felipe with no
+[01:43] stops and the Baja 500 with one stop.
+[01:46] >> And that's that's a huge difference.
+[01:47] Only stopping once or no stops. That's
+[01:49] that's huge.
+[01:50] >> The easiest place to pass people is when
+[01:52] they're stopped. That's when they make
+[01:53] the least dust. And these races are
+[01:55] literally coming down to seconds
+[01:56] nowadays. So if you save 30 seconds in a
+[01:59] pit, that could be the difference
+[02:00] between winning or losing a race.
+[02:02] >> Especially if you lost track position
+[02:03] while you were in the pit.
+[02:04] >> True. Cuz now you're in the dust. You
+[02:05] then you might get a flat or who knows
+[02:07] what. Y.
+[02:08] >> So there's there's uh several things
+[02:09] that we have to Not only do you need
+[02:11] more fuel to go farther, but we also
+[02:13] have to figure out how to get the tires
+[02:14] to go a little bit further than what
+[02:16] we've we've done. And so we've done some
+[02:18] geometry stuff with the rear to try and
+[02:21] uh promote a little longer tire wear or
+[02:24] a little longer tire life. Yep.
+[02:26] >> Make the wear more even across the tire.
+[02:28] Um we've done things in the front to get
+[02:31] even a little more traction and a use a
+[02:34] little bit more uh forward bite out of
+[02:36] the front end than our current Gen One
+[02:38] does to alleviate some more from the
+[02:40] rear because currently we get a lot
+[02:42] longer life out of the front tires in
+[02:43] the rear. So trying to balance that. um
+[02:48] to get a longer fuel or a longer mileage
+[02:50] before tires are needed to replace. Um
+[02:55] so with all that being said, we'll start
+[02:57] looking at some individual parts.
+[02:58] >> Yeah.
+[02:59] >> So this is your front drivetrain cooler.
+[03:02] Um this cools our our transmission which
+[03:05] is uh it's all designed and built
+[03:07] inhouse. It's uh the transmission
+[03:10] transfer case is all one unit. Um it the
+[03:13] torque converter and the front diff are
+[03:16] all lubricated with the the same uh
+[03:18] oils. Okay. And they're all a dry sump
+[03:20] system. So it all all that oil is um
+[03:23] maintained and kept in the same tank. So
+[03:25] this cooler cools all of the drivetrain.
+[03:27] Cools the transmission, the front diff
+[03:30] and I not all the drivetrain cools the
+[03:32] transmission, front diff, um converter
+[03:36] and transfer case. Uh the portals don't
+[03:39] require a cooler and the rear gear does
+[03:41] not or rear gears do not require a
+[03:42] cooler. Okay. Um we move up to here.
+[03:47] This is we've done the billet upper
+[03:49] control arm for a long time. That's
+[03:50] nothing new. Very similar design to our
+[03:52] Gen One. Uh the portal upright uses all
+[03:55] the same internals as our current portal
+[03:57] upright. It's just the housing's
+[03:59] different for for some geometry changes
+[04:01] that we did in the front of the truck.
+[04:03] >> Yeah, these things are massive too since
+[04:05] you guys like that's a hand there. Like
+[04:06] these things are huge.
+[04:08] >> Yeah. Yeah. Massive. And then but the
+[04:10] the newest thing to this front
+[04:11] suspension is uh the machined lower
+[04:15] control arm. I've wanted to do one for a
+[04:17] while and struggled to figure out how to
+[04:21] cost effectively do one. Um not that
+[04:24] these are cost effective, but
+[04:27] >> yeah, just a little expensive.
+[04:29] Um,
+[04:31] but part of the problem is you need
+[04:32] enough steering clearance out at the
+[04:34] wheel. So, you can't really make that
+[04:37] center section with the Uniball
+[04:39] aluminum. It it you can't make it large
+[04:41] enough and still have enough clearance
+[04:42] um with your kind of your space
+[04:45] constraints.
+[04:45] >> Okay. Um, so what we did on this is it
+[04:47] it not only is more efficient with
+[04:49] material to make it this way, but you
+[04:51] can now this center section is a 40340
+[04:57] um, and then is sandwiched with dowels
+[04:59] um, to a front 7075 and a rear 7075 leg.
+[05:03] So you can use the aluminum where you
+[05:05] want the aluminum and you can have the
+[05:06] steel strength where you want the steel
+[05:08] and you also don't have to start with a
+[05:10] piece this big.
+[05:11] >> Yeah.
+[05:11] >> Now it's it's it's uh broken up into
+[05:13] sections. Um,
+[05:15] >> so it's a three-piece lower arm
+[05:16] basically.
+[05:17] >> Correct.
+[05:18] >> Correct.
+[05:19] >> Um, nice thing about it now is it's
+[05:22] easier for us to keep parts on the shelf
+[05:24] for for customers that are machine parts
+[05:26] other than fabricated parts. Y
+[05:28] >> so if they damage something, it's much
+[05:29] more likely that we can have it ready
+[05:31] for them to go.
+[05:32] >> Um, the other nice thing about them is
+[05:34] with the three-piece, if you damage this
+[05:37] front section, you can just replace that
+[05:39] front section. That's actually pretty
+[05:41] big because before that that would get
+[05:43] damaged quite not quite often but if
+[05:44] you're going to hit something it's
+[05:45] probably going to be that before you
+[05:46] used to have to buy a whole new arm.
+[05:47] Right. Correct. So now you can just buy
+[05:48] that one section or if or if you from
+[05:51] taking Uniballs in and out over time and
+[05:54] wear and tear. If you damage that
+[05:55] Uniball cup instead of having to cut
+[05:57] them out of the fabricated arms and have
+[05:59] us weld new ones in it and post machine
+[06:01] them, you can just order that center
+[06:03] section and we can send it to you and
+[06:05] you bolt it right back together. That
+[06:06] makes a lot of sense. Yeah. And they
+[06:09] look cool. They do. They do. I I mean, I
+[06:10] haven't seen one like that before,
+[06:12] right?
+[06:12] >> Yeah.
+[06:13] >> It's definitely pretty cool.
+[06:16] >> So, this is uh
+[06:20] the fuel cell in the race truck. All
+[06:21] these carbon panels you see here. So,
+[06:23] this is a carbon kevlar
+[06:26] uh mostly Kevlar actually. It's just
+[06:27] carbon on the outsides and a Kevlar line
+[06:30] box that the fuel bladder will go into.
+[06:33] Uh, the tricky part about that was
+[06:35] figuring out how to get 145 gallons of
+[06:39] fuel inside the cab and still make it
+[06:43] come in and out.
+[06:44] >> Yeah.
+[06:45] >> So, there's there's tubs that are first
+[06:48] put into the truck, the lower parts of
+[06:50] the fuel cell can that are put into the
+[06:52] truck. Uh, then the bladder is inserted
+[06:56] into the truck and then the tops are all
+[06:59] put into the truck. And then the seat
+[07:01] mounts go in over the can, which double
+[07:05] as a hold down for the fuel cell.
+[07:09] >> Yeah, that's quite a bit of uh um How
+[07:12] long did it take you to come up with all
+[07:13] that?
+[07:14] >> Um
+[07:14] >> that's quite a bit of design you had to
+[07:15] think of.
+[07:16] >> So, when I first did it, I I you know, I
+[07:17] drew the first tank and I'm like, "Oh,
+[07:19] that that should that should be good."
+[07:21] Uh oh, I can barely get it out. And then
+[07:23] I did the calculations on it. It was
+[07:24] like 86 gallons. I was like, "Oh, I got
+[07:27] to figure out how to fit a lot more."
+[07:28] So, the the nice thing about this fuel
+[07:31] is one, it's center mass of the vehicle.
+[07:35] Um, two,
+[07:37] most of it is very low in the chassis.
+[07:39] >> Yeah. Three, it's actually in the safest
+[07:42] part of the chassis. Okay. Um, when you
+[07:44] have the rear mounted fuel cell, not
+[07:46] that it's necessarily extremely
+[07:48] dangerous, but if you get in an
+[07:49] accident, if you crash one of these, if
+[07:51] you're hit by another vehicle, 90% of
+[07:53] the time there's damage to the front and
+[07:54] to the rear. And those are the parts of
+[07:56] the chassis that are built to not be as
+[07:59] sturdy. The sturdiest part of the cab is
+[08:01] designed to be around the drivers for
+[08:03] safety reasons. And it's the most
+[08:04] centrally located and away from u crash
+[08:08] incidents, trees, rocks. So, uh I know a
+[08:12] lot of people have gone, "Oh, the
+[08:13] fuel's, you know, it's it's near the
+[08:15] drivers. You're sitting in fuel." Um, if
+[08:17] you rupture the fuel cell can in the
+[08:19] back and it catches fire, it's going to
+[08:22] catch you on fire and you're more likely
+[08:24] to rupture it in the back than you are
+[08:25] here in the center of the truck.
+[08:27] >> That's true. Yeah. Most collisions are
+[08:29] the front or the back like you said. So,
+[08:31] with cars or or trees or anything on the
+[08:33] on the course. Yeah.
+[08:35] >> So, we feel like we've taken the fuel
+[08:37] and moved it to the strongest area of
+[08:39] the entire chassis and the most
+[08:40] centrally located and out of the way.
+[08:42] >> I see you have cup holders, too.
+[08:44] >> Yeah. Th those will be for the battery
+[08:46] and alternator switch. That is they look
+[08:47] like cup holders though.
+[08:48] >> Every picture they put more than half of
+[08:51] the comments on Instagram or Facebook
+[08:53] are mention the cup holders.
+[08:54] >> Yeah.
+[08:55] >> So
+[08:56] >> yeah, nice cup holders.
+[08:57] >> So So the other thing you have to do
+[08:58] with be able to get this fuel cell in
+[09:00] and out is you have to make sure that
+[09:02] components don't get in the way. So
+[09:03] that's why our steering column has to be
+[09:05] able to unbolt from the chassis or you
+[09:07] can't get the fuel cans out.
+[09:08] >> Y. So, there's there was lots of
+[09:10] planning and lots of design and and lots
+[09:13] of stuff that we had to do to to make
+[09:14] that work.
+[09:15] >> That's that's the gnarliest fuel saw
+[09:16] I've ever seen in an off-road vehicle.
+[09:18] I'm just going to say that right now.
+[09:19] >> Yeah. I can't wait to see what a Harmon
+[09:21] says when they make the bladder.
+[09:23] >> Yeah. All right.
+[09:25] >> Good luck.
+[09:26] >> So, so then this will all be meshed and
+[09:29] it'll be carbon also.
+[09:30] >> Yep. Um, and the way this truck's
+[09:32] designed is it's designed to take all
+[09:33] the air that's gone into the cab and
+[09:36] funnel it back to both the intake of the
+[09:40] engine. So, we have fresh cool air
+[09:41] coming to the engine and fresh cool air
+[09:43] going to the coolers. Um, so this truck
+[09:47] is a little different than our current
+[09:49] is from the outside it'll be all smooth.
+[09:51] You won't really see any any of the
+[09:52] stuff. So, that'll be panled. this whole
+[09:55] top. Actually, Mike Tucker in our uh
+[09:58] walkaround video was making the carbon
+[10:00] mold for this top panel.
+[10:01] >> Okay. While we were over there. Um but
+[10:04] that'll all be so that this is all
+[10:06] panled. So you basically have a wind
+[10:08] tunnel through the center of the truck
+[10:10] that uh comes and exits through that. So
+[10:13] anything that comes into the cab has to
+[10:15] come through that back window is
+[10:16] funneled to this rear coolers and then
+[10:19] all the air will exhaust around and out
+[10:21] the back of the truck around the spare
+[10:22] tires. Very cool. And that's a massive
+[10:25] cooler on there, too.
+[10:26] >> Yes.
+[10:27] >> Yeah.
+[10:27] >> So, this is auge a new design we did
+[10:29] with PWR.
+[10:30] >> Um the top portion of it is uh the
+[10:34] radiator and then the bottom portion of
+[10:36] it is the engine oil cooler.
+[10:38] >> Yeah, that's that thing's huge. You got
+[10:41] three fans on it.
+[10:42] >> And then we also did some stuff the way
+[10:43] these panels in here work to keep all
+[10:46] the header heat out and away from fresh
+[10:50] air, coolers, coils. This all has a
+[10:53] return on it that mates cleanly to the
+[10:55] engine. So the headers, everything is
+[10:57] sealed off to the outside of the car.
+[10:58] >> Okay. Yeah. Try to keep the heat out of
+[11:00] that.
+[11:00] >> That makes sense.
+[11:02] >> Awesome. How how uh how long does it
+[11:04] take to get an engine out of this thing?
+[11:07] >> Uh not bad. As long as you have like a a
+[11:09] forklift or a fairly tall lift, it comes
+[11:11] right out through the top.
+[11:12] >> Okay. It comes out the top.
+[11:13] >> Yep.
+[11:14] >> See, our other one's dropped out of the
+[11:16] bottom. This one actually comes out
+[11:17] through the top.
+[11:18] >> Okay. Well, that's probably even easier
+[11:19] because before you had to kind of lift
+[11:20] the truck up to make enough clearance.
+[11:22] Now you can just lift the engine up and
+[11:23] out.
+[11:25] >> Um,
+[11:27] we come back here. Some of the fixed
+[11:28] weight stuff we've moved back here. Jack
+[11:30] tanks, jack pumps. Um, this one we have,
+[11:35] this is a transmission, the oil for the
+[11:38] transmission and drivetrain dry sump.
+[11:40] >> Y
+[11:40] >> the opposite side is the engine oil.
+[11:44] uh backup jack,
+[11:47] batteries,
+[11:49] coolers.
+[11:53] >> This all components that before were
+[11:56] toward the front side of the truck.
+[11:57] >> Yeah. So, this has all come back and
+[11:58] >> and the motor is actually another 26 in
+[12:00] further back than in our other mid
+[12:02] engine truck as well.
+[12:02] >> I was going to say it looks like it's
+[12:03] actually farther from where you're
+[12:04] sitting now, too, which actually is good
+[12:06] for a driver cuz it might keep a little
+[12:07] bit more of the noise.
+[12:08] >> So, this this used to be right behind
+[12:10] your shoulder.
+[12:11] >> Okay. So, it's literally 26 inches
+[12:14] further back in the chassis than uh than
+[12:16] our current Gen One allwheel drive
+[12:18] truck.
+[12:19] >> Awesome.
+[12:19] >> And so, that also helps move more fixed
+[12:21] weight to the rear.
+[12:22] >> Yeah. So, this is going to have the
+[12:24] jacks up here as well,
+[12:26] >> correct?
+[12:27] >> Um, yeah. So, the jack the hydraulic
+[12:29] jack part of it mounts there,
+[12:31] >> mounts here.
+[12:32] >> Oh, yeah. There we go. Um,
+[12:37] lots of people asking questions about
+[12:38] how all this works and drive shafts and
+[12:40] is it independent. So, all I'll say
+[12:43] right now is no, it's not independent.
+[12:45] Um, it is a more of a live axle
+[12:47] suspension setup. Um,
+[12:51] and that's all we'll go with for now.
+[12:52] >> Perfect.
+[12:53] >> It uses the same trailing arm as the
+[12:54] current Gen One truck.
+[12:55] >> All right. Current trailing arm Gen One
+[12:58] truck. Well, we got might be something a
+[12:59] little special later.
+[13:02] And you can adjust camber and toe.
+[13:04] >> Oh,
+[13:05] >> yep.
+[13:05] >> All right. There you go. You guys heard
+[13:07] it from the man himself.
+[13:09] >> Not independent.
+[13:10] >> Not independent. Not independent. But
+[13:13] something special, maybe.
+[13:14] >> Um trying to think if there's any
+[13:17] anything else.
+[13:18] >> I mean, this pedal looks cool.
+[13:20] >> Uh that same pedal that we've always
+[13:21] used. That's one of the very few
+[13:23] interchangeable parts.
+[13:24] >> How often do you have to change the uh
+[13:25] fluid
+[13:26] >> the shock oil?
+[13:27] >> Yeah. Um SDG wants you to do it every
+[13:30] every race like every you know all their
+[13:32] shocks just always do them.
+[13:33] >> Does it uh do you know do you know what
+[13:34] the spring rate is?
+[13:35] >> No.
+[13:36] >> It is depends it depends on the driver.
+[13:39] >> Yeah.
+[13:39] >> Um
+[13:40] you know the the the most finicky driver
+[13:43] I've ever had when it came to gas pedals
+[13:45] was for sure Andy McMillan.
+[13:47] >> Yep.
+[13:47] >> Every time he ever bought a new driving
+[13:50] shoe, he would insist that we made a new
+[13:53] pedal portion or foot portion of the
+[13:55] pedal
+[13:56] >> to fit it perfectly. always had to have
+[13:57] a quarter inch gap all the way around
+[13:59] the shoe in the same shape as the shoe.
+[14:03] >> Hey, whatever works, right? I mean,
+[14:05] Andy's famous for doing the, you know,
+[14:06] the blipping throttle too lot, so it
+[14:08] definitely gets used a lot. So,
+[14:10] >> is everything up here pretty much the
+[14:12] the same or anything?
+[14:13] >> So, we're doing kind of a different
+[14:14] steering setup on this.
+[14:16] >> Um,
+[14:18] >> uh, we're doing it's a swing set. It's
+[14:21] not a rack, but it also doesn't have a
+[14:24] call it your normal sort of box with a
+[14:26] sector shaft. So, so we're using kind of
+[14:28] a linear steering that we're doing with
+[14:30] double hydraulic rams that power the
+[14:33] swingers. So, it's almost like if you
+[14:36] took a full hydraulic steering, but then
+[14:38] you put a mechanical link in between so
+[14:40] that you don't get drift.
+[14:41] >> Cool. So, that's it's something new that
+[14:43] we're we're we're playing with that I
+[14:45] think is going to have a lot of
+[14:46] advantages.
+[14:46] >> Awesome.
+[14:47] >> We're able to do some really cool stuff
+[14:48] with it. Well, that'll be cool to see
+[14:49] once it's uh once it's on there.
+[14:51] >> Yeah.
+[14:52] >> Well, very cool. I think that covers the
+[14:54] uh the vehicle. If someone Let's ask if
+[14:56] someone wants to buy one of these right
+[14:58] now, what kind of weight is it?
+[15:00] >> So, one of these right now the we are
+[15:02] only going to build the first two until
+[15:05] they have um run for a year.
+[15:09] >> Okay?
+[15:09] >> And then we'll then we'll begin to
+[15:11] deliver or make build other ones.
+[15:13] >> Okay.
+[15:14] >> Um
+[15:15] >> you want to make sure they're approved.
+[15:16] get get out there, get some time on
+[15:18] them,
+[15:18] >> and I want to finish them before we see
+[15:19] how much they're really going to cost.
+[15:21] >> Yeah, cuz you don't know if you're not
+[15:22] done yet, right?
+[15:23] >> Correct. We have ballpark ideas and
+[15:25] estimates and prices that we've
+[15:27] committed to. Um, but you lose a lot of
+[15:30] money on the first couple.
+[15:31] >> Yeah, I'm sure. And we know it's no
+[15:33] secret who's this first one is, right?
+[15:34] It's already been said before. This is
+[15:35] Bryce's truck. So,
+[15:37] >> yeah. Cool to see. So, maybe later this
+[15:40] uh this year we'll see this thing in the
+[15:41] dirt.
+[15:42] >> Yeah.
+[15:43] >> Awesome. Well, uh,
+[15:44] >> we'll see you in the dirt sooner than
+[15:46] later.
+[15:48] >> I want to I want to drive it real bad.
+[15:50] >> Yeah, I'm sure you do.
+[15:52] >> This thing is going to be pretty cool.
+[15:54] It'll be cool to see when it's finished.
+[15:55] Uh, yeah. Thank you guys for giving us
+[15:57] an awesome shop tour today, a cool walk
+[16:00] around of the new Gen 2. Anything else
+[16:02] you want to talk about on it, or is that
+[16:03] about it?
+[16:04] >> I think that's about it for now.
+[16:05] >> It all right.
+[16:06] >> Well, there you got any questions?
+[16:08] >> No, I think that's it. We don't We got
+[16:09] to keep people guessing on some of the
+[16:10] stuff. So, we can't tell you all the
+[16:12] secrets yet. You have to have something
+[16:13] to show you later. If we showed you
+[16:14] everything right now, you're not going
+[16:15] to come back and check it out later. So,
+[16:17] >> yeah. And it's all about views.
+[16:19] >> It's all about view. Yeah. Right. We We
+[16:21] all care about that so much.
+[16:24] All right. Well, cool. That That's the
+[16:25] new uh the new Gen Two being built by
+[16:27] Mason Motorsports for uh Bryce Menses.
+[16:30] Thanks for uh tuning in, guys. Hopefully
+[16:32] uh you like the tour. If you didn't
+[16:33] check out the shop tour, go check out
+[16:34] the shop tour for a tour of this whole
+[16:37] uh this whole place. We'll see you on
+[16:38] the next

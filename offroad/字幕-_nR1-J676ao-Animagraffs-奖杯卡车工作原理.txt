@@ -1,0 +1,635 @@
+﻿标题: How an Off-Road Racing Trophy Truck Works (Baja 1000)
+发布者: Animagraffs (Jake O'Neal)
+链接: https://www.youtube.com/watch?v=_nR1-J676ao
+提取方式: youtube-transcript-api (en, auto-generated)
+
+[00:01] I'm Jake O'Neal creator of animography
+[00:07] [Music]
+[00:17] [Music]
+[00:27] [Music]
+[00:29] ,000 actual miles with recent courses
+[00:32] totaling 1,300 plus miles and recent
+[00:35] winners completing the course in about
+[00:38] 22 1/2 hours for an average speed of
+[00:41] over 55 plus
+[00:45] mph that includes pit stops something
+[00:48] like 10 to 12 for refueling and more if
+[00:51] repairs are needed in
+[00:56] between the terrain is varied and brutal
+[01:00] trucks can maintain 100 plus mph over
+[01:04] deep waves in the course called whoops
+[01:07] that would easily swallow a small car
+[01:13] entirely top speeds can exceed 130 plus
+[01:17] mph on flat
+[01:22] sections tires are 40 in
+[01:25] [Music]
+[01:28] tall suspension travel is 24 in in the
+[01:31] front and 32 in at the
+[01:35] [Music]
+[01:37] rear the engine is a naturally aspirated
+[01:41] big block V8 meaning no turbos or
+[01:46] supercharging it puts out an astounding
+[01:49] 1,100 plus
+[01:54] horsepower the truck carries two spare
+[01:56] tires a bunch of onboard tools for trail
+[01:59] repairs
+[02:00] [Music]
+[02:03] and a surprising array of electronics
+[02:05] since much of the race happens at
+[02:10] night it weighs around 7,000 lb
+[02:14] including 100 gallons of fuel weight the
+[02:18] sheer mass of these trucks is thought to
+[02:20] help carry them through the terrain
+[02:22] instead of bouncing off of
+[02:26] obstacles to put this in perspective
+[02:29] that's about as heavy as two modern
+[02:36] sedans with a general overview of this
+[02:39] absolute Beast of a machine Let's get
+[02:41] into the
+[02:43] details the exterior and frame are built
+[02:46] similar to many race applications with
+[02:49] panels made of fiberglass and other
+[02:52] [Music]
+[02:55] composits attached to a steel tube frame
+[03:02] panels channel in cooling air and
+[03:05] protect underlying equipment the strong
+[03:08] light and easily
+[03:13] replaceable a row of tough rubber flaps
+[03:15] at the midsection offers added
+[03:17] protection for rearward
+[03:23] components some trucks especially those
+[03:25] from other racing classes have forward
+[03:27] engines while our unlimited class model
+[03:30] has a mid-engine layout with the engine
+[03:32] placed behind the cockpit and also
+[03:34] facing
+[03:39] backwards zooming into the
+[03:42] engine we first notied the huge air
+[03:45] filter on
+[03:46] top which is custom designed to handle
+[03:49] massive air intake in the most punishing
+[03:51] environments as dust and dirt particles
+[03:54] pose a constant threat to engine
+[03:55] internals
+[03:57] [Music]
+[04:00] air travels through an array of separate
+[04:02] intakes called an eight
+[04:07] stack each air intake tube has its own
+[04:10] fuel
+[04:13] [Music]
+[04:14] injector this setup allows monitoring
+[04:17] and specific Fuel and air delivery for
+[04:19] each
+[04:23] cylinder these trucks generally use big
+[04:25] block engines traditionally designed for
+[04:28] large working trucks or or other
+[04:30] heavyduty
+[04:33] applications for example the size
+[04:35] comparison sedan from earlier might have
+[04:37] a 3.5 L V6 engine meaning the volume of
+[04:41] all six cylinders adds up to 3.5 L of
+[04:44] total
+[04:48] capacity a stock big block V8 engine
+[04:51] could start at 6 l or
+[04:56] so our custom race engine has been up
+[04:59] upgraded to 9 plus l or 555 cubic in of
+[05:07] volume the extremes of desert racing
+[05:10] directly inform the build riding over
+[05:12] rough terrain means constant loading and
+[05:14] unloading the engine in a way that's
+[05:16] pretty unique to this kind of
+[05:21] racing an oversized heavy duty engine
+[05:24] can better handle that kind of instant
+[05:26] full-on fullof impact and keep from
+[05:30] blowing itself to bits for the nearly 24
+[05:32] hours of allout
+[05:37] abuse power adders like turbos for
+[05:40] example may have Associated lag with
+[05:42] that kind of instant on and off power
+[05:45] requirement and also add more liability
+[05:47] in the air intake system with intricate
+[05:49] and highly tuned interior parts that
+[05:52] don't handle constant dirt and dust as
+[05:56] well that said competitive trucks in the
+[05:59] un limited class can have widely
+[06:01] diverging setups from what I've shown
+[06:02] here and nothing is set in
+[06:07] stone engine oil is handled with a dry
+[06:09] Sump
+[06:13] System standard vehicles have a deep oil
+[06:16] pan and the sump is the pit or well
+[06:19] where excess oil is
+[06:24] stored dry sump systems have an external
+[06:26] oil reservoir and a shallower pan
+[06:33] they're more proactive about
+[06:34] pressurizing and pumping oil to and from
+[06:36] the engine for better coverage Cooling
+[06:39] and less sloshing or oil starvation in
+[06:42] Wild race conditions like hard Corners
+[06:44] jumps Landings and so
+[06:49] on exhaust travels through individual
+[06:52] pipes called
+[06:57] headers and combines into collector
+[07:00] as it winds to the upper side of the
+[07:01] truck
+[07:04] [Music]
+[07:08] bed the radiator for engine cooling is
+[07:11] located against the cockpit back window
+[07:17] opening though there are no windows on
+[07:20] the truck including no
+[07:26] windshield much of the engine intake air
+[07:28] and cooling air flows from and through
+[07:31] the cockpit for access to the cleanest
+[07:33] air possible in the constant cloud of
+[07:36] [Music]
+[07:41] dirt the fuel tank fills the truck bed
+[07:44] area with a huge 105g carbon fiber tank
+[07:48] that has an interior Kevlar bladder for
+[07:50] puncture
+[07:55] resistance it's got multiple fuel pumps
+[07:57] for increased pumping ability and and
+[07:59] redundancy in case one
+[08:05] fails the tank interior has foam blocks
+[08:07] to keep fuel from excess movement and
+[08:13] sloshing the tank can be filled at
+[08:16] either
+[08:20] side for fastest fill times teams use
+[08:24] pressurized refueling canisters that can
+[08:26] relatively safely deliver something like
+[08:28] 80 gallons of fuel fuel in 30
+[08:34] seconds these refueling tanks are
+[08:37] pressurized with carbon dioxide removing
+[08:39] all oxygen and reducing risk of
+[08:46] fire heading back inside the truck let's
+[08:49] Trace power as it flows out of the
+[08:54] engine the transmission has five speeds
+[08:57] and behaves primarily like a sequen qu
+[08:59] quential transmission where the driver
+[09:01] shifts up or down one speed at a
+[09:08] time however unlike a standard
+[09:10] sequential setup this transmission can
+[09:12] behave more like a manual transmission
+[09:14] in allowing the driver to select a
+[09:16] specific gear instead of moving only up
+[09:19] or down one speed at a time in case a
+[09:22] gear or speed is lost in the course of a
+[09:25] race
+[09:29] power flows through a connected shaft to
+[09:31] the transfer
+[09:36] case in a classic four-wheel drive setup
+[09:39] the transfer case is connected in the
+[09:41] path of the rear axle shaft and brings
+[09:44] power to a solid front
+[09:53] axle our race truck's mid-engine layout
+[09:56] shuffles these components around
+[10:00] [Music]
+[10:03] it has a solid rear
+[10:05] [Music]
+[10:08] axle but independent front suspension
+[10:11] meaning Drive power comes through
+[10:13] articulating axle shafts to each
+[10:19] wheel there are front and rear
+[10:21] differential gear sets which as you may
+[10:23] already know allow wheels at each side
+[10:26] to rotate at different speeds when
+[10:28] necessary
+[10:31] the rear differential is in the axle
+[10:36] housing while the front differential is
+[10:38] bolted to the
+[10:44] frame it has its own cooling radiator
+[10:52] nearby the distinction between
+[10:54] four-wheel drive and all-wheel drive is
+[10:56] that with four-wheel the system will
+[10:58] most likely need to be engaged by the
+[11:00] driver for use in particular
+[11:06] scenarios whereas all-wheel drive is
+[11:09] always
+[11:16] active all this mod of power can be put
+[11:19] to best use through the suspension
+[11:24] system it's something of a miracle to
+[11:27] launch a 7,000lb behem teth into the air
+[11:30] high enough to jump over itself and then
+[11:36] some and have it land perfectly graceful
+[11:39] as a
+[11:46] cat if our normal SUV leaves the ground
+[11:49] at all handling will be severely
+[11:51] compromised when it touches back
+[11:56] down it may experience repeated boun
+[11:59] ounces as body roll and direction of
+[12:01] travel are affected in unpredictable
+[12:08] ways the race truck seems to handle
+[12:10] everything with great skill both small
+[12:13] bumps and huge jumps
+[12:21] alike let's go right to the heart of the
+[12:24] suspension the spring and shock absorber
+[12:27] and then we'll zoom out to connect to
+[12:28] part and see how the system can take in
+[12:31] such a wide range of
+[12:36] obstacles Springs are the main component
+[12:39] tasked withh holding all the vehicle's
+[12:41] weight and absorbing
+[12:46] bumps shock absorbers aren't meant
+[12:49] primarily to hold weight but rather to
+[12:52] tame or damp the motion of the
+[12:58] spring our truck has a dual spring setup
+[13:01] that comes with a number of desirable
+[13:07] benefits first for the extreme
+[13:09] suspension travel distance a single very
+[13:11] long spring at this length might have
+[13:14] issues binding or bending in undesirable
+[13:16] ways from Full extension to full
+[13:22] compression the two Springs are attached
+[13:25] to a sliding retainer in the middle that
+[13:26] keeps everything aligned throughout
+[13:32] the smaller top spring is also softer
+[13:35] under normal Cruise they work together
+[13:37] for a softer smoother
+[13:43] ride however as the system compresses
+[13:46] the sliding ring butts up against the
+[13:48] stop
+[13:52] collar which removes the top spring
+[13:54] entirely
+[13:59] leaving the much firmer heavier bottom
+[14:01] spring to handle things from that point
+[14:08] on this is what's called Progressive
+[14:10] spring rate where one system can handle
+[14:12] both soft and firm
+[14:18] requirements without Progressive Springs
+[14:20] the ride might be too firm when cruising
+[14:22] for poor jittery handling over highspeed
+[14:25] flatter
+[14:26] sections or far too soft to land a jump
+[14:30] or navigate Big obstacles without
+[14:32] breaking
+[14:36] things even this highly tuned spring
+[14:38] system would experience chaotic
+[14:40] bounciness on its
+[14:45] own nearby shock absorbers are specially
+[14:48] built and tuned to eliminate Extra
+[14:50] Spring bounces as much as
+[14:56] possible the body of the shock is filled
+[14:58] with with
+[15:03] oil inside there's a moving rod with a
+[15:06] piston at its
+[15:10] end and holes or ports that allow shock
+[15:14] oil to pass
+[15:16] [Music]
+[15:18] through some ports flare open towards
+[15:21] the top to affect flow during the
+[15:23] compression stage
+[15:29] While others open towards the bottom for
+[15:31] the rebound
+[15:37] stroke there are stacks of thin flexible
+[15:40] washers top and bottom that can be
+[15:42] swapped
+[15:46] out to alter how fast oil can flow
+[15:49] through these
+[15:57] ports and allow separate tuning for
+[16:00] compression versus
+[16:05] rebound an attached
+[16:09] Reservoir with a relatively stationary
+[16:12] piston and nitrogen charge keeps the oil
+[16:16] portion properly pressurized during all
+[16:18] this
+[16:22] movement like the spring setup it's
+[16:25] desirable to have softer or stiffer
+[16:27] zones as the shock travels its
+[16:32] range to make some parts softer or
+[16:35] stiffer there are bypass tubes in the
+[16:38] shock
+[16:42] wall that lets some oil Bypass or flow
+[16:45] around the Piston
+[16:49] entirely there's an adjustable valve at
+[16:52] one end to allow or restrict the flow
+[16:54] for a softer or stiffer piston feel
+[17:01] this special valve is also one way and
+[17:03] it's designed to close if the Piston
+[17:05] goes the opposite
+[17:10] direction meaning this particular bypass
+[17:13] can only affect shock
+[17:18] compression the tube has a preset length
+[17:21] and can only work while the Piston is in
+[17:23] its
+[17:27] range by using various bypass tubes you
+[17:30] can tune different parts of the shock
+[17:32] for more or less oil flow and softer or
+[17:35] stiffer shock feel in that
+[17:41] zone these three tubes have one-way
+[17:43] valves for
+[17:49] compression there are two additional
+[17:51] bypass tubes at the other side for the
+[17:53] rebound stroke
+[18:01] the high-tech shock absorbers have a ton
+[18:03] of adjustability to skillfully handle a
+[18:06] wide range of
+[18:10] conditions all this movement generates a
+[18:12] lot of heat so there are nearby
+[18:14] reservoirs with fins mounted higher up
+[18:17] in the outside Airstream which allow hot
+[18:20] shock oil to circulate through for
+[18:27] cooling shocks and springs are mounted
+[18:30] to reinforced frame supports at the
+[18:35] top and an engineered swinging beam
+[18:39] called the trailing arm at the
+[18:44] bottom to complete the assembly there
+[18:46] are smaller bump stops above the axle
+[18:49] that compress at the absolute limit of
+[18:51] travel
+[19:02] in my research I noticed that these bump
+[19:04] stops come into use way more than I
+[19:07] thought they would they're driving these
+[19:09] trucks at the absolute limit all the
+[19:15] time trailing arms attach lower on the
+[19:18] rear
+[19:19] [Music]
+[19:23] axle with separate rods at the top
+[19:30] to allow for a lot of travel while
+[19:32] keeping components properly aligned
+[19:34] through the full range especially axle
+[19:42] joints this is called a four-link
+[19:48] suspension the long trailing arms are
+[19:51] also a key design component in making
+[19:53] these trucks seem to float in a straight
+[19:56] level path no matter the chaos unfolding
+[19:59] at each
+[20:03] wheel if you draw a line from the tire
+[20:06] contact patch to the trailing arm Pivot
+[20:09] Point this line represents the direction
+[20:12] of all the drive force coming from the
+[20:14] rear
+[20:14] [Music]
+[20:18] end as long as this line is in front of
+[20:21] the vehicle's center of gravity the
+[20:23] wheels will tend to pull the vehicle
+[20:25] forward in the direction of this line
+[20:32] our classic 4x4 shows how this looks
+[20:34] with a more standard rear axle
+[20:40] setup where the driving force remains
+[20:42] behind the center of gravity and tends
+[20:45] to pull things upward for a bouncy
+[20:53] ride keeping that center of gravity
+[20:56] behind the line of force is why you'll
+[20:58] often see lots of white hanging off the
+[21:00] back of desert race Vehicles things like
+[21:03] spare tires tools and so
+[21:09] on continuing with the trailing arm we
+[21:13] see the attached sway bar near the
+[21:18] axle it connects both trailing arms and
+[21:21] the truck's frame together with a rigid
+[21:23] but flexible
+[21:25] bar that twists with suspension travel
+[21:29] at each
+[21:32] side this limits excess body roll in
+[21:35] corners and keeps both tires in contact
+[21:38] with the ground as much as
+[21:42] [Music]
+[21:45] possible at the very back there are
+[21:47] fabric straps between the frame and axle
+[21:50] called limit
+[21:52] straps that gently suspend all these
+[21:55] heavy components at full droop so they
+[21:58] don't bang into stops throughout the
+[22:00] system and cause extra wear and
+[22:05] tear the axle is an extremely beefed up
+[22:08] custom welded part that's been
+[22:10] reinforced with thick steel at critical
+[22:12] points
+[22:17] throughout watching the system travel
+[22:19] its full 32 in is pretty amazing and
+[22:22] they definitely use every bit of that
+[22:24] range while underway
+[22:32] moving forward let's have a look at the
+[22:34] front
+[22:38] suspension unlike the solid axle rear
+[22:41] end the front has independent suspension
+[22:44] for each
+[22:48] side the main connecting components are
+[22:51] called a ARS for the shape
+[22:56] [Music]
+[23:01] a shock and spring pair like the rear
+[23:03] setup but a little
+[23:05] smaller attach from a fortified section
+[23:08] of the
+[23:13] frame to the lower a
+[23:16] [Music]
+[23:19] AR a ARS connect to the upright which
+[23:22] holds the wheel and Associated
+[23:24] components
+[23:32] the front drive axle also enters the
+[23:34] upright between upper and lower AR ARS
+[23:37] we'll look a little closer at the
+[23:38] uprights in a
+[23:44] moment suspension philosophy can quickly
+[23:46] get into the weeds but generally
+[23:49] speaking for some added complexity a bit
+[23:53] less travel and less weight independent
+[23:56] front suspension helps solve some
+[23:58] critical steering
+[24:02] goals unlike a solid
+[24:04] [Music]
+[24:08] axle tires keep their top to bottom
+[24:10] angle called
+[24:14] camber throughout the range of travel
+[24:30] keeping the outer tire perpendicular to
+[24:32] the ground in corners for better
+[24:34] connection no matter what the other
+[24:36] wheel is
+[24:36] [Music]
+[24:52] doing front suspension has bump stops as
+[24:54] well which strike against the upper a AR
+[25:03] steering components are packaged with
+[25:05] front
+[25:10] suspension there's a power steering box
+[25:12] which functions similar to the power
+[25:14] steering in a normal car with a
+[25:16] mechanical connection that's aided by
+[25:22] Hydraulics there's an added hydraulic
+[25:24] assist unit nearby in our race truck to
+[25:26] help tame the massive tires at
+[25:32] speed fully hydraulic steering lacks the
+[25:35] feel and instantaneous connection to the
+[25:37] ground that drivers require so the
+[25:40] system Blends mechanical and hydraulic
+[25:44] components this is a swing set style
+[25:48] design where the central bracket for
+[25:50] steering arms is designed to swing in an
+[25:53] arc throughout the full range
+[25:59] instead of just moving side to side in a
+[26:01] straight line as many standard steering
+[26:03] racks will
+[26:08] do a ARS have their own arc as they move
+[26:12] parallel to each other up and
+[26:14] [Music]
+[26:16] down and the swing set steering
+[26:18] complements that Arc to keep Parts
+[26:20] properly aligned through the extreme
+[26:23] suspension
+[26:26] range if not positioned properly as
+[26:29] things move steering arms might pull
+[26:32] Wheels in or
+[26:34] out causing unwanted steering changes as
+[26:37] suspension flexes this is called bump
+[26:45] steer let's follow front suspension out
+[26:48] to the
+[26:50] wheel one major challenge with all-wheel
+[26:53] drive race trucks has traditionally been
+[26:56] clearance If This Were A two whe drive
+[26:58] vehicle things can stay right where they
+[27:02] are but if we add a front drive axle it
+[27:05] needs to go right where the lower a AR
+[27:07] is to drive the front
+[27:11] wheel now we've lost a lot of
+[27:14] clearance many consumer grade cars have
+[27:17] this kind of arrangement but our race
+[27:19] truck needs all the ground clearance it
+[27:21] can
+[27:24] get to move the drive axle and a ARS
+[27:27] back up high High portal axles are
+[27:33] used Drive power flows through a double
+[27:36] intermediary gear set for
+[27:39] strength to the lower
+[27:42] gear and out to the
+[27:47] wheel the portal assembly adds weight
+[27:50] and complexity but also enables
+[27:51] all-wheel drive without sacrificing
+[27:54] ground clearance which has proven to be
+[27:56] worth the tradeoff
+[27:58] [Music]
+[28:01] front brakes attach here and the wheel
+[28:04] and tire
+[28:06] setup these giant balloon-like tires are
+[28:09] run at lower internal air
+[28:12] pressure for a wider flatter and more
+[28:15] flexible contact
+[28:19] patch also the ability to help absorb
+[28:22] the brutal terrain
+[28:24] shocks the tire deflects and deforms a
+[28:27] lot while in
+[28:32] action the lower pressure high
+[28:35] horsepower and extreme terrain demands
+[28:38] would make keeping tires connected to
+[28:40] the rim a real challenge so beadlock
+[28:43] style rims are
+[28:47] used normal tires use the stiffer inner
+[28:50] ring or
+[28:53] bead combined with air pressure to press
+[28:56] the tire against the metal rim for a
+[28:58] tight reliable
+[29:03] seal our bead loock Rim places the tire
+[29:06] bead outside of the rim
+[29:12] lip in a special
+[29:14] [Music]
+[29:15] Channel a metal ring is bolted to the
+[29:22] wheel pinching the tire bead firmly in
+[29:24] place for a solid connection that
+[29:26] doesn't require high in internal air
+[29:28] pressure to
+[29:34] maintain and here's the complete front
+[29:36] suspension with steering and drive
+[29:39] components all working together from
+[29:41] Full droop to full
+[29:44] [Music]
+[29:49] compression now let's get into the
+[29:51] cockpit and see how the driver and
+[29:53] Navigator interact with our race truck
+[29:58] the driver Pilots the
+[30:03] vehicle and the Navigator is tasked with
+[30:06] all other duties required to get through
+[30:08] 1,000 plus miles of off-road terrain
+[30:10] safely calling out obstacles
+[30:12] communicating with the support team and
+[30:14] keeping on course at every
+[30:18] moment there are no doors and entering
+[30:21] the truck means climbing through the
+[30:23] side window opening
+[30:28] however as previously noted there are
+[30:30] also no
+[30:32] windows there are nets for safety to
+[30:35] keep passengers inside in the event of
+[30:37] an
+[30:40] accident both driver and Navigator have
+[30:43] helmets with hoses and pumps for
+[30:45] filtered cooling
+[30:50] air the driver has controls at the wheel
+[30:53] to position different external Lighting
+[30:55] systems up or down
+[31:01] there's a button to dispense fluid
+[31:02] through a drink tube in the
+[31:07] helmet and a push to talk button at the
+[31:10] other side for radio
+[31:15] communication there are paddle shift
+[31:17] levers at either side of the
+[31:19] [Music]
+[31:22] wheel dash panels include a general
+[31:25] control panel with various truck and
+[31:28] race specific
+[31:29] [Music]
+[31:33] functions the central display shows
+[31:35] speed critical monitors like Fuel and
+[31:38] oil pressure lap times and
+[31:41] [Music]
+[31:43] more the right display is the GPS map
+[31:46] and race
+[31:51] course the center console has a battery
+[31:54] disconnect switch for safety
+[31:57] [Music]
+[31:59] and a fire system pull
+[32:04] cord which will activate extinguishers
+[32:06] that have lines plumbed into areas like
+[32:08] the cockpit and engine
+[32:14] compartment the center console has a
+[32:17] control and lighting panel that's
+[32:18] accessible for both driver and
+[32:24] Navigator the power steering fluid fill
+[32:26] tube comes through the the console here
+[32:28] for easy access during the
+[32:33] race as we move to the Navigator's
+[32:37] position we see a larger GPS map
+[32:43] display with similar matching controls
+[32:45] panels and displays to the
+[32:51] driver the main communication radio is
+[32:54] up top
+[32:58] with volume knobs for individual
+[33:00] headsets inside
+[33:06] helmets the navigator also has door bags
+[33:09] with tools for field repairs between pit
+[33:11] stops if
+[33:17] necessary on that note the truck carries
+[33:20] an assortment of other items for field
+[33:25] repairs including a set of containers
+[33:27] with critical fluids like engine oil
+[33:30] power steering fluid transmission fluid
+[33:32] and so
+[33:34] [Music]
+[33:35] on there's a spare drive
+[33:38] [Music]
+[33:41] axle a hydraulic jack can be engaged
+[33:44] from the cockpit to rapidly jack up the
+[33:46] truck on either side for example for a
+[33:49] tire
+[33:53] change there's also a spare jack on
+[33:55] board if the automatic jack fails
+[34:01] and a set of spare
+[34:08] tires also at the exterior there's an
+[34:10] array of powerful lights in various
+[34:12] positions to light up the scene at
+[34:18] night yellow or Amber lights don't
+[34:21] reflect airborn particles as
+[34:22] dramatically as white light and become
+[34:24] invaluable in heavy dust or fog
+[34:31] some lights have actuators for
+[34:38] positioning with all the Interior
+[34:40] Electronics and lighting it's not
+[34:42] uncommon for these trucks to draw 160 to
+[34:45] 200 amps which is comparable to a
+[34:48] midsize
+[34:53] house it's downright uncanny to see
+[34:56] these absolute beasts fly like a missile
+[34:59] over some of the most unwelcoming
+[35:00] terrain
+[35:02] imaginable continuously settling into a
+[35:04] controlled graceful stance no matter
+[35:07] what obstacles they hit covering
+[35:09] hundreds of off-road miles in less than
+[35:12] 24 hours
+[35:15] [Music]

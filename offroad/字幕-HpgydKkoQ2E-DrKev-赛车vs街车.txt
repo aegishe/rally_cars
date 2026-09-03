@@ -1,0 +1,369 @@
+﻿标题: Built for Speed: Race Car Data vs. Street Cars
+发布者: Car Design Workshop
+链接: https://www.youtube.com/watch?v=HpgydKkoQ2E
+提取方式: youtube-transcript-api (en, auto-generated)
+
+[00:00] Goodnight. I'm Dr. Kev. And if I'm
+[00:01] working on race cars, we've got only one
+[00:03] goal that you're after, and that is to
+[00:05] win races, to be faster than other cars
+[00:08] that are built to the same set of rules
+[00:10] you're running to. But if you're
+[00:11] building a sports car, it's not quite
+[00:14] the same. A sports car doesn't get less
+[00:16] fun just because it isn't the fastest on
+[00:18] the road. In this video, we're going to
+[00:20] compare race car data to road car data,
+[00:23] and look at seven main differences that
+[00:25] influence the design of our vehicles.
+[00:27] Welcome to Car Design Workshop.
+[00:32] Race cars are about relentless
+[00:34] improvement. The example I'm going to
+[00:36] use in this data is from 2006 when I was
+[00:39] working professionally as a race car
+[00:41] engineer. And this data is from a GT3
+[00:43] running in Sebring. We were doing around
+[00:45] about 2 minutes and 10 second laps. Now,
+[00:48] 20 years later, a GT3 is about 10
+[00:50] seconds faster, and that's faster than a
+[00:53] GT2 from this same era. And that gets to
+[00:55] the first point of difference between a
+[00:58] race car and a road car, and that is
+[01:00] speed. So, there's some places in the
+[01:02] world where you can go a lot faster than
+[01:03] Australia, but here in my own country,
+[01:06] the road car speed limit is 110 km/h.
+[01:10] And of course, if you're caught in
+[01:11] traffic, that minimum speed you could be
+[01:14] running would be 0 km/h. Compared to
+[01:17] this race car data [music] from Sebring,
+[01:19] the car has about 160 km/h average
+[01:22] speed, and the lowest speed in a lap is
+[01:25] going to be 74 km/h. Now, we will hit
+[01:28] zero when we're in the pits, but that
+[01:29] won't last very long. The top speed for
+[01:32] the car is about 250 km/h. Now, that has
+[01:35] big implications for how we design the
+[01:38] vehicle. The first obvious implication
+[01:40] is safety. The kinetic energy that needs
+[01:43] to be absorbed in a crash is going to be
+[01:45] a half mv squared. And so, at the top
+[01:48] speed of a race car running here at
+[01:50] Sebring compared to the top speed you're
+[01:52] going to hit on an Australian road, it's
+[01:54] 516%
+[01:57] more energy at top speed. We also know
+[02:00] that the aerodynamic forces scale as a
+[02:02] function of V squared. So again, the
+[02:04] race car has about five times the arrow
+[02:07] loads, that means drag and downforce,
+[02:09] that we're going to see on a road car
+[02:11] running at 110 k an hour. Even more than
+[02:14] that, the power required to overcome
+[02:16] drag scales as a function of V cubed,
+[02:18] which means to get any significant
+[02:20] increase in top speed of a race car, we
+[02:23] need a lot more power. Now one of the
+[02:25] big implications that we have with this,
+[02:27] with the road car with lower speeds and
+[02:29] often sitting at the lights at a minimum
+[02:31] of 0 km an hour,
+[02:33] >> [music]
+[02:33] >> is there's going to be a lot less air
+[02:35] flow to the radiator for a given opening
+[02:38] and radiator size. That means a road car
+[02:41] is going to need fans for when the car
+[02:43] is stationary in order to keep the car
+[02:45] cool. And because a race car is going to
+[02:47] have a lot more air flow, you can
+[02:50] potentially get away with a much smaller
+[02:52] opening size. In fact, you need to tune
+[02:54] that to ensure that you're not running
+[02:56] too much drag in your race car. The
+[02:58] second thing we'd want to consider is
+[02:59] the acceleration of a car, and this is
+[03:01] closely related to the speed. See, in a
+[03:03] road situation, acceleration is fairly
+[03:06] infrequent. Most of the time you're
+[03:08] going to be driving along freeways or
+[03:10] long sections of straight road,
+[03:13] which means we don't have a lot of
+[03:14] lateral acceleration. And apart from
+[03:16] accelerating away from the lights or
+[03:18] braking to the lights, we don't
+[03:20] generally have a lot of longitudinal
+[03:21] acceleration, either.
+[03:23] Yet for a race car, the faster that we
+[03:25] want to go in a lap, we're accelerating
+[03:27] all the time. If you're not speeding up
+[03:30] or slowing down or going around a
+[03:32] corner, there's something that you've
+[03:34] left on the table. We also notice that a
+[03:36] race car is going to have much higher G
+[03:38] cornering. Now this is a GT3 Porsche
+[03:41] data, but we're still seeing cornering
+[03:43] up past 1 and 1/2 Gs. Whereas a road
+[03:45] car, even with good tires, is only going
+[03:48] to hit about 1 G cornering. Now this has
+[03:50] pretty big implications. The more that
+[03:52] you want a corner, the more lateral
+[03:54] acceleration that you've got, the more
+[03:56] you have to start dealing with things
+[03:58] like are you going to run a dry sump?
+[04:00] Are you going to maintain oil pressure
+[04:02] to your engine? If your engine starts to
+[04:04] starve of oil, then it's not going to
+[04:06] last very long. We also have suspension
+[04:08] implications. So, the more that you're
+[04:10] cornering and accelerating, braking, the
+[04:13] more you have to consider changes to
+[04:15] camber and to ride height. It's one of
+[04:17] the reasons a race car is often a lot
+[04:19] stiffer than a road car. The third thing
+[04:21] I want to consider is the throttle
+[04:23] usage. On a road car, there's a lot of
+[04:26] low usage of throttle. The example we
+[04:29] have here from the road car, even though
+[04:31] it was a fairly lively drive in a
+[04:32] Caterham, we still only hit about 8%
+[04:35] average throttle. And that's because
+[04:37] there's a lot of time spent either
+[04:39] cruising at a constant speed or stopped
+[04:42] at a set of lights. Whereas, we see in a
+[04:44] race car, the throttle is very on or
+[04:46] off. It's almost digital. And the
+[04:49] average throttle usage for a lap around
+[04:51] Sebring was 66%.
+[04:54] Now, that means that there's a lot more
+[04:56] of the power of the engine being used,
+[04:58] which has a big implication on our
+[05:00] cooling system. It means a lot more heat
+[05:02] is coming out of the engine that we're
+[05:04] going to have to deal with. Which leads
+[05:05] to our fourth point, the engine speed
+[05:07] we're going to see is also a lot higher
+[05:09] for a race car than a road car.
+[05:12] In a road car, it's very low. For the
+[05:14] short run that we have here, we only had
+[05:16] an average of about 1,700 RPM. Now, you
+[05:19] will see in a spirited drive your RPM
+[05:21] being a lot higher when you're taking
+[05:23] off from the lights and you might feel
+[05:24] like you're revving it quite a lot, but
+[05:26] because you just can't keep going faster
+[05:28] and faster on the road, at some point
+[05:30] need to cruise and you got to put that
+[05:31] into a higher gear. Whereas, on the race
+[05:34] car, we have an average RPM that's very
+[05:36] high, about 6,900 in this situation.
+[05:40] That's higher than the redline on a lot
+[05:42] of road cars. Now, this has a massive
+[05:44] impact on the amount of heat that is
+[05:47] being generated. In a road car over an
+[05:50] average period of time, you've got a lot
+[05:52] less heat.
+[05:53] And heat transfer is time-based, so we
+[05:56] can have a cooling system that is
+[05:57] designed for quick acceleration off the
+[06:00] line that might not be able to handle
+[06:03] that non-stop. There's a capacitor style
+[06:06] effect of water. We don't need to size
+[06:08] the cooling system of road car for
+[06:10] maximum power output or maximum RPM
+[06:13] output. And one of the common issues
+[06:15] that we have if we take a road car
+[06:18] that's designed for the road and put it
+[06:19] on a racetrack is it'll often overheat.
+[06:21] Because in a race car situation, you're
+[06:23] going to be using much more of that
+[06:25] power more of the time. Now, it also has
+[06:27] some pretty big implications on the
+[06:29] engine life. In a road car, you want
+[06:31] your engine to last a long time. So, we
+[06:34] want to keep the revs pretty low. In the
+[06:36] race car, running at these higher RPMs
+[06:38] have pretty big implications. It means
+[06:40] we're going to need stronger materials.
+[06:42] We need a better balanced engine. We've
+[06:44] got to think about the kinetic energy of
+[06:46] components.
+[06:47] Friction in the oil leads to RPM
+[06:50] dependent friction. And if we're doing
+[06:52] long-distance racing, the best sort of
+[06:54] racing, you could have 6 or 12 or even
+[06:57] 24 hours of hard load. Now, in a 24-hour
+[07:00] race, you could be doing 4,000 km of
+[07:03] high load in a GT3 car. Now, there are
+[07:05] some other implications around tuning.
+[07:07] So, if you are going to be running at a
+[07:09] higher RPM like a race car, you're
+[07:11] generally going to want things like
+[07:13] shorter runners to tune your peak torque
+[07:16] at a much higher RPM than you'd have on
+[07:18] a road car. Now, if we're going faster
+[07:20] and we're still hitting corners, that
+[07:21] means our brakes are used in a very,
+[07:24] very different way in a race car than
+[07:25] they are in a road car.
+[07:27] On a road car, we're generally applying
+[07:29] our brakes very smooth and building up
+[07:31] some pressure, not just slamming them on
+[07:33] and using the maximum amount of braking.
+[07:36] Now, also, we're generally operating
+[07:37] them infrequently. So, that means our
+[07:40] brake system is usually cold when we're
+[07:43] applying the brakes. In a race car, the
+[07:44] brake application is very aggressive at
+[07:47] the start. Almost maximum braking near
+[07:49] the start of that braking zone, and then
+[07:52] tapering that off as you're trail
+[07:54] braking into the corner, ensuring that
+[07:56] the front is not locking up. And a
+[07:58] driver, in order to be this aggressive
+[08:00] on the brakes, needs to rely on set
+[08:02] braking points around the track. And
+[08:04] these aggressive braking maneuvers,
+[08:06] they're happening over and over again in
+[08:08] a lap. It's repeated high braking. It
+[08:11] means the temperature of the braking
+[08:12] system is going to be quite high. It
+[08:14] means the brake pads that you're going
+[08:16] to use are going to have to be designed
+[08:18] to give good friction at high
+[08:20] temperatures, rather than on the roads
+[08:22] where we might want brake pads that give
+[08:24] you good friction from a low
+[08:25] temperature.
+[08:27] It also means that our fluid needs to
+[08:29] withstand much higher temperatures
+[08:31] before boiling. And we need to think
+[08:33] about the amount of material and size of
+[08:35] our brake discs to ensure they have
+[08:37] decent thermal capacity. We also need to
+[08:39] think about cooling for our braking
+[08:41] system. And just like we would have with
+[08:43] the engine cooling, brake temperature
+[08:46] and overheating of the brakes is a
+[08:47] regular failure point for road cars
+[08:50] going on track. Sometimes you can take
+[08:51] some very fast road cars, put them on a
+[08:53] decent track, and they'll only get a few
+[08:55] laps out before their brakes are
+[08:57] overheated. And that brings us to our
+[08:59] sixth point, which is the track. If
+[09:02] we're dealing with a road car, we could
+[09:04] be dealing with any surface. It could be
+[09:06] a bumpy road, it could be potholes, it
+[09:08] could be speed bumps, dirt. Whereas on a
+[09:10] race car, even the bumpy tracks, if
+[09:14] we're talking circuits, are generally
+[09:15] pretty smooth.
+[09:17] We saw this year that they actually
+[09:18] stopped the Monaco F1 race because of a
+[09:21] hole in the track. Yet around the corner
+[09:23] from my place, they haven't stopped
+[09:24] traffic because of a whopping great big
+[09:26] pothole there. That means for a race
+[09:28] car, we've got a different approach to
+[09:30] our suspensions. We're going to be
+[09:32] dealing with generally lower damper
+[09:34] speeds. It means we can run the car a
+[09:36] lot stiffer. For a road car, the stiffer
+[09:38] we make it, the less capable it's going
+[09:40] to be as the roads get rougher. Now, we
+[09:43] also notice that there's safety
+[09:44] implications. Roads are shared with all
+[09:47] sorts of people. There's trucks, there's
+[09:49] cyclists, there's pedestrians, there's
+[09:51] cars going all sorts of directions.
+[09:53] There's a lot less predictability than
+[09:55] there is on a racetrack.
+[09:57] On a racetrack, the same thing tends to
+[10:00] happen lap after lap. All the cars are
+[10:02] heading in the same direction, they're
+[10:03] traveling similar speeds. And while
+[10:06] exciting things might happen every so
+[10:08] often, it's far less possibility than
+[10:10] what you might have on a shared road.
+[10:12] That means a road car needs to be
+[10:15] further away from the limit and build in
+[10:17] some more capability to deal with any
+[10:20] odd situation. So much of what is done
+[10:22] around racetracks is to improve the
+[10:24] safety of these higher speed vehicles.
+[10:26] You've got runoff areas that are much
+[10:29] better for safety, able to slow the cars
+[10:30] down before a collision. You have tire
+[10:32] barriers to absorb energy. So, that
+[10:35] means that you can drive to the limit
+[10:38] much more safely. So, there is an
+[10:40] assumption in racing that there are
+[10:41] going to be accidents, and the track
+[10:44] design accounts for that. Also, on a
+[10:46] racetrack, a lot of effort is made to
+[10:49] separate people from the cars. There's
+[10:51] barriers between the racetrack and
+[10:53] spectators. If you were to drive on the
+[10:55] road like you drive on a racetrack,
+[10:57] there's far more chances for something
+[10:59] seriously bad to happen. And the seventh
+[11:01] point that I wanted to bring up is just
+[11:03] a difference in the driver. In a race
+[11:06] car, you're generally dealing with
+[11:07] somebody that's a little bit more
+[11:08] skilled and experienced. A good race
+[11:11] driver is very repeatable. Lap after
+[11:13] lap, we're going to see the same sorts
+[11:15] of inputs at the same sorts of time. If
+[11:18] you overlaid many laps, often you see
+[11:20] very little differences from one lap to
+[11:22] the next. A good driver is fit and
+[11:25] strong and has endurance, and they can
+[11:26] handle higher inputs. They're generally
+[11:29] more accurate with their input, and
+[11:31] there is a much smaller margin for
+[11:32] error, whereas a driver of road car
+[11:35] could be anybody.
+[11:37] So, the car just needs to be a little
+[11:39] bit more forgiving. There's a different
+[11:41] trade-off we make for comfort versus
+[11:44] performance. Now, we don't want to make
+[11:45] a race car completely uncomfortable
+[11:47] because that means it's going to be too
+[11:49] hard to drive at the limit. But, that
+[11:51] trade-off is at a different point. So,
+[11:52] we would accept a much higher level of
+[11:55] vibration and heat and loads on the
+[11:57] driver in a race car than we would in a
+[11:59] road car. Now, you could potentially
+[12:01] spend a lot more time in your road car
+[12:02] than you ever would in a race car. So,
+[12:04] things like noise become pretty
+[12:06] important. I would generally drive
+[12:08] around 10 hours per week in a normal
+[12:10] week, which is about 500 hours per year
+[12:13] sitting in a car. And if I want to take
+[12:15] a sports car on a long trip down south
+[12:17] in Western Australia, I'm going to want
+[12:19] to make sure that's a little bit more
+[12:20] comfortable than my race car might be.
+[12:23] Now, we get a fair few questions on this
+[12:25] channel about why we don't just build
+[12:28] Project 171 as fast as we possibly can.
+[12:31] We get asked, "Why would we want to
+[12:33] compromise performance when we can just
+[12:35] make it a little bit better?" But, I
+[12:37] think once you see the differences of a
+[12:39] race car compared to a road car, you'll
+[12:41] probably realize that you don't actually
+[12:44] want a race car on the road. You just
+[12:47] want something that gives you the
+[12:48] feeling of being in a race car. So, I'm
+[12:51] pretty keen to hear your thoughts about
+[12:53] the differences between road cars and
+[12:55] race cars. So, feel free to leave a
+[12:56] comment on this video on your way to
+[12:58] liking it. And if you want to continue
+[13:00] seeing how we're working on this sports
+[13:02] car, please subscribe to the channel.
+[13:04] Thanks for your time.

@@ -1,0 +1,769 @@
+标题: What Everyone is Missing About Suspension
+发布者: Crusty Creations
+链接: https://www.youtube.com/watch?v=eFGkopoCTYY
+提取方式: youtube-transcript-api (auto-generated EN)
+
+[00:00] We'll go up. We'll go down. We'll go up.
+[00:03] We'll We'll go down. We'll go down.
+[00:05] We'll go down. We'll go up. We'll go up.
+[00:07] Up down.
+[00:11] >> Have you or a loved one been suffering
+[00:13] from the neurodegenerative disease
+[00:15] commonly known as I think it would be a
+[00:17] good idea to build my own
+[00:18] suspensionitis? Well, I have some
+[00:20] terrible news for you. This video has
+[00:22] been specifically formulated to worsen
+[00:25] all symptoms and effects of the disease.
+[00:27] For the past way longer than I would
+[00:29] care to admit, I've been designing a
+[00:31] motorcycle-powered car. The single most
+[00:33] brain-scrambling part of this process
+[00:35] has without a doubt been suspension
+[00:38] design. The primary reason for this and
+[00:41] the thing I will attempt to address in
+[00:42] this video is indeed
+[00:45] not knowing how to design suspension.
+[00:47] In my own case, I tried to remedy this
+[00:49] using everyone's favorite dumpster fire
+[00:52] of information, the internet. And okay,
+[00:54] if you apply some critical thinking and
+[00:56] wade through enough smoldering garbage,
+[00:59] you can find some stuff that is probably
+[01:01] correct. The problem is it's typically
+[01:03] either oversimplified or just
+[01:05] incomplete. It'll give you an idea of
+[01:08] what some aspects of suspension design
+[01:10] are, but it doesn't go in depth enough
+[01:12] to actually give you an understanding of
+[01:14] how to apply it to a real-world
+[01:16] suspension design. Long story short, I
+[01:19] did a lot of research, I stared at a lot
+[01:21] of walls, and sometimes the ground, and
+[01:24] eventually, against all odds, things did
+[01:27] start to click. So, while this video
+[01:29] will come nowhere near every aspect of
+[01:32] suspension design, I've done my best to
+[01:34] cover a few very underrepresented topics
+[01:38] that are genuinely some of the most
+[01:40] important in terms of actually
+[01:42] understanding suspension design and how
+[01:44] to apply it in a real-world project. So,
+[01:48] without further ado, let's get into it.
+[01:50] You may have heard the purpose of
+[01:51] suspension, other than to cushion your
+[01:53] backside, is to maximize the available
+[01:56] grip of your tires. While slightly
+[01:58] simplified, this is true. But, why?
+[02:01] Well, to understand this, we first need
+[02:03] to understand one of the most
+[02:04] fundamental aspects of vehicle dynamics,
+[02:07] and that is load transfer. Whenever you
+[02:09] do anything with a car at all, whether
+[02:11] it be braking, turning, accelerating, or
+[02:14] running over small innocent animals,
+[02:16] some form of load transfer is happening.
+[02:19] If we brake, load is transferred from
+[02:21] the rear tires to the front tires of the
+[02:23] vehicle. If we turn around a left hand
+[02:25] corner, load is transferred from the
+[02:27] left tires to the right tires of the
+[02:29] vehicle. You get the idea. But, why does
+[02:31] this matter? Well, this is because,
+[02:33] generally speaking, as the vertical load
+[02:36] increases on a tire, the coefficient of
+[02:38] friction actually goes down. So,
+[02:41] although the force of friction will
+[02:43] increase on the more loaded tire, the
+[02:45] actual friction per pound of force
+[02:48] decreases. And since we borrowed those
+[02:51] pounds of force from other tires on the
+[02:53] vehicle, our total friction, and
+[02:55] therefore grip, goes down. So, load
+[02:57] transfer is essentially bad. I should
+[03:00] note that this relationship between
+[03:01] coefficient of friction and vertical
+[03:03] load is very complicated and non-linear.
+[03:06] But, for now, we just need to know that
+[03:08] it exists, and that is kind of the whole
+[03:10] reason suspension even matters in the
+[03:12] first place. So, if we've decided that
+[03:14] load transfer is bad, how can we reduce
+[03:17] it? Well, in the case of going over a
+[03:19] bumpy road, having a softer suspension
+[03:21] will naturally reduce load transfer by
+[03:23] conforming to those bumps. But, this
+[03:25] doesn't help us if we are braking,
+[03:27] accelerating, or going around a corner.
+[03:30] And this brings me to what I believe, in
+[03:31] a sense, is where suspension design
+[03:33] really starts. That is, track width,
+[03:36] wheelbase, and center of gravity. These
+[03:38] variables are dramatically important
+[03:40] because they affect load transfer, and
+[03:42] therefore the handling of your vehicle.
+[03:44] For example, at a given center of
+[03:46] gravity height, if we increase the track
+[03:48] width of a car, we reduce the the
+[03:50] transfer going around a corner. So,
+[03:52] wider car equals less load transfer
+[03:54] equals more mechanical grip, hence why
+[03:56] race cars tend to be pretty wide.
+[03:58] Although, this width does come with the
+[04:00] tradeoffs of a less optimal racing line,
+[04:03] more drag due to the increased frontal
+[04:05] area, and of course, a bit of a weight
+[04:07] penalty from making things bigger. Load
+[04:09] transfer under braking and acceleration
+[04:12] are, of course, affected in a similar
+[04:13] way by the length of your wheelbase. So,
+[04:16] a longer wheelbase will generally
+[04:17] perform better under braking due to
+[04:20] there being less load transfer, assuming
+[04:22] your brake bias is set up correctly, and
+[04:24] under acceleration, obviously, this
+[04:25] depends on which wheels are driven. So,
+[04:27] with a rear-wheel drive car, more weight
+[04:30] transfer onto the rear might be
+[04:31] desirable. And on the opposite extreme,
+[04:33] on a front-wheel drive car, obviously,
+[04:35] you want minimal weight transfer off of
+[04:37] your front wheels when you're
+[04:38] accelerating. The wheelbase of vehicle
+[04:40] actually also has a dramatic impact on
+[04:43] handling. This is in part because for a
+[04:45] given turning angle, a shorter wheelbase
+[04:48] will have a tighter turning radius,
+[04:49] making it a little bit more agile. But,
+[04:51] the main driving factor here actually
+[04:53] comes back to load transfer. A great
+[04:55] example of this is trail braking, or
+[04:57] braking as we turn a car into a corner.
+[05:00] With a shorter wheelbase car, trail
+[05:02] braking will transfer a lot more load
+[05:04] off the rear wheels of the car, making
+[05:06] it oversteer and rotate into the corner.
+[05:08] This can be very beneficial for tighter,
+[05:11] slower-speed tracks where we really want
+[05:13] a vehicle to rotate. However, on a
+[05:15] higher-speed track, in a high-speed
+[05:17] braking zone, a shorter-wheelbase car
+[05:19] can be very unstable for this exact same
+[05:21] reason. This is a big part of why a
+[05:24] shorter-wheelbase car is more desirable
+[05:26] for slow-speed stuff, and a
+[05:27] longer-wheelbase car will be more
+[05:29] desirable for high-speed stuff. I should
+[05:30] note that the total amount of load
+[05:32] transfer is, obviously, not just a
+[05:34] component of wheelbase and track width.
+[05:36] It is, rather, a relationship between
+[05:39] them and the location of the center of
+[05:40] gravity. The line between the loaded
+[05:43] contact patch of a vehicle and the
+[05:45] center of gravity is a good way to
+[05:48] visualize how much load transfer, and
+[05:50] also to calculate the amount of load
+[05:52] transfer using trigonometry. And just to
+[05:54] be thorough, the last variable affecting
+[05:57] load transfer is obviously how fast we
+[05:59] go around the corner. If we go 2 mph
+[06:01] around a corner, we're obviously not
+[06:03] going to see very much load transfer.
+[06:05] So, wheelbase, track width, center of
+[06:07] gravity, and of course, lateral
+[06:09] acceleration around the corner set our
+[06:11] total amount of load transfer we're
+[06:13] dealing with. And if your project allows
+[06:15] for it, these are incredibly impactful
+[06:17] variables to play with that will have a
+[06:19] dramatic impact on the performance and
+[06:21] handling of your car. Except lateral
+[06:24] acceleration.
+[06:25] That one usually we try and increase, in
+[06:28] case that wasn't clear. But that's only
+[06:30] really half the story. And this is a
+[06:32] video about suspension, so I should
+[06:34] probably talk about that.
+[06:36] Now, suspension itself doesn't get a say
+[06:38] in the total amount of load being
+[06:40] transferred. However, it does, in a
+[06:42] sense, get a say in how that load gets
+[06:44] transferred. Does it get transferred
+[06:46] nearly instantaneously through control
+[06:47] arms, or does it get transferred
+[06:49] gradually through springs? This is where
+[06:51] roll centers and anti-roll bars come
+[06:54] into the picture. And yes, I know I've
+[06:56] said it way too many times, but I am
+[06:58] still not done talking about load
+[07:00] transfer. So, let's talk about roll
+[07:03] centers, anti-roll bars, how they relate
+[07:05] to each other, and how they relate to,
+[07:07] you guessed it,
+[07:08] load transfer. I should note that yes,
+[07:11] anti-roll is very important for various
+[07:14] reasons. But what we're going to talk
+[07:15] about in this video, since it is
+[07:17] extremely related to everything we've
+[07:19] just talked about, is how it is related
+[07:22] to the way load is transferred. This is
+[07:24] very important for understanding how to
+[07:26] tune a vehicle's handling and mechanical
+[07:29] balance, which we will talk about later
+[07:30] on. But for now, let's talk about roll
+[07:32] centers. If you don't know what a roll
+[07:35] center is, to put it in very simple
+[07:37] terms, it's an imaginary point
+[07:39] determined by your suspension geometry
+[07:41] that the chassis of your car is going to
+[07:44] rotate around as you turn around a
+[07:46] corner and the chassis rolls. The height
+[07:48] of this imaginary pivot point, the roll
+[07:50] center, obviously has a dramatic effect
+[07:53] on body roll. And from what I've seen,
+[07:55] this is how a lot of people look at it.
+[07:57] There's nothing inherently wrong with
+[07:59] this, but if we really want to
+[08:00] understand the whole picture of why roll
+[08:02] centers genuinely matter, I think it's
+[08:04] better to look at it in a bit of a
+[08:05] different way. I like to think of roll
+[08:07] centers in terms of percentage of load
+[08:11] being transferred geometrically through
+[08:13] your control arms versus the percentage
+[08:16] that is being transferred elastically
+[08:18] through your springs. To give an example
+[08:20] of this, if your roll center was right
+[08:22] at the ground, then in theory you have
+[08:25] no geometric roll resistance to help
+[08:27] transfer load. Therefore, all the load
+[08:30] is transferred through your springs,
+[08:32] whether that be anti-roll bars or your
+[08:34] corner springs. Alternatively, if the
+[08:36] roll center is at the center of gravity
+[08:38] height, then there's no body roll and
+[08:40] all the load is transferred
+[08:41] geometrically through the control arms.
+[08:43] This is only really true in theory due
+[08:46] to jacking forces, but we'll go into
+[08:48] that more later. Anyway, if load is
+[08:50] transferred elastically through the
+[08:51] springs, then it will happen gradually
+[08:54] and the body will roll. If load is
+[08:55] transferred geometrically through the
+[08:57] control arms, the load transfer will
+[08:59] happen much more quickly and with less
+[09:01] body roll. Just to reiterate, we cannot
+[09:03] change the total amount of load transfer
+[09:06] for a given center of gravity and track
+[09:09] width, but we can change slightly the
+[09:11] amount of time it takes for that load to
+[09:13] transfer. You might be wondering why
+[09:15] this even matters at all. Well, there
+[09:17] are a lot of pros and cons to both
+[09:18] elastic and geometric load transfer, so
+[09:21] let's go over that. To do this, first
+[09:23] we'll look at an example of a car with a
+[09:25] very high roll center, so very high
+[09:27] geometric load transfer. And due to this
+[09:29] high roll center, we'll typically have
+[09:32] softer anti-roll bars. So, what are the
+[09:34] advantages of a setup like this? The
+[09:36] first advantage we sort of just
+[09:38] mentioned there, if you have a higher
+[09:39] roll center, you can have roll
+[09:41] resistance without the need for very
+[09:43] stiff springs or anti-roll bars. This
+[09:45] makes your vehicle more compliant over
+[09:47] bumps, so on a bumpy track, you'll have
+[09:50] more mechanical grip. As we mentioned
+[09:52] before, geometric load transfer is very
+[09:54] fast. This is not only great for if you
+[09:57] want a responsive vehicle, but is an
+[09:59] important tuning tool which we will talk
+[10:00] about later. Also, the fact that
+[10:02] geometric load transfer doesn't require
+[10:04] any body roll to start transferring load
+[10:07] can be beneficial for preventing camber
+[10:10] loss of your wheels on turning of a
+[10:13] corner. Although, as we'll talk about
+[10:15] later, this one kind of depends. Anyway,
+[10:18] what are the downsides of this setup?
+[10:19] Well, firstly, and perhaps one of the
+[10:22] main downsides of a high roll center and
+[10:25] high geometric load transfer is jacking
+[10:28] force. The higher the roll center is off
+[10:30] the ground, the higher the component of
+[10:32] force trying to lift the body of your
+[10:34] car up as you are going around a corner.
+[10:37] A great example of this is a pole
+[10:39] vaulter. A pole vaulter uses their
+[10:41] horizontal motion, and then they stick
+[10:44] their pole in the ground, and then they
+[10:46] jack themselves up. This would be an
+[10:47] example of a very high roll center. The
+[10:50] point where the pole vaulter is holding
+[10:52] onto the pole would be the roll center,
+[10:54] and the point where the pole is
+[10:56] interacting with the ground would be
+[10:57] your contact patch. Alternatively, if I
+[11:00] try to pole vault and I drop my pole and
+[11:02] tripped on it, this would be an example
+[11:05] of a very low roll center and very low
+[11:08] jacking force. Notice how I fall on my
+[11:10] face rather than jack myself up and fly
+[11:12] into the air. Another potential
+[11:14] disadvantage is load transfer actually
+[11:16] happening too quickly, which was also a
+[11:18] pro. But, if load transfer does happen
+[11:20] very quickly, it can do what is referred
+[11:23] to as shock load the tire. Basically, if
+[11:26] a tire is loaded too quickly, it
+[11:28] essentially can't hold as much traction,
+[11:30] as far as I understand. Now, you'd
+[11:31] probably have to be a real tire expert
+[11:34] to understand this, but it is a reason
+[11:36] to not have too much geometric load
+[11:38] transfer. As you can imagine, this fast
+[11:41] load transfer is also going to make a
+[11:42] car a lot more sensitive to jerky driver
+[11:45] inputs. All right, we've looked at a
+[11:47] geometric-y load transfer-y car example.
+[11:50] Let's now look at a more elastic-y load
+[11:53] transfer-y car example. This example
+[11:55] will have very low roll centers, and to
+[11:58] prevent extremely excessive body roll,
+[12:01] stiffer springs {slash} anti-roll bars.
+[12:03] The first advantage of this setup is
+[12:05] going to be the slower load transfer.
+[12:07] This is obviously going to make the
+[12:09] vehicle a little bit more forgiving to
+[12:11] drive and less likely for that shock
+[12:13] loading thing to happen. Our next
+[12:15] advantage is the fact that with our
+[12:16] elastic load transfer, the body has to
+[12:18] roll a little bit before load is
+[12:20] transferred. This actually gives us an
+[12:22] opportunity to tune the load transfer
+[12:24] characteristics with dampers more,
+[12:26] whereas we couldn't do that with
+[12:27] geometric load transfer. This damping
+[12:29] could be achieved with designated roll
+[12:31] dampers or just with your corner
+[12:34] dampers, which every car has. With high
+[12:36] roll centers comes high jacking force,
+[12:38] and obviously with a low roll center in
+[12:40] this example, we have less jacking
+[12:42] force. This is a big pro because if
+[12:45] jacking force gets out of control, the
+[12:47] jacking of the car raises the roll
+[12:49] center and actually increases load
+[12:51] transfer, which we really don't want,
+[12:53] and screws up all sorts of aspects of
+[12:55] suspension geometry. So, preventing this
+[12:58] excess jacking force by having low roll
+[13:01] centers in this example is a massive
+[13:03] thumbs up. So, those are the good
+[13:05] things. What are the bad things about
+[13:06] elastic load transfer? Well, first of
+[13:09] all, if your elastic load transfer is
+[13:11] happening through anti-roll bars, so
+[13:14] those are components linking two wheels
+[13:16] together, it creates less true
+[13:18] independence in your suspension, which
+[13:20] is bad for mechanical grip. To give an
+[13:22] example of why this is bad, if let's say
+[13:25] your front right tire hits a bump in the
+[13:27] road, then your very stiff anti-roll bar
+[13:31] is going to try to lift your front left
+[13:33] tire off the ground. So, this basically
+[13:36] will transfer a lot of load in that
+[13:38] second of hitting the bump onto the tire
+[13:41] that hit the bump, your front right
+[13:42] tire. The last con of our elastic load
+[13:44] transfer is our immediate body roll
+[13:47] before load transfer can happen. This is
+[13:49] in a sense undesirable on turn-in
+[13:51] because you'll have a little bit of
+[13:53] camber loss before load transfer
+[13:55] happens. Although, this does come with
+[13:57] the caveat of how much static camber
+[14:00] does your vehicle have. So, if you're
+[14:02] running static camber anyway, to have an
+[14:04] appropriate contact patch in mid-corner,
+[14:06] then it might actually be desirable to
+[14:09] have the car rotate to flatten out the
+[14:11] contact patch on turn-in. So, again,
+[14:13] this one kind of depends. Now, you
+[14:15] should have an idea of the advantages
+[14:17] and disadvantages of geometric and
+[14:20] elastic load transfer, but you probably
+[14:22] have a lot of questions like, "Where do
+[14:24] you I actually put my roll centers?" I
+[14:26] wish I could give you a magic number and
+[14:29] we could be done with this video, but
+[14:31] unfortunately, suspension is kind of a
+[14:33] tangled mess of compromises. The perfect
+[14:36] suspension geometry in the real world
+[14:38] relies on a ridiculous amount of
+[14:41] real-world track testing and several
+[14:44] design iterations to find those perfect
+[14:47] numbers. But, for those of us mere
+[14:49] mortals just building a car in a shed,
+[14:51] we kind of need a race car V1 before we
+[14:55] can even consider any of that level of
+[14:57] stuff. And some of us would like our
+[14:59] first guess at suspension geometry to at
+[15:02] least be educated. So, to be educated in
+[15:05] regard to roll centers, one of the
+[15:07] primary things we first must understand
+[15:09] is how the front and rear suspension
+[15:11] interact. We can't look at the front and
+[15:13] rear suspension in isolation, and this
+[15:15] all comes back to load transfer. As I
+[15:17] have said and said again, the total load
+[15:21] transfer of a vehicle with a given track
+[15:23] and center of gravity cannot be altered
+[15:25] with suspension geometry, no matter how
+[15:27] much you try. You can, however, shift
+[15:31] load transfer from the front to the rear
+[15:34] or the rear to the front by altering the
+[15:37] front and rear stiffness of your
+[15:39] suspension. This is indeed
+[15:41] revolutionary. If a vehicle is set up
+[15:44] with more roll stiffness in the front
+[15:46] than in the rear, then more of the load
+[15:48] transfer will happen on the front of the
+[15:50] vehicle than the rear. This in a sense
+[15:53] will shift some of the grip from the
+[15:55] front to the rear of the vehicle. So,
+[15:57] this stiffer roll resistance in the
+[15:59] front will essentially create more
+[16:01] understeer and less oversteer. And
+[16:04] obviously the opposite is true if we
+[16:05] have stiffer anti-roll in the rear of a
+[16:07] vehicle. This will essentially shift
+[16:10] some of the grip from the rear of the
+[16:11] vehicle to the front of the vehicle. An
+[16:13] extreme example of this can be seen in
+[16:15] very front-heavy track cars that are
+[16:17] using extremely stiff rear roll
+[16:19] resistance to prevent understeer. It is
+[16:22] not uncommon in a setup like this to see
+[16:24] the inside rear wheel actually lift off
+[16:26] the ground in a corner. In this example,
+[16:28] 100% of the rear load has been
+[16:30] transferred to the outside tire, which
+[16:33] results in less load transfer happening
+[16:35] in the front. [snorts] While this
+[16:37] probably isn't a super ideal scenario
+[16:40] setup, it is both a great visual example
+[16:43] and a great example of how suspension is
+[16:45] really all about compromise. This
+[16:47] front-heavy car is also a perfect
+[16:49] example of one of the major deciding
+[16:51] factors for our front-rear load transfer
+[16:54] distribution. We can tune this
+[16:56] distribution to counter a front or
+[16:58] rear-heavy car's natural tendency to
+[17:01] either understeer or oversteer. But you
+[17:03] might be wondering why an uneven
+[17:05] front-rear weight distribution even has
+[17:07] the effect of causing a vehicle
+[17:09] imbalance in the first place. This comes
+[17:11] back to the point I made at the
+[17:12] beginning of the video about tires. As
+[17:15] the vertical load on a tire increases,
+[17:17] the coefficient of friction, or force of
+[17:20] friction per unit of vertical force,
+[17:22] goes down. Back to our front-heavy car
+[17:24] example. Yes, we have more weight, and
+[17:27] therefore more force of friction, aka
+[17:29] grip, on our front tires. However, due
+[17:31] to the increased weight, we also have
+[17:34] more cornering force. So, basically, our
+[17:37] cornering force scales up linearly with
+[17:40] the weight of the front of the vehicle,
+[17:42] but our force of friction does not, due
+[17:44] to our decreasing coefficient of
+[17:46] friction. So, in the front of the car,
+[17:47] we end up with more cornering force for
+[17:50] the amount of grip we have. This results
+[17:52] in that understeer we all know and love
+[17:54] so much. Keep in mind what I've just
+[17:56] said assumes that the front and rear
+[17:58] tires are the same. If we have wider
+[18:00] tires in the front or rear, or a
+[18:02] different compound of tire in the front
+[18:05] or rear, this obviously changes things
+[18:06] and is yet another tool to tune a
+[18:09] vehicle's balance. But, I will save that
+[18:11] massive tangent for later. So, based on
+[18:14] what we just talked about, let's look at
+[18:15] how that might affect the placement of
+[18:17] our front roll center and our rear roll
+[18:19] center. One way to approach this problem
+[18:21] would be to put the rear roll center
+[18:23] higher on a front-heavy car to combat
+[18:25] understeer, and to put the front roll
+[18:27] center higher on a rear-heavy car to
+[18:29] combat oversteer. Seems like sound
+[18:31] logic, but it fails to take into account
+[18:34] a couple very important variables. In
+[18:37] order to make a more informed decision
+[18:38] here, we're going to have to once again
+[18:40] look at how a car behaves on turn-in.
+[18:42] So, as we turn into a corner, what do we
+[18:45] do on turn-in? We turn the steering
+[18:47] wheel of the car. This causes the front
+[18:49] tires of the car to immediately develop
+[18:52] a slip angle. So, the car is still
+[18:55] essentially going straight, but the
+[18:57] front tires are at an angle. This causes
+[18:59] the front tires to experience a lateral
+[19:02] force extremely quickly. The rear tires,
+[19:04] on the other hand, don't experience any
+[19:07] significant cornering force until the
+[19:09] car starts to rotate and laterally
+[19:11] accelerate around the corner. The rear
+[19:13] of the car will then step out a bit and
+[19:15] finally develop a slip angle and lateral
+[19:18] force. Basically, what this all means is
+[19:21] that on turn-in, even a rear-heavy car
+[19:24] generally has the tendency to
+[19:26] understeer. So, what's the best way to
+[19:28] reduce this turn-in understeer? Well, if
+[19:31] we can reduce the load transfer on the
+[19:33] front tires on turn-in, we can increase
+[19:35] the front grip and therefore reduce
+[19:37] understeer. To decrease the percentage
+[19:39] of load being transferred across the
+[19:41] front tires, we need to force the rear
+[19:43] tires to essentially take a larger share
+[19:46] of the total load transfer. And as I
+[19:48] mentioned, the rear tires are already
+[19:50] kind of late to the party on turn-in.
+[19:52] So, we really need this rear load
+[19:55] transfer to happen as fast as we
+[19:57] possibly can. And of course, as we
+[19:59] learned earlier, the fastest load
+[20:01] transfer is geometric. Basically, all
+[20:04] this points to having a higher rear roll
+[20:06] center than front roll center to help a
+[20:08] vehicle rotate on turn-in, even if the
+[20:10] car is rear-heavy. Okay, higher rear,
+[20:13] lower front, but how high or how low are
+[20:16] we actually talking? Well, it might seem
+[20:19] reasonable to aim for around 50%
+[20:21] geometric and 50% elastic load transfer
+[20:24] with a little bit more geometric in the
+[20:26] rear and a little bit more elastic in
+[20:27] the front to help with turn-in. We
+[20:29] should be dialed, right? Well, in most
+[20:31] circumstances, there is kind of a big
+[20:33] problem with this setup. If we assume a
+[20:35] center of gravity height of around 15
+[20:38] in,
+[20:38] and we want a little bit more than 50%
+[20:41] geometric load transfer in the rear,
+[20:42] this puts our rear roll center at maybe
+[20:45] 9 in.
+[20:46] Well, I'm here to tell you that 9 in is
+[20:48] in fact way too much.
+[20:51] It's also too high of a roll center. The
+[20:53] problem is jacking force. But it's
+[20:55] important to keep in mind that roll
+[20:57] center is not the entire part of the
+[20:58] equation here. Our track width is the
+[21:01] other half of the picture. We can
+[21:02] visualize this by drawing a line from
+[21:04] our contact patch to the roll center of
+[21:06] our vehicle. This is similar to how we
+[21:08] visualized {slash} calculated our load
+[21:10] transfer earlier, but this time it's
+[21:12] with jacking force. Anyway, the angle
+[21:14] between your loaded contact patch and
+[21:17] your roll center is basically a great
+[21:19] way to calculate your approximate
+[21:21] jacking force percentage. Want to
+[21:23] calculate this, you can just take the
+[21:25] tangent of that angle times 100 to get
+[21:28] your percentage. Looking at it this way
+[21:30] shows that if we increase our track
+[21:32] width, we can actually raise our roll
+[21:34] center a little bit without having any
+[21:36] jacking force penalty. As far as I've
+[21:38] researched, about 8.5 degrees for the
+[21:41] angle of that line, which comes out to
+[21:44] about 15% jacking force, is probably the
+[21:47] upper limit of what is acceptable in
+[21:49] terms of jacking force. I'm sure there
+[21:50] are exceptions to this as there are
+[21:52] really no hard and fast rules with
+[21:54] suspension. However, it's always going
+[21:56] to be safer to have less jacking force.
+[21:59] So, in case you're curious, if we pair a
+[22:01] 60-in track width with our 9-in roll
+[22:04] center, this gives us 30% jacking force,
+[22:07] aka way too much. So, because at least
+[22:10] typically speaking, jacking force is
+[22:12] going to put a limit on how high we can
+[22:13] put our roll centers, this means we're
+[22:15] probably not going to get anywhere near
+[22:18] our 50% geometric load transfer. So, now
+[22:21] based on what we learned, our new
+[22:23] strategy will be to keep our rear roll
+[22:25] center reasonably low to stay well under
+[22:27] that 15% and our front roll center even
+[22:30] lower so we still have that benefit of
+[22:33] reducing understeer on turn-in. But what
+[22:35] happens after turn-in? Our rear-heavy
+[22:37] car still has a tendency to oversteer
+[22:40] because it's rear weight biased. Well,
+[22:43] once the car has settled into the corner
+[22:44] and the slip angles have formed and the
+[22:46] body has rolled, this is where elastic
+[22:49] load transfer can take over. Since the
+[22:51] majority of our load transfer is in fact
+[22:53] elastic due to our low roll centers,
+[22:56] this means on our rear-heavy car
+[22:57] example, we can actually shift our load
+[23:01] transfer distribution to be more on the
+[23:04] front tires once the car is mid-corner
+[23:07] and the body has rolled. This
+[23:08] essentially means we can tune out our
+[23:11] oversteer tendency of the rear-heavy car
+[23:13] once it is mid-corner. To clarify,
+[23:16] basically, despite the percentage of
+[23:17] geometric load transfer being quite
+[23:20] small, it still has a lot of authority
+[23:22] on turn-in since it happens so quickly.
+[23:24] Once the car is actually rotated and is
+[23:27] in the corner, then elastic load
+[23:28] transfer can take over simply because
+[23:30] it's a much larger component of load
+[23:32] transfer. So, on our rear-heavy car, we
+[23:35] can, in a sense, tune separately for
+[23:37] turn-in and mid-corner by using either
+[23:40] geometric or elastic load transfer. Now,
+[23:42] obviously, in theory, it's going to be a
+[23:44] lot easier to get this to make sense and
+[23:47] work than in practice. Getting all your
+[23:49] load transfers to time perfectly is not
+[23:51] necessarily going to be a simple task.
+[23:53] Obviously, this is going to be extremely
+[23:55] dependent on many other factors like the
+[23:58] sort of track you're driving on, the
+[24:00] type of tires you're using, if you have
+[24:02] staggered tires, you get the idea. It
+[24:04] depends on a lot of stuff. Even a
+[24:06] driver's skill level and driving style
+[24:09] are going to be a massive deciding
+[24:11] factor in terms of how you set up a
+[24:13] car's mechanical balance. Anyway, I have
+[24:16] done way too much rambling at this
+[24:18] point, and ideally, I would like to at
+[24:20] least attempt to answer one question in
+[24:23] this video. So, where do we put our roll
+[24:27] centers? Well, as we learned in this
+[24:29] video, that depends on things. That
+[24:32] depend on things that depend on other
+[24:34] things. So, in all honesty, I can't in
+[24:37] good faith tell you where to put your
+[24:39] roll centers. That being said, I can
+[24:42] tell you where and why I have put my
+[24:45] roll centers where I have on my
+[24:47] particular project. First, some context.
+[24:50] I am designing a motorcycle-powered car
+[24:53] with a track width of 60 in, an
+[24:55] estimated center of gravity height of 15
+[24:58] inches, and an estimated front rear
+[25:01] weight distribution of 42 front and 58
+[25:05] rear. My current design has roll centers
+[25:08] of 3.1 inches in the rear and 1.8 inches
+[25:11] in the front. This puts my rear jacking
+[25:14] force at approximately 10.3% and my
+[25:17] front jacking force at about 6%. In
+[25:20] terms of geometric load transfer
+[25:22] distribution, this puts me at about
+[25:24] 20.7% in the rear and 12% in the front.
+[25:28] My philosophy here is to keep the front
+[25:30] roll center low enough that I can have
+[25:32] the rear roll center proportionally a
+[25:34] decent amount higher without actually
+[25:36] having it be very high and creating too
+[25:39] much jacking force. Those are the
+[25:41] numbers I have chosen, at least for now,
+[25:43] but don't take the numbers too
+[25:44] seriously. Choosing the perfect baseline
+[25:47] numbers likely isn't nearly as important
+[25:49] as understanding how to actually change
+[25:52] those numbers when the car isn't
+[25:54] behaving how you want it to. This is why
+[25:56] personally adjustability has been very
+[25:58] high on my priority list when designing
+[26:00] my suspension. If I can't adjust it, how
+[26:03] am I supposed to understand how to
+[26:05] adjust it? The other part of
+[26:07] understanding how to adjust these
+[26:09] various suspension parameters is of
+[26:11] course understanding the physical
+[26:13] changes you need to make to your pivot
+[26:15] points in order to change certain
+[26:17] parameters such as roll center. While
+[26:19] perhaps this is theoretically possible
+[26:22] without modeling this on a computer, CAD
+[26:25] is realistically, by quite some margin,
+[26:27] going to be the simplest way to do this.
+[26:29] There are some not so cheap programs out
+[26:32] there which are made specifically for
+[26:34] suspension design, such as Optimum G.
+[26:36] Unfortunately, this wasn't really in my
+[26:39] budget, so I ended up designing my
+[26:41] suspension entirely in Onshape simply
+[26:44] because their free version allows for
+[26:46] it. This was actually surprisingly
+[26:48] easier than I expected given I had
+[26:50] basically no CAD experience at the time.
+[26:52] I've been using Onshape so heavily since
+[26:54] then, designing this car project and
+[26:57] various other things that I actually
+[26:59] reached out to them, and they were kind
+[27:01] enough to give me access to Onshape
+[27:03] Professional for the channel. Anyway, if
+[27:05] you are designing something,
+[27:07] particularly suspension, you may find
+[27:10] CAD to be useful. If you are interested
+[27:12] in Onshape or particularly Onshape
+[27:14] Professional, there is a link in the
+[27:16] description where you can try it for
+[27:18] free for 6 months. To be fully
+[27:20] transparent, I don't get any commission
+[27:22] or money from this, but it may help my
+[27:24] chances in the future for a sponsorship.
+[27:26] So, I'm not completely unbiased, but I
+[27:28] do genuinely enjoy using it, and I
+[27:30] especially appreciate the fact that they
+[27:32] continue to offer a really good free
+[27:34] version, so a lot of people that
+[27:36] couldn't otherwise afford CAD can
+[27:38] actually get into it. So, we have looked
+[27:41] at some more general topics as well as
+[27:43] some more specific examples like roll
+[27:45] centers in this video, but obviously
+[27:48] there is way, way, way more to talk
+[27:50] about in terms of suspension. So, I
+[27:53] hopefully plan on making more videos
+[27:55] diving deeper into more specific aspects
+[27:58] of suspension, especially if this video
+[28:00] is well received. So, if you would like
+[28:02] to see more, give the video a like and
+[28:04] tell me what I should cover next in
+[28:06] regarding to suspension or whatever. And
+[28:08] obviously, if I am off the mark or
+[28:10] outright wrong with anything in this
+[28:11] video,
+[28:13] let me know. Tell me how stupid I am in
+[28:15] the comments.
+[28:16] Thanks for watching.

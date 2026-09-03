@@ -10,8 +10,8 @@
 发布者：Fishgistics（YouTube @Fishgistics）
 链接：https://www.youtube.com/watch?v=h9-RIBHhVCU
 时长：16:39.8
-提取方式：yt-dlp 下载音频（format 18）+ faster-whisper small 本地转写（CPU int8）
-字幕：无官方字幕/自动字幕（仅 live_chat），全文转写见 offroad/字幕-h9-RIBHhVCU-Mason-AWD-Trophy-Truck.txt
+提取方式：yt-dlp 下载音频（format 18）+ faster-whisper small 本地转写（CPU int8）；**2026-09-03 经 youtube-transcript-api 确认视频有 en auto-generated 官方自动字幕**（早期记录"无官方字幕"有误），已另存完整版
+字幕：Whisper 转写版见 `offroad/字幕-h9-RIBHhVCU-Mason-AWD-Trophy-Truck.txt`；auto-generated 完整版（526 段带时间戳）见 `offroad/字幕-h9-RIBHhVCU-Mason-AWD-Trophy-Truck-自动字幕完整版.txt`。两版门桥/散热/布局段落交叉核对一致（2026-09-03），auto-generated 版句法更完整
 上传日期：未获取（yt-dlp 出口风控未返回；race-dezert 帖 2026-04-17，视频为其同批首发素材）
 ```
 
@@ -39,7 +39,7 @@
 - **前悬：双叉臂独立 + 前桥门桥**：
   - 上控制臂：billet 加工，延续 gen1 设计（L50-51）
   - 门桥立柱（portal upright）：**沿用 gen1 全部内部件，仅壳体改动**适配前悬几何（L52-53）
-  - 下控制臂：**三件式机加工**（L55-81）——中心段 340 铝 + 前后 7075 钢腿，销钉夹紧；模块化维修（损坏单段只换单段，uniball 杯可单独订购）
+  - 下控制臂：**三件式机加工**（L55-81）——中心段 **4340 合金钢**（原音 "40340"，双版转写同）+ **前后 7075 铝合金腿**，销钉夹紧（Neil："用铝处用铝、需钢强度处用钢"）；模块化维修（损坏单段只换单段，uniball 杯可单独订购）。⚠️ **勘误（2026-09-03 全文 diff）：早期总结"中心段 340 铝 + 前后 7075 钢腿"材料归属颠倒——7075 为铝合金牌号而非钢，340 实为 4340 钢的转写拆读**
 - **后悬：非独立（live axle）**，沿用 gen1 拖曳臂，可调 camber/toe（L173-182）；Neil 原话 "it's not independent... more of a live axle suspension setup"，并对"将来可能有什么特别的东西"留悬念。
 - **门桥/后桥散热**：**不需要独立冷却器**（L49："The portals don't require a cooler and the rear gear does not require a cooler"）——仅前传动系（变速箱+前差+变矩器+分动箱）共用干式油底壳油箱冷却（L41-48）。
 
@@ -65,5 +65,10 @@
 ## ⚠️ 引用纪律
 
 - 视频为**首发/宣传性质**（"keep people guessing"、留悬念），未验证项（后悬"something special"、价格、交付时间）按工程方口径引用，不当作定论；
-- 数值类（145 加仑、26 英寸、三件式材料牌号 340/7075）出自工程方口述，引用时标注"视频访谈口径"；
+- 数值类（145 加仑、26 英寸、三件式材料牌号 **4340 钢中心段 / 7075 铝腿**——2026-09-03 勘误）出自工程方口述，引用时标注"视频访谈口径"；
 - 25 英寸行程、双环齿驱动轴等 race-dezert 帖数字与视频不冲突但**不互证**，各自标注出处。
+
+## 🔧 勘误记录
+
+- **2026-09-03（auto-generated 官方字幕全文 diff，Q9）**：下摆臂材料"中心段 340 铝 + 前后 7075 钢腿"→ 勘误为 **中心段 4340 合金钢 + 前后 7075 铝合金腿**。两版转写（Whisper "40 340 / 70 75"、auto "40340 / 7075"）**一致**，错误源于当年解读转写时材料知识误读（7075=航空铝、非钢；40340 为 4340 的听写连读）。教训：Whisper 数字/材料牌号解读前应与官方自动字幕核对；引用纪律已同步。
+- 其余关键数值两版核对一致（145 加仑 / 26 英寸 / live axle 非独立 / trailing arm 沿用 Gen1 / camber+toe 可调 / 发动机上出 / 门桥散热无冷却器）。
