@@ -21,6 +21,7 @@ FIELDNAMES = [
     'ts', 'machine', 'fid',
     'total_threads', 'scanned',
     'replies_sum', 'replies_avg', 'replies_max',
+    'top_tid', 'top_subject',
     'new_1h', 'active_5m', 'active_1h',
     'lastpost_ts',
 ]

@@ -23,6 +23,7 @@ NGA 版面热度定时扫描器
 
 import argparse
 import csv
+import html
 import json
 import os
 import random
@@ -43,11 +44,20 @@ FIELDNAMES = [
     'ts', 'machine', 'fid',
     'total_threads', 'scanned',
     'replies_sum', 'replies_avg', 'replies_max',
+    'top_tid', 'top_subject',
     'new_1h', 'active_5m', 'active_1h',
     'lastpost_ts',
 ]
 
 MAX_FAILS = 3
+
+
+def clean_subject(s):
+    """NGA 标题清洗：去标签、反转义、压空白、截断。"""
+    s = re.sub(r'<[^>]+>', '', s or '')
+    s = html.unescape(s)
+    s = re.sub(r'\s+', ' ', s).strip()
+    return s[:80]
 
 
 def ensure_guestjs(session: requests.Session, fid: str):
@@ -117,6 +127,8 @@ def compute_metrics(topics, total_threads, fid, now):
     lastposts = [int(t.get('lastpost') or 0) for t in topics]
     n = len(replies)
     replies_sum = sum(replies)
+    # 当前第一热帖：抓取范围内回帖最多的主题
+    top = max(topics, key=lambda t: int(t.get('replies') or 0)) if topics else {}
     return {
         'fid': fid,
         'total_threads': total_threads if total_threads is not None else '',
@@ -124,6 +136,8 @@ def compute_metrics(topics, total_threads, fid, now):
         'replies_sum': replies_sum,
         'replies_avg': round(replies_sum / n, 2) if n else 0,
         'replies_max': max(replies) if n else 0,
+        'top_tid': top.get('tid', ''),
+        'top_subject': clean_subject(top.get('subject', '')),
         'new_1h': sum(1 for p in postdates if now - p <= 3600),
         'active_5m': sum(1 for l in lastposts if now - l <= 300),
         'active_1h': sum(1 for l in lastposts if now - l <= 3600),
@@ -159,6 +173,33 @@ def latest_record(data_dir, fid):
         if latest is None or last['ts'] > latest[0]:
             latest = (last['ts'], last.get('machine', ''), fn)
     return latest
+
+
+def append_row_migrate(path, row):
+    """追加一行。若文件 header 落后于当前 FIELDNAMES（历史数据缺新列），先迁移补齐列再追加。"""
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    if not (os.path.exists(path) and os.path.getsize(path) > 0):
+        with open(path, 'w', encoding='utf-8', newline='') as f:
+            w = csv.DictWriter(f, fieldnames=FIELDNAMES)
+            w.writeheader()
+            w.writerow(row)
+        return
+    with open(path, 'r', encoding='utf-8-sig', newline='') as f:
+        rd = csv.DictReader(f)
+        old_header = list(rd.fieldnames or [])
+        old_rows = list(rd)
+    if old_header == FIELDNAMES:
+        with open(path, 'a', encoding='utf-8', newline='') as f:
+            csv.DictWriter(f, fieldnames=FIELDNAMES).writerow(row)
+        return
+    # 迁移：旧行缺的新列补空，重写 header + 旧行 + 新行
+    print(f'[csv] header 升级：{len(old_rows)} 条历史数据补齐新列')
+    with open(path, 'w', encoding='utf-8', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction='ignore')
+        w.writeheader()
+        for r in old_rows:
+            w.writerow(r)
+        w.writerow(row)
 
 
 def main():
@@ -202,13 +243,7 @@ def main():
     row['ts'] = ts
     row['machine'] = machine
 
-    os.makedirs(data_dir, exist_ok=True)
-    exists = os.path.exists(csv_path) and os.path.getsize(csv_path) > 0
-    with open(csv_path, 'a', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
-        if not exists:
-            writer.writeheader()
-        writer.writerow(row)
+    append_row_migrate(csv_path, row)
 
     print(json.dumps(row, ensure_ascii=False))
     print(f'写入 -> {csv_path}')

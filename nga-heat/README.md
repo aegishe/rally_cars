@@ -35,6 +35,7 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 | `total_threads` | 版面总主题数 |
 | `scanned` | 本次实际抓到的主题数 |
 | `replies_sum` / `replies_avg` / `replies_max` | 回帖总和 / 平均 / 最大 |
+| `top_tid` / `top_subject` | 当前第一热帖（回帖最多）的 tid / 标题；历史数据升级前的旧行这两列为空 |
 | `new_1h` | 最近 1 小时新发主题数 |
 | `active_5m` / `active_1h` | 最近 5 分钟 / 1 小时内有新回帖的主题数 |
 | `lastpost_ts` | 最新最后回复时间（unix 秒） |
