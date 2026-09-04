@@ -1,2 +1,4 @@
 run_heat.log
 data/*_merged.csv
+
+__pycache__/
