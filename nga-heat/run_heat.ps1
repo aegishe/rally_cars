@@ -40,19 +40,22 @@ if ($tok) {
 $pyout = & python $Py --fid $Fid --pages $Pages 2>&1
 $pyout | ForEach-Object { $_.ToString() } | Write-Output
 
-# 3. commit + push
+# 3. commit any new data
 $dirty = git -C $Repo status --porcelain -- nga-heat 2>$null
 if ($dirty) {
     git -C $Repo add nga-heat 2>&1 | Out-Null
     git -C $Repo commit -m "nga-heat: hourly $(Get-Date -Format 'yyyy-MM-dd HH:mm') @ $env:COMPUTERNAME" 2>&1 | Out-Null
-    if ($tok) {
-        Run-Git "push `"$url`" HEAD:$Branch"
-        Line "push done"
-    } else {
-        Line "no token, committed locally only"
-    }
+    Line "committed new data"
 } else {
-    Line "no new data (this machine already recorded this hour), skip commit"
+    Line "no new data this hour (skip commit)"
+}
+
+# 4. push (no-op if already up to date; also pushes the flush commit from step 0)
+if ($tok) {
+    Run-Git "push `"$url`" HEAD:$Branch"
+    Line "push done"
+} else {
+    Line "no token, committed locally only"
 }
 
 Line "end"
