@@ -44,7 +44,7 @@ FIELDNAMES = [
     'ts', 'machine', 'fid',
     'total_threads', 'scanned',
     'replies_sum', 'replies_avg', 'replies_max',
-    'top_tid', 'top_subject',
+    'hot_tid', 'hot_subject',
     'new_1h', 'active_5m', 'active_1h',
     'lastpost_ts',
 ]
@@ -127,8 +127,10 @@ def compute_metrics(topics, total_threads, fid, now):
     lastposts = [int(t.get('lastpost') or 0) for t in topics]
     n = len(replies)
     replies_sum = sum(replies)
-    # 当前第一热帖：抓取范围内回帖最多的主题
-    top = max(topics, key=lambda t: int(t.get('replies') or 0)) if topics else {}
+    # 当前"仍在讨论"的帖：抓取范围内 lastpost（最后回复）最新者。
+    # 注意：不用 replies 最多的帖——累计大帖可能靠权重长期挂版（如被翻的旧帖），
+    # 不代表当下热点；lastpost 最新才反映此刻正在被回复。
+    hot = max(topics, key=lambda t: int(t.get('lastpost') or 0)) if topics else {}
     return {
         'fid': fid,
         'total_threads': total_threads if total_threads is not None else '',
@@ -136,8 +138,8 @@ def compute_metrics(topics, total_threads, fid, now):
         'replies_sum': replies_sum,
         'replies_avg': round(replies_sum / n, 2) if n else 0,
         'replies_max': max(replies) if n else 0,
-        'top_tid': top.get('tid', ''),
-        'top_subject': clean_subject(top.get('subject', '')),
+        'hot_tid': hot.get('tid', ''),
+        'hot_subject': clean_subject(hot.get('subject', '')),
         'new_1h': sum(1 for p in postdates if now - p <= 3600),
         'active_5m': sum(1 for l in lastposts if now - l <= 300),
         'active_1h': sum(1 for l in lastposts if now - l <= 3600),

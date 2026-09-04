@@ -34,11 +34,14 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 | `ts` / `machine` | 采样时间 / 机器名 |
 | `total_threads` | 版面总主题数 |
 | `scanned` | 本次实际抓到的主题数 |
-| `replies_sum` / `replies_avg` / `replies_max` | 回帖总和 / 平均 / 最大 |
-| `top_tid` / `top_subject` | 当前第一热帖（回帖最多）的 tid / 标题；历史数据升级前的旧行这两列为空 |
+| `replies_sum` / `replies_avg` / `replies_max` | 回帖总和 / 平均 / 最大（累计口径） |
+| `hot_tid` / `hot_subject` | 当下**仍在讨论**的帖：抓取范围内最后回复（lastpost）最新的 tid / 标题。不用 replies 最多者——累计大帖可能靠权重长期挂版，不代表当下热点 |
 | `new_1h` | 最近 1 小时新发主题数 |
 | `active_5m` / `active_1h` | 最近 5 分钟 / 1 小时内有新回帖的主题数 |
 | `lastpost_ts` | 最新最后回复时间（unix 秒） |
+
+> 列史：9/4 21:05 前热帖列名为 `top_tid/top_subject`（累计回帖最多），之后改为
+> `hot_tid/hot_subject`（最后回复最新）。旧行该两列值为空属正常。
 
 热度趋势看 `replies_sum`、`active_5m`、`new_1h` 随时间变化即可。
 
