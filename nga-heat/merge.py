@@ -3,11 +3,12 @@
 合并各机 CSV，输出单份去重后的 merged CSV。
 
 把 data/ 下所有 nga_fid<fid>_heat_<machine>.csv 按 ts 排序，
-丢弃时间相差小于 --dedup-window 秒（默认 900 = 15 分钟）的重复组（保留每组第一条），
+按自然小时去重（同一 YYYY-MM-DD HH 内的多条只保留第一条——两机同时在线、
+任务延迟或手动补跑产生的同小时重复都会去掉），
 输出 data/nga_fid<fid>_heat_merged.csv（本地产物，已 gitignore）。
 
 用法：
-    python merge.py --fid -343809 --dedup-window 900
+    python merge.py --fid -343809
 """
 
 import argparse
@@ -38,10 +39,9 @@ def main():
     except Exception:
         pass
 
-    ap = argparse.ArgumentParser(description='合并各机 CSV 并按时间相近去重')
+    ap = argparse.ArgumentParser(description='合并各机 CSV 并按自然小时去重')
     ap.add_argument('--fid', default='-343809')
     ap.add_argument('--data-dir', default='')
-    ap.add_argument('--dedup-window', type=int, default=900)
     args = ap.parse_args()
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -71,15 +71,10 @@ def main():
     kept = []
     dropped = 0
     for r in rows:
-        t = parse_ts(r.get('ts', ''))
-        if t is None:
-            kept.append(r)
+        h = r.get('ts', '')[:13]  # YYYY-MM-DD HH 自然小时键
+        if kept and h and h == kept[-1].get('ts', '')[:13]:
+            dropped += 1
             continue
-        if kept:
-            t_last = parse_ts(kept[-1].get('ts', ''))
-            if t_last is not None and abs(t - t_last) < args.dedup_window:
-                dropped += 1
-                continue
         kept.append(r)
 
     out = os.path.join(data_dir, f'nga_fid{args.fid}_heat_merged.csv')

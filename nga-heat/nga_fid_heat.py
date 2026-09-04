@@ -9,13 +9,14 @@ NGA 版面热度定时扫描器
     data/nga_fid<fid>_heat_<machine>.csv   每机一份（随 git 同步）
     data/nga_fid<fid>_heat_merged.csv      merge.py 合并去重产物（本地，gitignore）
 
-去重：扫描前检查 data 目录下所有本 fid 源 CSV 的最新一条，若与本次采样时间相差
-小于 --dedup-window 秒（默认 900 = 15 分钟）则跳过——用于丢弃两机同时在线产生的
-时间相近的重复采样。最终去重以 merge.py 为准（时间相近只保留每组第一条）。
+去重：按自然小时——扫描前检查 data 目录下所有本 fid 源 CSV 的最新一条，若已属于
+本次采样的同一自然小时（YYYY-MM-DD HH 相同）则跳过写入。这样两机同小时同时采样、
+任务延迟、手动补跑（--force 除外）都不会产生第二条同小时数据。merge.py 合并时同样
+按自然小时去重，保留每小时第一条。
 
 用法：
     python nga_fid_heat.py --fid -343809 --pages 2
-    python nga_fid_heat.py --fid -343809 --force --dedup-window 900
+    python nga_fid_heat.py --fid -343809 --force
 
 反爬纪律（勿改小）：页间隔 1.5-2.5s 随机、单进程不并行、非 200 退避重试。
 """
@@ -47,15 +48,6 @@ FIELDNAMES = [
 ]
 
 MAX_FAILS = 3
-DEFAULT_DEDUP_WINDOW = 900  # 秒，两机同小时采样视为重复
-
-
-def parse_ts(s):
-    """'YYYY-MM-DD HH:MM:SS' -> unix 秒（失败返回 None）。"""
-    try:
-        return time.mktime(time.strptime(s, '%Y-%m-%d %H:%M:%S'))
-    except Exception:
-        return None
 
 
 def ensure_guestjs(session: requests.Session, fid: str):
@@ -150,7 +142,8 @@ def last_row_of(path):
 
 
 def latest_record(data_dir, fid):
-    """data 目录下所有本 fid 源 CSV 里最新一条记录，返回 (unix_ts, machine, filename)。"""
+    """data 目录下所有本 fid 源 CSV 里最新一条记录，返回 (ts_str, machine, filename)。
+    ts_str 格式 'YYYY-MM-DD HH:MM:SS'，字典序即时间序。"""
     prefix = f'nga_fid{fid}_heat_'
     latest = None
     if not os.path.isdir(data_dir):
@@ -163,9 +156,8 @@ def latest_record(data_dir, fid):
         last = last_row_of(os.path.join(data_dir, fn))
         if not last or not last.get('ts'):
             continue
-        t = parse_ts(last['ts'])
-        if t is not None and (latest is None or t > latest[0]):
-            latest = (t, last.get('machine', ''), fn)
+        if latest is None or last['ts'] > latest[0]:
+            latest = (last['ts'], last.get('machine', ''), fn)
     return latest
 
 
@@ -179,9 +171,7 @@ def main():
     ap.add_argument('--fid', default='-343809', help='版面 fid（默认车版 -343809）')
     ap.add_argument('--pages', type=int, default=2, help='抓取页数（每页约 60 主题，默认 2 页）')
     ap.add_argument('--data-dir', default='', help='数据目录（默认 <脚本目录>/data）')
-    ap.add_argument('--dedup-window', type=int, default=DEFAULT_DEDUP_WINDOW,
-                    help='时间相近去重窗口，秒（默认 900 = 15 分钟）')
-    ap.add_argument('--force', action='store_true', help='强制写入，忽略时间相近去重')
+    ap.add_argument('--force', action='store_true', help='强制写入，忽略同小时去重')
     args = ap.parse_args()
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -192,14 +182,12 @@ def main():
     now = int(time.time())
     ts = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(now))
 
-    # 时间相近去重（丢弃两机同时在线产生的重复采样）
+    # 按自然小时去重：任意源文件已有本小时记录则跳过（两机同小时、任务延迟、手动补跑都挡住）
     if not args.force:
         latest = latest_record(data_dir, args.fid)
-        if latest:
-            delta = abs(now - latest[0])
-            if delta < args.dedup_window:
-                print(f'[dedup] 距 {latest[2]} 最新记录仅 {delta:.0f}s（< {args.dedup_window}s），跳过写入')
-                sys.exit(0)
+        if latest and latest[0][:13] == ts[:13]:
+            print(f'[dedup] {latest[2]} 已记录本小时（{latest[0][:13]}），跳过写入')
+            sys.exit(0)
 
     s = requests.Session()
     s.headers.update(HEADERS)

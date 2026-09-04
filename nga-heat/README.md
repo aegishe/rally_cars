@@ -9,9 +9,10 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 （与 dsh 会话 jsonl 双机追加冲突同理）。所以：
 
 - 每台机器写自己的 `data/nga_fid-343809_heat_<机器名>.csv`，git 同步**永不冲突**。
-- `merge.py` 把两台机器的文件合成一份 `..._heat_merged.csv`，并按「时间相近」去重——
-  两机同时在线时每小时各采样一次（时间差几十秒～几分钟），视为同一组，只保留先到的一条。
-- 去重窗口默认 900 秒（15 分钟），远小于相邻两次采样的 1 小时间隔，不会误吞正常数据。
+- `merge.py` 把两台机器的文件合成一份 `..._heat_merged.csv`。
+- 去重按**自然小时**（YYYY-MM-DD HH 相同视为重复）：扫描时若任意源文件已有本小时
+  记录则跳过写入；merge 时同一小时的多条只保留第一条。两机同时在线、任务延迟、
+  手动补跑产生的同小时重复都会被去掉，正常数据（天然间隔 1 小时）永不误删。
 
 `merged.csv` 是本地合成产物，已 gitignore，不入库、不参与同步。
 
@@ -19,12 +20,12 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 
 | 文件 | 作用 |
 |---|---|
-| `nga_fid_heat.py` | 扫描脚本：抓前 N 页主题，算指标，追加本机 CSV，带时间相近去重 |
-| `merge.py` | 合并各机 CSV → 单份 merged CSV（按 ts 排序 + 时间相近去重） |
-| `run_heat.bat` | 计划任务入口（只扫描追加，**不做 git 提交**） |
+| `nga_fid_heat.py` | 扫描脚本：抓前 N 页主题，算指标，追加本机 CSV，按自然小时去重 |
+| `merge.py` | 合并各机 CSV → 单份 merged CSV（按 ts 排序 + 自然小时去重） |
+| `run_heat.ps1` | 计划任务入口：隐藏窗口调用扫描脚本，只追加 CSV，**不做 git 操作** |
 | `data/nga_fid-343809_heat_<机器名>.csv` | 各机数据（随 git 同步） |
 | `data/nga_fid-343809_heat_merged.csv` | 合并去重产物（本地，gitignore） |
-| `run_heat.log` | 运行日志（本地，gitignore） |
+| `run_heat.log` | 运行日志（本地，gitignore，UTF-8） |
 
 ## CSV 指标含义
 
@@ -42,17 +43,17 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 
 ## 同步方式
 
-`run_heat.bat` 每小时**只本地追加 CSV，不做任何 git 操作**。
-数据提交/推送交给既有的 dsh-sync（每日 23:00 自动）或手动同步，不再每小时 commit 污染仓库历史。
+计划任务每小时**只本地追加 CSV，不做任何 git 操作**（隐藏窗口运行，不弹黑窗）。
+数据提交/推送交给既有的 dsh-sync（每日 23:00 自动）或手动同步，不污染仓库历史。
 
 ## 部署（家里电脑接续）
 
 1. 家里机 rally_cars 仓库随 dsh-sync 同步后，`nga-heat/` 目录自动出现（或 `git pull` 拉取）。
 2. 确认 python + `requests` 就绪（`pip install requests`）。
-3. 注册同名计划任务（路径按家里实际仓库路径）：
+3. 注册同名计划任务（隐藏窗口，路径按家里实际仓库路径）：
 
 ```bat
-schtasks /create /tn "NGA-Heat-Scan" /tr "D:\Project\dsh_rally_cars\nga-heat\run_heat.bat" /sc HOURLY /mo 1 /st 00:05 /f
+schtasks /create /tn "NGA-Heat-Scan" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File D:\Project\dsh_rally_cars\nga-heat\run_heat.ps1" /sc HOURLY /mo 1 /st 00:05 /f
 ```
 
 4. 两机各自每小时采样一次（`machine` 列不同），数据文件随 dsh-sync 合并到两端；
@@ -67,7 +68,7 @@ schtasks /create /tn "NGA-Heat-Scan" /tr "D:\Project\dsh_rally_cars\nga-heat\run
 ## 手动跑
 
 ```bat
-python nga_fid_heat.py --fid -343809 --pages 2            rem 正常扫描（带去重）
+python nga_fid_heat.py --fid -343809 --pages 2            rem 正常扫描（同小时已有记录则跳过）
 python nga_fid_heat.py --fid -343809 --force              rem 忽略去重，强制补录一条
 python merge.py --fid -343809                             rem 合并各机 CSV 并去重
 ```
