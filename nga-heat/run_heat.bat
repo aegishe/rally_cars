@@ -1,3 +1,3 @@
 @echo off
-rem NGA heat hourly scan wrapper for Windows Task Scheduler
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0run_heat.ps1" >> "%~dp0run_heat.log" 2>&1
+rem NGA heat hourly scan - append CSV only (git sync handled by dsh-sync daily)
+python "%~dp0nga_fid_heat.py" --fid -343809 --pages 2 >> "%~dp0run_heat.log" 2>&1

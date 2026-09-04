@@ -2,17 +2,22 @@
 """
 NGA 版面热度定时扫描器
 
-每小时抓取指定版面的主题列表（thread.php?fid=xxx&__output=8），统计回帖数等热度指标，
-追加一行到 CSV。游客态（guestJs）访问，无需登录账号。
+每小时抓取指定版面主题列表（thread.php?fid=xxx&__output=8），统计回帖数等热度指标，
+追加一行到本机专属 CSV（文件名带机器名，双机各自写、git 同步不冲突）。
+
+数据文件：
+    data/nga_fid<fid>_heat_<machine>.csv   每机一份（随 git 同步）
+    data/nga_fid<fid>_heat_merged.csv      merge.py 合并去重产物（本地，gitignore）
+
+去重：扫描前检查 data 目录下所有本 fid 源 CSV 的最新一条，若与本次采样时间相差
+小于 --dedup-window 秒（默认 900 = 15 分钟）则跳过——用于丢弃两机同时在线产生的
+时间相近的重复采样。最终去重以 merge.py 为准（时间相近只保留每组第一条）。
 
 用法：
     python nga_fid_heat.py --fid -343809 --pages 2
-    python nga_fid_heat.py --fid -343809 --csv D:\\data\\heat.csv --force
+    python nga_fid_heat.py --fid -343809 --force --dedup-window 900
 
-反爬纪律（勿改小）：
-    - 页间隔 1.5-2.5s 随机
-    - 单进程、不并行、不加速
-    - 非 200 退避重试，连败 3 次停止
+反爬纪律（勿改小）：页间隔 1.5-2.5s 随机、单进程不并行、非 200 退避重试。
 """
 
 import argparse
@@ -42,14 +47,18 @@ FIELDNAMES = [
 ]
 
 MAX_FAILS = 3
+DEFAULT_DEDUP_WINDOW = 900  # 秒，两机同小时采样视为重复
+
+
+def parse_ts(s):
+    """'YYYY-MM-DD HH:MM:SS' -> unix 秒（失败返回 None）。"""
+    try:
+        return time.mktime(time.strptime(s, '%Y-%m-%d %H:%M:%S'))
+    except Exception:
+        return None
 
 
 def ensure_guestjs(session: requests.Session, fid: str):
-    """第一次请求版面触发游客 cookie + guestJs，写入 session。
-
-    游客态首次访问返回 403，body 里 JS 会生成 guestJs=xxx；
-    带该 cookie 再请求即返回 200 JSON。登录态首次即 200 则无需处理。
-    """
     r = session.get(f'{NGA_BASE}/thread.php?fid={fid}&__output=8', timeout=15)
     if r.status_code == 200:
         return
@@ -62,7 +71,6 @@ def ensure_guestjs(session: requests.Session, fid: str):
 
 
 def decode_json(raw: bytes):
-    """NGA JSON 自适应解码：优先 UTF-8，失败退 GBK。"""
     try:
         return json.loads(raw.decode('utf-8'))
     except (UnicodeDecodeError, json.JSONDecodeError):
@@ -70,7 +78,6 @@ def decode_json(raw: bytes):
 
 
 def fetch_board(session: requests.Session, fid: str, pages: int):
-    """抓取版面前 N 页主题列表，返回 (topics, total_threads)。"""
     topics = []
     total_threads = None
     fails = 0
@@ -85,7 +92,6 @@ def fetch_board(session: requests.Session, fid: str, pages: int):
                 break
             time.sleep(random.uniform(5, 15))
             continue
-
         if r.status_code != 200:
             fails += 1
             print(f'[page {page}] status {r.status_code}（{fails}/{MAX_FAILS}）')
@@ -94,13 +100,11 @@ def fetch_board(session: requests.Session, fid: str, pages: int):
             time.sleep(random.uniform(5, 15))
             continue
         fails = 0
-
         try:
             d = decode_json(r.content)
         except json.JSONDecodeError as e:
             print(f'[page {page}] JSON 解析失败 {e}，停止')
             break
-
         data = d.get('data', {})
         if page == 1:
             total_threads = data.get('__ROWS')
@@ -116,11 +120,9 @@ def fetch_board(session: requests.Session, fid: str, pages: int):
 
 
 def compute_metrics(topics, total_threads, fid, now):
-    """基于抓到的主题列表计算热度指标。"""
     replies = [int(t.get('replies') or 0) for t in topics]
     postdates = [int(t.get('postdate') or 0) for t in topics]
     lastposts = [int(t.get('lastpost') or 0) for t in topics]
-
     n = len(replies)
     replies_sum = sum(replies)
     return {
@@ -138,33 +140,33 @@ def compute_metrics(topics, total_threads, fid, now):
 
 
 def last_row_of(path):
-    """读 CSV 最后一条数据行（无则 None）。"""
     if not os.path.exists(path):
         return None
-    with open(path, 'r', encoding='utf-8', newline='') as f:
-        reader = csv.DictReader(f)
-        last = None
-        for row in reader:
+    last = None
+    with open(path, 'r', encoding='utf-8-sig', newline='') as f:
+        for row in csv.DictReader(f):
             last = row
-        return last
+    return last
 
 
-def append_csv(path, row, force=False):
-    """追加一行；同 machine 同一小时内已有记录则跳过（防重复运行）。"""
-    if not force:
-        last = last_row_of(path)
-        if last and last.get('machine') == row['machine'] and last.get('ts', '')[:13] == row['ts'][:13]:
-            print(f'[csv] 本机本小时已有记录（{row["ts"][:13]}），跳过写入')
-            return False
-
-    exists = os.path.exists(path) and os.path.getsize(path) > 0
-    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-    with open(path, 'a', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
-        if not exists:
-            writer.writeheader()
-        writer.writerow(row)
-    return True
+def latest_record(data_dir, fid):
+    """data 目录下所有本 fid 源 CSV 里最新一条记录，返回 (unix_ts, machine, filename)。"""
+    prefix = f'nga_fid{fid}_heat_'
+    latest = None
+    if not os.path.isdir(data_dir):
+        return None
+    for fn in os.listdir(data_dir):
+        if not (fn.startswith(prefix) and fn.endswith('.csv')):
+            continue
+        if fn.endswith('_merged.csv'):
+            continue
+        last = last_row_of(os.path.join(data_dir, fn))
+        if not last or not last.get('ts'):
+            continue
+        t = parse_ts(last['ts'])
+        if t is not None and (latest is None or t > latest[0]):
+            latest = (t, last.get('machine', ''), fn)
+    return latest
 
 
 def main():
@@ -176,16 +178,28 @@ def main():
     ap = argparse.ArgumentParser(description='NGA 版面热度扫描（每小时一行 CSV）')
     ap.add_argument('--fid', default='-343809', help='版面 fid（默认车版 -343809）')
     ap.add_argument('--pages', type=int, default=2, help='抓取页数（每页约 60 主题，默认 2 页）')
-    ap.add_argument('--csv', default='', help='CSV 输出路径（默认 <脚本目录>/data/nga_fid<fid>_heat.csv）')
-    ap.add_argument('--force', action='store_true', help='强制写入，忽略本小时去重')
+    ap.add_argument('--data-dir', default='', help='数据目录（默认 <脚本目录>/data）')
+    ap.add_argument('--dedup-window', type=int, default=DEFAULT_DEDUP_WINDOW,
+                    help='时间相近去重窗口，秒（默认 900 = 15 分钟）')
+    ap.add_argument('--force', action='store_true', help='强制写入，忽略时间相近去重')
     args = ap.parse_args()
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = args.csv or os.path.join(script_dir, 'data', f'nga_fid{args.fid}_heat.csv')
+    data_dir = args.data_dir or os.path.join(script_dir, 'data')
+    machine = re.sub(r'[^A-Za-z0-9_-]', '_', socket.gethostname())
+    csv_path = os.path.join(data_dir, f'nga_fid{args.fid}_heat_{machine}.csv')
 
     now = int(time.time())
     ts = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(now))
-    machine = socket.gethostname()
+
+    # 时间相近去重（丢弃两机同时在线产生的重复采样）
+    if not args.force:
+        latest = latest_record(data_dir, args.fid)
+        if latest:
+            delta = abs(now - latest[0])
+            if delta < args.dedup_window:
+                print(f'[dedup] 距 {latest[2]} 最新记录仅 {delta:.0f}s（< {args.dedup_window}s），跳过写入')
+                sys.exit(0)
 
     s = requests.Session()
     s.headers.update(HEADERS)
@@ -200,9 +214,16 @@ def main():
     row['ts'] = ts
     row['machine'] = machine
 
-    written = append_csv(csv_path, row, force=args.force)
+    os.makedirs(data_dir, exist_ok=True)
+    exists = os.path.exists(csv_path) and os.path.getsize(csv_path) > 0
+    with open(csv_path, 'a', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        if not exists:
+            writer.writeheader()
+        writer.writerow(row)
+
     print(json.dumps(row, ensure_ascii=False))
-    print(f'{"写入" if written else "跳过"} -> {csv_path}')
+    print(f'写入 -> {csv_path}')
 
 
 if __name__ == '__main__':
