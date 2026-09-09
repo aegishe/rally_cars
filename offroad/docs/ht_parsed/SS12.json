@@ -1,0 +1,778 @@
+[
+{
+"tot": "4:35:14 4:35:14 25",
+"bib": "116",
+"driver": "李和鑫（CHN）",
+"codriver": "马磊(CHN)",
+"club": "富耐克车队",
+"cls": "F4",
+"time": "T1+",
+"model": "FUNIK富耐克赛车"
+},
+{
+"tot": "70 6:05:22 6:05:22",
+"bib": "119",
+"codriver": "姚勇(CHN)",
+"cls": "海拉克斯",
+"driver": "薛鹏鹏（CHN）",
+"club": "新疆八一钢铁车队",
+"model": "丰田",
+"time": "T1. 1"
+},
+{
+"tot": "4:37:02 4:37:02 26",
+"bib": "123",
+"driver": "王文林（CHN)*",
+"codriver": "郭军（CHN)",
+"club": "樂都金昌拉力南方商城雄鹰赛车车队",
+"cls": "巴吉",
+"model": "雄鹰赛车",
+"time": "T1.2"
+},
+{
+"tot": "4:45:29 4:45:29 35",
+"brand": "驰越运动唐山运良DO轮毂车队",
+"bib": "127",
+"driver": "吴琦会（CHN）",
+"codriver": "张露（CHN)",
+"model": "九江赛车",
+"time": "T1+"
+},
+{
+"tot": "46:00:00 53:30:00 7:30:00 92",
+"codriver": "刘元(CHN)",
+"bib": "136",
+"club": "驰越运动多耐减震器车队",
+"driver": "宋昆（CHN）",
+"time": "T1+",
+"model": "CR7",
+"cls": "CR7"
+},
+{
+"tot": "34:45:00 42:15:00 7:30:00 82",
+"codriver": "庞志旺（(CHN)",
+"brand": "驰越运动唐山运良DO轮毂车队",
+"model": "九江赛车",
+"bib": "137",
+"time": "↑1+",
+"driver": "潘静波（CHN）"
+},
+{
+"driver": "左小兵（CHN)",
+"codriver": "苗志军(CHN)",
+"club": "富耐克车队",
+"model": "FUNIK富耐克赛车",
+"cls": "F4",
+"tot": "5:21:35 5:21:35 59",
+"bib": "138",
+"time": "↑1+"
+},
+{
+"tot": "4:42:34 4:42:34 32",
+"codriver": "刘广青(CHN)",
+"bib": "152",
+"driver": "吴大军（CHN）",
+"club": "奇瑞瑞虎赛车队",
+"model": "奇瑞",
+"cls": "瑞虎8",
+"time": "T1.1"
+},
+{
+"tot": "42:15:00 83 7:30:00 34:45:00",
+"cls": "丰田GR海拉克斯",
+"driver": "黄卫东（CHN)",
+"bib": "157",
+"codriver": "马淼(CHN)",
+"club": "佳通轮胎GF-Sport车队",
+"model": "飞扬赛车",
+"time": "T1+"
+},
+{
+"codriver": "王少伟(CHN)",
+"tot": "4:39:40 4:39:40 29",
+"bib": "158",
+"driver": "高枫（CHN）",
+"club": "佳通轮胎GF-Sport车队",
+"model": "飞扬赛车",
+"cls": "丰田GR海拉克斯",
+"time": "T1. 1"
+},
+{
+"club": "山西腾飞赛车队",
+"tot": "7:30:00 46:00:00 t6 53:30:00",
+"bib": "160",
+"driver": "韩建强（CHN)",
+"codriver": "尚亮亮（CHN)",
+"model": "飞扬赛车",
+"cls": "丰田GR海拉克斯",
+"time": "T1+"
+},
+{
+"tot": "7:30:00 46:00:00 53:30:00 93",
+"bib": "161",
+"driver": "敖日格勒（CHN)",
+"codriver": "王朝辉(CHN)",
+"club": "奇瑞赛车队",
+"model": "奇瑞",
+"cls": "瑞虎8",
+"time": "T1. 1"
+},
+{
+"codriver": "刘雪原(CHN)",
+"tot": "5:10:33 5:10:33 51",
+"model": "奇瑞",
+"cls": "瑞虎8",
+"bib": "162",
+"driver": "李鹏程（CHN)",
+"club": "奇瑞赛车队",
+"time": "T1. 1"
+},
+{
+"codriver": "田宇(CHN)",
+"brand": "驰越运动唐山运良DO轮毂车队",
+"tot": "7:30:00 46:00:00 96 53:30:00",
+"model": "硬虎赛车",
+"cls": "KP1",
+"bib": "163",
+"driver": "马源（CHN)",
+"time": "↑1+"
+},
+{
+"tot": "61 5:22:25 5:22:25",
+"bib": "165",
+"model": "日产",
+"driver": "张天化（CHN)",
+"club": "新疆八一钢铁车队",
+"cls": "纳瓦拉",
+"time": "T1. 1",
+"codriver": "王红兵(CHN)"
+},
+{
+"codriver": "董明明（CHN)",
+"model": "丰田",
+"tot": "4:29:46 21 4:29:46",
+"bib": "166",
+"club": "新疆喀什鑫锦泰车队",
+"cls": "海拉克斯",
+"time": "T1+",
+"driver": "张力斌（CHN)"
+},
+{
+"tot": "53:30:00 7:30:00 46:00:00 95",
+"bib": "172",
+"driver": "王国瑞（CHN)",
+"codriver": "刘志刚(CHN)",
+"club": "龙脉赛车",
+"model": "龙脉赛车",
+"cls": "001",
+"time": "T1+"
+},
+{
+"club": "STR斯图锐竞技减震器车队",
+"tot": "5:05:25 5:05:25 48",
+"bib": "173",
+"driver": "王旭岚（CHN）",
+"codriver": "彭哲(CHN)",
+"model": "福特",
+"cls": "F150",
+"time": "T1.3"
+},
+{
+"bib": "177",
+"codriver": "王翼荣(CHN)",
+"tot": "4:48:23 4:48:23 37",
+"driver": "郑立增（CHN）",
+"club": "承德雷锋赛车队",
+"model": "九江赛车",
+"time": "↑1+"
+},
+{
+"club": "奈曼三兴CR7车队",
+"tot": "5:10:43 0:15:00 5:25:43 63",
+"bib": "178",
+"driver": "王吉生（CHN)",
+"codriver": "姚滨（CHN)",
+"cls": "CR7",
+"time": "T1+",
+"model": "CR7世纪赛车"
+},
+{
+"tot": "5:07:57 5:07:57 49",
+"driver": "王和平(女） (CHN)",
+"codriver": "李彦毅（女）（CHN)",
+"club": "湖南马帮硬虎赛车队",
+"bib": "189",
+"model": "硬虎赛车",
+"time": "↑1+",
+"cls": "KP1"
+},
+{
+"tot": "78 7:30:00 24:15:00 31:45:00",
+"driver": "汪忠义（CHN)",
+"codriver": "孟宪瑞(CHN)",
+"model": "硬虎赛车",
+"bib": "198",
+"brand": "硬虎赛车大连忠义金属车队",
+"cls": "EV03",
+"time": "T1. 2"
+},
+{
+"codriver": "苏志鹏(CHN)",
+"club": "赛轮轮胎黑曼巴锐骐车队",
+"model": "郑州日产",
+"time": "T2.3",
+"tot": "6:24:37 6:24:37 74",
+"bib": "228",
+"driver": "宋海涛（CHN)",
+"cls": "锐骐7"
+},
+{
+"codriver": "VALENTINA PERTEGARINI (ARG)",
+"driver": "NICOLAS EDUARDO CAVIGLIASSO (ARG)",
+"tot": "4:30:12 4:30:12 22",
+"club": "长城坦克700·K-MAN车队",
+"model": "长城坦克",
+"bib": "251",
+"cls": "坦克700-Hi4T",
+"time": "T2. E"
+},
+{
+"codriver": "JAN ROSA VINAS(ESP)",
+"tot": "4:45:16 4:45:16 34",
+"club": "长城坦克Hi4车队",
+"model": "长城坦克",
+"cls": "坦克700-Hi4T",
+"bib": "252",
+"driver": "PAU NAVARRO FERRER (ESP)",
+"time": "T2. E"
+},
+{
+"cls": "坦克700-Hi4T",
+"driver": "GERARD FARRES GUELL (ESP)",
+"codriver": "BRUNO JACOMY (ARG)",
+"model": "长城坦克",
+"tot": "5:19:12 5:19:12 57",
+"bib": "253",
+"club": "长城坦克Hi4T车队",
+"time": "T2.E"
+},
+{
+"driver": "姚卫强（CHN)",
+"tot": "4:56:29 4:56:29 40",
+"codriver": "韩旭(CHN)",
+"club": "长城坦克Hi4T车队",
+"model": "长城坦克",
+"bib": "256",
+"cls": "300Hi4T",
+"time": "T2. E"
+},
+{
+"tot": "5:22:20 5:22:20 60",
+"driver": "(CHN) 额尼日勒图",
+"bib": "257",
+"codriver": "敖布勒格(CHN)",
+"club": "长城火炮东利车队",
+"model": "长城",
+"cls": "火炮V6",
+"time": "T2. 1"
+},
+{
+"club": "长城火炮东利车队",
+"tot": "4:39:39 4:39:39 28",
+"bib": "259",
+"driver": "李晓文（CHN)",
+"model": "长城",
+"codriver": "白耀（CHN)",
+"cls": "火炮V6",
+"time": "T2. 1"
+},
+{
+"tot": "5:17:37 5:17:37 56",
+"bib": "261",
+"driver": "王惠军（CHN)",
+"codriver": "黄凤革(CHN)",
+"club": "长城坦克700·K-MAN车队",
+"model": "长城",
+"cls": "坦克700",
+"time": "T2. E"
+},
+{
+"codriver": "刘超(CHN)",
+"model": "长城坦克",
+"tot": "4:57:39 41 4:57:39",
+"bib": "262",
+"club": "长城坦克Hi4车队",
+"cls": "坦克300Hi4T",
+"driver": "马海龙（CHN)",
+"time": "T2. E"
+},
+{
+"club": "长城坦克Hi4T车队",
+"tot": "4:55:59 4:55:59 39",
+"bib": "263",
+"driver": "张剑峰（CHN)",
+"codriver": "黄志锋(CHN)",
+"model": "长城坦克",
+"cls": "坦克300Hi4T",
+"time": "T2.E"
+},
+{
+"codriver": "刘岩(CHN)",
+"club": "212越野车车队",
+"tot": "4:45:56 4:45:56 36",
+"driver": "王鹏（CHN)",
+"model": "212品牌",
+"cls": "T01",
+"time": "T2. 1",
+"bib": "265"
+},
+{
+"codriver": "贾威(CHN)",
+"tot": "4:59:42 4:59:42 43",
+"bib": "266",
+"driver": "李强（CHN）",
+"club": "212越野车车队",
+"cls": "T01",
+"model": "212品牌",
+"time": "T2. 1"
+},
+{
+"tot": "6:10:22 72 6:10:22",
+"driver": "王洪江（CHN)",
+"bib": "267",
+"codriver": "于超潮(CHN)",
+"brand": "江西五十铃沙蜥减震器车队",
+"model": "江西五十铃",
+"cls": "D-MAX",
+"time": "T2. 1"
+},
+{
+"tot": "58 5:19:29 5:19:29",
+"bib": "268",
+"codriver": "史泽森(CHN)",
+"driver": "梁志辉（CHN)",
+"brand": "江西五十铃沙蜥减震器车队",
+"model": "江西五十铃",
+"cls": "D-MAX",
+"time": "T2. 1"
+},
+{
+"tot": "77 7:08:35 7:08:35",
+"bib": "269",
+"driver": "于泽顺（CHN)",
+"codriver": "任家禄（CHN)",
+"time": "T2. 1",
+"brand": "江西五十铃沙蜥减震器车队",
+"model": "江西五十铃",
+"cls": "D-MAX"
+},
+{
+"tot": "5:05:04 5:05:04 47",
+"bib": "270",
+"club": "东风猛士车队",
+"driver": "杜江伟（CHN)",
+"codriver": "吴奇(CHN)",
+"model": "东风猛士",
+"cls": "猛士M817",
+"time": "T2. E"
+},
+{
+"tot": "7:30:00 24:15:00 31:45:00 79",
+"codriver": "日格乐(CHN)",
+"bib": "271",
+"driver": "刘飞宽（CHN)",
+"club": "东风猛士车队",
+"time": "T2. E",
+"model": "东风猛士",
+"cls": "猛士M817"
+},
+{
+"codriver": "李东峰（CHN)",
+"model": "东风猛士",
+"tot": "7:30:00 40:00:00 47:30:00 88",
+"bib": "272",
+"driver": "侯红宁（CHN)",
+"club": "东风猛士车队",
+"cls": "猛士M817",
+"time": "T2. E"
+},
+{
+"tot": "5:03:14 5:03:14 45",
+"cls": "猛士M817",
+"bib": "273",
+"driver": "杜军（CHN)",
+"codriver": "孙欧(CHN)",
+"model": "东风猛士",
+"club": "东风猛士车队",
+"time": "T2. E"
+},
+{
+"codriver": "刘鹏(CHN)",
+"tot": "4:31:01 23 4:31:01",
+"bib": "275",
+"club": "纵横F700赛车队",
+"cls": "F700",
+"driver": "周元福（CHN)",
+"model": "纵横",
+"time": "T2. E"
+},
+{
+"club": "纵横F700赛车队",
+"tot": "4:41:15 4:41:15 31",
+"bib": "276",
+"driver": "李鹏玉（CHN)",
+"codriver": "胡悦（CHN)",
+"model": "纵横",
+"cls": "F700",
+"time": "T2.E"
+},
+{
+"tot": "4:59:24 4:59:24 42",
+"driver": "梁起洲（CHN)",
+"codriver": "刘建(CHN)",
+"club": "纵横F700赛车队",
+"model": "纵横",
+"bib": "277",
+"cls": "F700",
+"time": "T2.E"
+},
+{
+"tot": "5:53:46 5:53:46 66",
+"bib": "278",
+"driver": "孟斌（CHN）",
+"codriver": "王为君（女）（CHN)",
+"club": "纵横G700赛车队",
+"model": "纵横",
+"cls": "G700",
+"time": "T2. E"
+},
+{
+"tot": "46:15:00 86 7:30:00 38:45:00",
+"driver": "乌日图那生（CHN)",
+"codriver": "杨成斌（CHN)",
+"club": "纵横G700赛车队",
+"time": "T2. E",
+"model": "纵横",
+"cls": "G700",
+"bib": "279"
+},
+{
+"tot": "7:30:00 38:00:00 45:30:00 85",
+"bib": "280",
+"codriver": "陈亮(CHN)",
+"cls": "G700",
+"driver": "张洋（CHN）",
+"club": "纵横G700赛车队",
+"model": "纵横",
+"time": "T2. E"
+},
+{
+"club": "K-MAN（中国）车队",
+"tot": "54 5:15:15 5:15:15",
+"driver": "吴福喜（CHN)",
+"codriver": "韩冰（CHN)",
+"model": "长城",
+"cls": "长城炮",
+"bib": "281",
+"time": "T2.3"
+},
+{
+"tot": "6:04:51 6:04:51 69",
+"codriver": "娄立园（CHN)",
+"model": "长城",
+"bib": "282",
+"club": "东利机械乌鲁木齐官方坦克团车队",
+"cls": "火炮2.0",
+"time": "T2. 3",
+"driver": "张国强（CHN)"
+},
+{
+"driver": "黄东旭（CHN)",
+"codriver": "唐世新(CHN)",
+"cls": "火炮2.0",
+"tot": "6:00:50 6:00:50 68",
+"club": "东利机械乌鲁木齐官方坦克团车队",
+"model": "长城",
+"time": "T2. 3",
+"bib": "283"
+},
+{
+"codriver": "张腾中(CHN)",
+"tot": "5:00:50 44",
+"bib": "285",
+"club": "东利机械乌鲁木齐官方坦克团车队",
+"model": "长城",
+"cls": "火炮2.0",
+"driver": "周任斌（CHN）",
+"time": "T2.3"
+},
+{
+"codriver": "唐相伟(CHN)",
+"tot": "6:10:14 71 6:10:14",
+"cls": "坦克300",
+"bib": "287",
+"driver": "李江（CHN）",
+"club": "东利机械赛车队",
+"model": "长城汽车",
+"time": "T2.3"
+},
+{
+"tot": "5:44:45 5:44:45 65",
+"codriver": "张裕良(CHN)",
+"club": "荣耀赛车",
+"cls": "牧马人四门款1C4BJWEC",
+"time": "T2. 3",
+"bib": "289",
+"driver": "邵建苗（CHN)",
+"model": "吉普"
+},
+{
+"codriver": "宋健康（CHN)",
+"tot": "7:30:00 36:45:00 84 44:15:00",
+"bib": "290",
+"club": "荣耀赛车",
+"cls": "中机坦途5TFDY5F1",
+"time": "T2.3",
+"driver": "吴伟琦（CHN）",
+"model": "丰田"
+},
+{
+"bib": "291",
+"tot": "5:39:41 64 5:39:41",
+"driver": "张执欣（CHN）",
+"codriver": "潘宇航(CHN)",
+"club": "陕西惠齐电力赛车俱乐部",
+"model": "长城",
+"cls": "V6火炮",
+"time": "T2. 3"
+},
+{
+"cls": "坦克300",
+"tot": "4:50:24 38 4:50:24",
+"driver": "张启昌（CHN)",
+"codriver": "吴成(CHN)",
+"model": "长城",
+"bib": "293",
+"club": "沙蜥减震器车队",
+"time": "T2.3"
+},
+{
+"bib": "295",
+"driver": "霍玉茵（女）（CHN)",
+"codriver": "程惠煊（女）（CHN)",
+"club": "沙蜥减震器车队",
+"model": "长城",
+"tot": "5:48:06 0:45:00 6:33:06 75",
+"cls": "坦克300",
+"time": "T2. 3"
+},
+{
+"tot": "7:30:00 46:30:00 39:00:00 87",
+"bib": "296",
+"club": "沙蜥减震器车队",
+"cls": "坦克300",
+"driver": "韩喜庆（CHN)",
+"codriver": "王宁宇(CHN)",
+"model": "长城魏派",
+"time": "T2.3"
+},
+{
+"tot": "6:45:35 6:45:35 76",
+"codriver": "王明（CHN)",
+"club": "沙蜥减震器车队",
+"cls": "坦克300",
+"driver": "李岩（CHN)",
+"model": "长城",
+"bib": "297",
+"time": "T2. 3"
+},
+{
+"tot": "7:30:00 40:30:00 89 48:00:00",
+"bib": "298",
+"driver": "曹敏（CHN)",
+"codriver": "曾海平(CHN)",
+"club": "湖南马帮沙蜥减震器车队",
+"model": "德宝牧犸人",
+"cls": "1C4PJXFN",
+"time": "T2. 3"
+},
+{
+"tot": "5:11:20 5:11:20 52",
+"driver": "Sycheva Tatiana(女）(RUS)",
+"bib": "302",
+"codriver": "Shubin Kirill (RUS)",
+"club": "XeshaMotorsport",
+"model": "Can-Am",
+"time": "T3",
+"cls": "Maverick X3"
+},
+{
+"tot": "46:00:00 91 7:30:00 53:30:00",
+"codriver": "郭峰(CHN)",
+"model": "庞巴迪",
+"bib": "303",
+"driver": "李鹏飞（CHN)",
+"club": "DN多耐睿行者车队",
+"time": "T3",
+"cls": "240R"
+},
+{
+"tot": "4:40:04 30 4:40:04",
+"codriver": "张旭(CHN)",
+"brand": "乌海速驰延安酒运动俱乐部",
+"model": "庞巴迪",
+"bib": "305",
+"driver": "张梦迁（CHN)",
+"cls": "240R",
+"time": "T3"
+},
+{
+"tot": "7:30:00 80 26:30:00 34:00:00",
+"bib": "306",
+"driver": "郭云辉（CHN）",
+"codriver": "杨威(CHN)",
+"model": "庞巴迪",
+"club": "DN多耐睿行者车队",
+"cls": "240R",
+"time": "T3"
+},
+{
+"driver": "吕逸飞（CHN）",
+"codriver": "刘大彬(CHN)",
+"model": "庞巴迪",
+"tot": "5:08:44 0:15:00 5:23:44 62",
+"bib": "307",
+"club": "DN多耐睿行者赛车队",
+"cls": "240R",
+"time": "T3"
+},
+{
+"tot": "4:42:58 33 4:42:58",
+"driver": "冯少仑（CHN)",
+"codriver": "张建兵（CHN)",
+"model": "庞巴迪",
+"bib": "308",
+"club": "DN多耐客行者赛车队",
+"cls": "240R",
+"time": "T3"
+},
+{
+"bib": "309",
+"time": "T3",
+"tot": "5:08:00 50 5:08:00",
+"driver": "牛月华（CHN)",
+"codriver": "刘原(CHN)",
+"club": "DN多耐睿行者车队",
+"model": "庞巴迪",
+"cls": "240R"
+},
+{
+"driver": "周贺（CHN)",
+"tot": "4:28:47 4:28:47 19",
+"codriver": "白中华(CHN)",
+"bib": "310",
+"club": "善行团熊猫车队",
+"model": "庞巴迪",
+"cls": "庞巴迪240R",
+"time": "T3"
+},
+{
+"tot": "67 5:58:56 5:58:56",
+"bib": "311",
+"codriver": "李磊(CHN)",
+"club": "呼伦贝尔苍狼白鹿车队",
+"model": "庞巴迪",
+"driver": "乌力吉木仁（CHN）",
+"cls": "240R",
+"time": "T4"
+},
+{
+"cls": "RZR PRO R",
+"tot": "5:16:30 55 5:16:30",
+"bib": "312",
+"driver": "郝星瑜（女） (CHN)",
+"codriver": "赫荣哲（CHN)",
+"time": "T4",
+"club": "北极星科马仕勇士车队",
+"model": "北极星"
+},
+{
+"club": "北极星科马仕勇士车队",
+"tot": "5:15:15 53 5:15:15",
+"bib": "313",
+"model": "北极星",
+"driver": "王晓鹏（CHN)",
+"codriver": "宝恒野(CHN)",
+"cls": "RZR PRO R"
+},
+{
+"tot": "7:30:00 28:30:00 81 36:00:00",
+"bib": "315",
+"driver": "郝云（CHN）",
+"codriver": "王鹏(CHN)",
+"club": "庞巴迪运良骑活车队",
+"model": "庞巴迪（BRP）",
+"cls": "Can-am Maver ick R X",
+"time": "T4"
+},
+{
+"driver": "孙萌（CHN)",
+"codriver": "刘杰（女）(CHN)",
+"club": "庞巴迪运良骑活车队",
+"tot": "6:20:23 6:20:23 73",
+"model": "庞巴迪",
+"bib": "316",
+"cls": "maverick r",
+"time": "T4"
+},
+{
+"club": "贵州英雄渡酒车队",
+"codriver": "高君柱(CHN)",
+"model": "庞巴迪",
+"cls": "240R",
+"time": "T4",
+"tot": "5:04:19 5:04:19 46",
+"driver": "汪伦（CHN)",
+"bib": "317"
+},
+{
+"tot": "41:00:00 90 7:30:00 48:30:00",
+"model": "庞巴迪",
+"bib": "318",
+"driver": "王正龙（CHN)",
+"codriver": "贾宝康(CHN)",
+"club": "贵州英雄渡酒车队",
+"cls": "240R",
+"time": "14"
+},
+{
+"codriver": "张宏宾(CHN)",
+"tot": "4:34:55 24 4:34:55",
+"driver": "胡健（CHN)",
+"club": "河北中才赛车俱乐部",
+"model": "庞巴迪",
+"cls": "庞巴迪240R",
+"bib": "319",
+"time": "T4"
+},
+{
+"codriver": "Malkov Ivan(RUS)",
+"tot": "4:29:36 4:29:36 20",
+"bib": "501",
+"model": "KAMAZ",
+"cls": "KAMAZ",
+"time": "T5. 1",
+"driver": "Akhmedov AImaz (RUS)",
+"club": "KAMAZ-master"
+},
+{
+"codriver": "SHMELEV ALEKSANDR(RUS)",
+"tot": "4:38:50 4:38:50 27",
+"bib": "503",
+"club": "URAL MOTORSPORT",
+"model": "URAL",
+"cls": "43206R",
+"driver": "NAYMAN YURIY(RUS)",
+"time": "T5.1"
+}
+]
