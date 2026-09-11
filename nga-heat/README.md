@@ -23,6 +23,7 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 | `nga_fid_heat.py` | 扫描脚本：抓前 N 页主题，算指标，追加本机 CSV，按自然小时去重 |
 | `merge.py` | 合并各机 CSV → 单份 merged CSV（按 ts 排序 + 自然小时去重） |
 | `run_heat.ps1` | 计划任务入口：隐藏窗口调用扫描脚本，只追加 CSV，**不做 git 操作** |
+| `fix_heat_schedule.ps1` | 重建计划任务为 **24 个固定整点触发器**（HH:05），修睡眠错过导致的采样漂移 |
 | `data/nga_fid-343809_heat_<机器名>.csv` | 各机数据（随 git 同步） |
 | `data/nga_fid-343809_heat_merged.csv` | 合并去重产物（本地，gitignore） |
 | `run_heat.log` | 运行日志（本地，gitignore，UTF-8） |
@@ -54,13 +55,18 @@ CSV 是**追加型文件**，两台机器各自往同一个文件追加、再靠
 
 1. 家里机 rally_cars 仓库随 dsh-sync 同步后，`nga-heat/` 目录自动出现（或 `git pull` 拉取）。
 2. 确认 python + `requests` 就绪（`pip install requests`）。
-3. 注册同名计划任务（隐藏窗口，路径按家里实际仓库路径）：
+3. 注册计划任务（隐藏窗口 + **固定整点**）：
 
 ```bat
-schtasks /create /tn "NGA-Heat-Scan" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File D:\Project\dsh_rally_cars\nga-heat\run_heat.ps1" /sc HOURLY /mo 1 /st 00:05 /f
+powershell -NoProfile -ExecutionPolicy Bypass -File D:\Project\dsh_rally_cars\nga-heat\fix_heat_schedule.ps1
 ```
 
-4. 两机各自每小时采样一次（`machine` 列不同），数据文件随 dsh-sync 合并到两端；
+> 该脚本用 XML 注册 24 个 `CalendarTrigger`（每天 00:05、01:05 … 23:05，绝对时间），
+> 而不是 `schtasks /sc HOURLY`——后者是"相对上次运行 +1 小时"的重复，机器睡眠/关机
+> 错过触发后会以延迟点重新起算，导致采样时间漂移（实测漂到 :26 / :43）。绝对时间触发器不会漂。
+> 脚本可重复运行（覆盖同名任务）；每台机器各跑一次即可（内含本机用户 SID）。
+
+4. 两机各自每小时采样一次（`machine` 列不同，同自然小时去重），数据文件随 dsh-sync 合并到两端；
    需要看整体趋势时跑一次 `python merge.py --fid -343809` 生成去重后的 merged CSV。
 
 ## 风险说明
