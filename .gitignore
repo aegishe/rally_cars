@@ -7,3 +7,12 @@ cookies.txt
 
 # Conflict-resolution backups (dsh-sync v3)
 **/*.remote
+
+# temp / intermediate artifacts: never sync to git (files stay on disk)
+/_tmp_*
+/_bili_*
+/_dl_log.txt
+/_asr_log.txt
+*.m4s
+*.m4a
+frames/
