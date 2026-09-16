@@ -16,3 +16,6 @@ cookies.txt
 *.m4s
 *.m4a
 frames/
+# 临时目录统一 .tmp/；裸 tmp/ 也拦一道，防误提交
+tmp/
+.tmp/
