@@ -61,6 +61,9 @@
 |------|------|
 | `daily-touring/CONTEXT.md` | 续航三角 / 焦虑谱系 / 14 维度 / 亏电体验衰减 |
 | `daily-touring/docs/` | 车型决赛圈对比（SUV/轿车/硬派SUV 等 10+ 篇） |
+| `daily-touring/docs/交接-纯电CLTC反推模型.md` | **纯电电耗/续航反推**（2026-09-17）：Stage-1 欠定审计（1 观测 vs 5 未知量）+ CLTC-P 1800 点数据资产 + 7 条建模禁区（余项禁令 / 恒等式禁令 / 单位链自检）。附 `stage1-inference.js`、`cltc-p-1800points.json` |
+| `daily-touring/docs/纯电电耗与续航-口径分层模型.md` | 口径分层框架（账面/车机/实测三层）+ 物理分解（滚阻/风阻/循环/附件） |
+| `daily-touring/docs/六车对比-冬夏-载重-长短途矩阵.md` | 六车工况矩阵。⚠️ **含已被证伪的"综合效率"表，待用交接文档结论覆盖** |
 | `daily-touring/charts/` | 雷达图等可视化 |
 
 ### 完美电驱越野 (`perfect-e-offroad/`)
