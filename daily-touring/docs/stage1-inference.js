@@ -88,14 +88,14 @@ const kW_res = (c, v) => (c.m * G * c.Crr * vms(v) + 0.5 * RHO * c.Cd * c.A * Ma
 const kW_kin = c => eNet_unit * c.m / CLTC.T / 1000;   // kJ/kg ×kg /s = kW
 const eCLTC = c => c.wh / c.cltc * 100;
 
-line(); console.log('维度1 · 实际电耗（CLTC 标准条件，官方口径 = 电池 ÷ 续航 × 100）'); line();
-console.log('车型'.padEnd(22) + pad('电池kWh', 9) + pad('CLTC km', 9) + pad('实际电耗', 10) + pad('电耗速率kW', 11));
+line(); console.log('维度1 · 官方 CLTC 申报电耗（标准条件：23±5℃ / 空调关闭 / 平均车速 28.96km/h / 试验质量）'); line();
+console.log('车型'.padEnd(22) + pad('电池kWh', 9) + pad('CLTC km', 9) + pad('申报电耗', 10) + pad('电耗速率kW', 11));
 for (const c of CARS) {
   console.log(c.n.padEnd(22) + pad(f2(c.wh), 9) + pad(c.cltc, 9) + pad(f2(eCLTC(c)), 10)
     + pad(f2(eCLTC(c) * CLTC.vAvg / 100), 11));
 }
 
-line(); console.log('维度2 · 综合效率（轮端需求 ÷ 电池端输出）'); line();
+line(); console.log('维度2 · 综合效率（轮端需求 ÷ 电池端输出）—— 同一标准条件下'); line();
 console.log('车型'.padEnd(22) + pad('阻力@vAvg', 10) + pad('动能项', 9) + pad('需求合计', 10)
   + pad('电池输出', 10) + pad('综合效率', 10));
 for (const c of CARS) {
