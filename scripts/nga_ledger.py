@@ -229,12 +229,12 @@ def fmt_person(rows, uid, verbose=True):
         lines.append('- 攻击词：' + ' · '.join(f'{k} {v}' for k, v in sorted(attack.items(), key=lambda x: -x[1])))
     for p in prof:
         if p.get('facts'):
-            lines.append('- 自曝/身份线索：')
+            lines.append('- 自曝/身份线索（来自该用户在其他帖的历史，与你无直接互动）：')
             lines += [f'    - {q}' for q in p['facts']]
     if verbose:
         for p in prof:
             if p.get('quotes'):
-                lines.append('- 代表发言（自动抽取）：')
+                lines.append('- 跨帖历史样本（该用户在其他帖的发言，与本人无直接互动）：')
                 lines += [f'    - {q}' for q in p['quotes'][:5]]
     for o in others:
         tag = ' '.join(f'[{t}]' for t in o.get('tags', []))
@@ -291,7 +291,11 @@ def find_my_threads(uid):
                 if key is None:
                     m2 = re.search(r'tid=(\d+)', open(p, encoding='utf-8').read())
                     key = m2.group(1) if m2 else os.path.basename(p)
-                if key not in files or 'latest' in os.path.basename(p):
+                # 优先级：nga_tid 前缀 > 其他命名；latest 后缀优先
+                def _pref(x):
+                    b = os.path.basename(x)
+                    return (2 if b.startswith('nga_tid') else 0) + (1 if 'latest' in b else 0)
+                if key not in files or _pref(p) > _pref(files[key]):
                     files[key] = p
     return files
 
@@ -394,23 +398,12 @@ def cmd_targets_threads(args):
     rows = load()
     ledger = {r['uid']: (r.get('name') or '') for r in rows}
     name_map = build_name_map()
+    tmap = build_title_map()
 
     def nm(u):
         return name_map.get(u) or ledger.get(u) or ''
 
-    files = {}
-    for d in SCAN_DIRS:
-        pats = ('nga_tid*_replies*.txt', 'nga_pian*.txt')
-        for pat in pats:
-            for p in glob.glob(os.path.join(d, pat)):
-                head = open(p, encoding='utf-8').read(4000)
-                m = re.search(r'\[0楼\]\s+(.+?)\s+\(uid=(\d+)\)', head)
-                if not m or m.group(2) != args.uid:
-                    continue
-                k = re.search(r'tid(\d+)', os.path.basename(p))
-                key = k.group(1) if k else os.path.basename(p)
-                if key not in files or 'latest' in os.path.basename(p):
-                    files[key] = p
+    files = find_my_threads(args.uid)
     if not files:
         print('未找到以该 uid 为楼主的帖子抓取文件。')
         return
@@ -418,7 +411,9 @@ def cmd_targets_threads(args):
     for key, p in sorted(files.items()):
         txt = open(p, encoding='utf-8').read()
         mt = re.search(r'\[0楼\]\s+(.+?)\s+\(uid=(\d+)\)', txt)
-        title = mt.group(1) if mt else key
+        title = _clean(mt.group(1)) if mt else key
+        if title in ('?', '') or title == key:
+            title = tmap.get(key, key)
         blocks = re.split(r'^\[(\d+)楼\]\s+(.+?)\s+\(uid=(\d+)\)', txt, flags=re.M)
         speakers, direct, replied_me = {}, {}, {}
         for i in range(1, len(blocks), 4):
