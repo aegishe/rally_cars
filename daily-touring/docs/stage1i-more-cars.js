@@ -79,7 +79,7 @@ function solve(c) {
 const rows = CARS.map(c => ({ c, ...solve(c) }));
 
 line(); console.log('Stage-1i  12 车反推三电效率 η + 续航（φ=0.75 自洽）'); line();
-console.log('  标 ⚠️ = 参数未经逐台复核（新车型）；标 ⚠️η = η 超物理上限(异常)');
+console.log('  标 ⚠️ = 参数未经逐台复核（新车型）；标 ⚠️η = η 超 CLTC 加权上限(异常)');
 console.log('');
 
 line(); console.log('【三电效率 η 排序】'); line();
