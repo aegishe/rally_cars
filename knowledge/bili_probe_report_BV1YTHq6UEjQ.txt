@@ -1,0 +1,19 @@
+[cookie] space.bilibili.com_cookies.txt fields=29 has_buvid3=True has_csrf=True
+[spi] code=0
+[spi] buvid3/buvid4 已刷新（b3=9482AACB-D72…）
+[ticket] code=0 msg=OK
+[ticket] 已写入 session，len=156
+[wbi] mixin ok len=32
+
+=== target BV1YTHq6UEjQ aid=117377261897345 cid=42431087092 reply=270 ===
+[target/ck1/wbi-main-m3] code=0 msg=OK n=3 all=270 is_end=True
+[target/ck1/main-nosign] code=0 msg=OK n=3 all=270 is_end=True
+[target/ck1/old-sort2] code=0 msg=OK n=3 all=None is_end=None
+[target/ck1/app-sign] code=0 msg=OK n=3 all=270 is_end=True
+[target/ck0/wbi-main-m3] code=0 msg=OK n=3 all=270 is_end=True
+[target/ck0/main-nosign] code=0 msg=OK n=3 all=270 is_end=True
+[target/ck0/old-sort2] code=0 msg=OK n=3 all=None is_end=None
+[target/ck0/app-sign] code=0 msg=OK n=3 all=270 is_end=True
+
+> 判读：n=20 且 is_end 可翻页 = 接口正常；n≤3 或 code=-352/-412 = 被降级/风控。
+> buvid3/buvid4 与 bili_ticket 已在本次会话内刷新；若仍降级，换出口 IP 或降低频率。
