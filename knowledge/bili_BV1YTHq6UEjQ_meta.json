@@ -7,11 +7,11 @@
   "pub": "2026-10-04 07:00",
   "reply_api": 270,
   "mode": "both",
-  "cookie": "space.bilibili.com_cookies.txt",
+  "cookie": "www.bilibili.com_cookies.txt",
   "all_count": 270,
-  "pages": 2,
+  "pages": 11,
   "main_complete": true,
   "all_count_note": "all_count = 主楼 + 楼中楼 合计，不是主楼数；判断抓全只看 main_complete",
   "errors": null,
-  "elapsed": 0.9
+  "elapsed": 9.1
 }
