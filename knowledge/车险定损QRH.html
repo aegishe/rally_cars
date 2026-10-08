@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>车险定损 QRH</title>
+<style>
+  @page { size: A4; margin: 10mm 11mm 9mm 11mm; }
+
+  :root{
+    --ink:#111;
+    --rule:#111;
+    --gray:#5c5c5c;
+    --lgray:#e8e8e8;
+    --box:#f4f4f4;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{ margin:0; padding:0; }
+
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+    color:var(--ink);
+    font-size:9.3pt;
+    line-height:1.40;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ============ 页 ============ */
+  .page{
+    width:188mm;
+    height:276mm;
+    page-break-after:always;
+    position:relative;
+    overflow:hidden;
+  }
+  .page:last-child{ page-break-after:auto; }
+
+  /* 阶段分组：整组不许跨页断开 */
+  .grp{ break-inside:avoid; page-break-inside:avoid; }
+
+  /* ============ 页眉 ============ */
+  .hdr{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    border-bottom:2.4pt solid var(--rule);
+    padding-bottom:1.6mm;
+  }
+  .hdr .t{
+    font-size:18pt;
+    font-weight:700;
+    letter-spacing:.4pt;
+    line-height:1;
+  }
+  .hdr .t span{
+    display:block;
+    font-size:8.3pt;
+    font-weight:400;
+    letter-spacing:1.6pt;
+    color:var(--gray);
+    margin-top:1.3mm;
+    text-transform:uppercase;
+  }
+  .hdr .meta{
+    text-align:right;
+    font-size:7.5pt;
+    color:var(--gray);
+    line-height:1.55;
+    letter-spacing:.2pt;
+  }
+  .hdr .meta b{ color:var(--ink); font-size:8.4pt; }
+
+  /* ============ 章节标题条 ============ */
+  .sec{
+    background:var(--rule);
+    color:#fff;
+    font-size:9.1pt;
+    font-weight:700;
+    letter-spacing:1.1pt;
+    padding:1.3mm 2.6mm;
+    margin:3mm 0 1.9mm;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+  }
+  .sec span{ font-weight:400; font-size:7.3pt; letter-spacing:.4pt; opacity:.82; }
+  .sec.red{ background:#a11212; }
+  .sec.out{ background:#fff; color:var(--ink); border:1.4pt solid var(--rule); }
+
+  /* ============ 记忆项 ============ */
+  .mem{
+    border:2.2pt solid #a11212;
+    background:#fdf3f3;
+    padding:0;
+  }
+  .mem .cap{
+    background:#a11212;
+    color:#fff;
+    font-size:7.5pt;
+    font-weight:700;
+    letter-spacing:1.4pt;
+    padding:.9mm 2.6mm;
+    display:flex;
+    justify-content:space-between;
+  }
+  .mem ol{
+    margin:0;
+    padding:2.4mm 2.6mm 2.4mm 10mm;
+  }
+  .mem li{
+    margin-bottom:1.9mm;
+    font-size:10.4pt;
+    font-weight:700;
+    line-height:1.36;
+  }
+  .mem li:last-child{ margin-bottom:0; }
+  .mem li em{
+    font-style:normal;
+    font-weight:400;
+    font-size:8.6pt;
+    color:#7a2020;
+    display:block;
+    margin-top:.5mm;
+  }
+
+  /* ============ 数字条 ============ */
+  table{ width:100%; border-collapse:collapse; }
+  .num{ margin-bottom:.8mm; }
+  .num td{
+    border:.6pt solid #b9b9b9;
+    padding:1.3mm 2.4mm;
+    vertical-align:top;
+  }
+  .num td.k{ width:42mm; font-weight:700; font-size:8.6pt; background:var(--box); }
+  .num .big{
+    font-family:Consolas,"Courier New",monospace;
+    font-weight:700;
+    font-size:12pt;
+    letter-spacing:.3pt;
+  }
+  .num td.v{ font-size:8.6pt; }
+
+  .note{
+    font-size:7.9pt;
+    color:#7a2020;
+    background:#fdf3f3;
+    border-left:2.4pt solid #a11212;
+    padding:1.4mm 2.4mm;
+    margin-top:1.5mm;
+    line-height:1.42;
+  }
+  .note b{ letter-spacing:.3pt; }
+
+  /* ============ 检查单 ============ */
+  .ck{
+    border:.6pt solid #b9b9b9;
+    padding:1.8mm 2.6mm 1.5mm;
+    margin-bottom:0;
+  }
+  .ck .h{
+    font-size:8.5pt;
+    font-weight:700;
+    letter-spacing:.5pt;
+    border-bottom:.6pt solid var(--lgray);
+    padding-bottom:.9mm;
+    margin-bottom:1.4mm;
+    display:flex;
+    justify-content:space-between;
+  }
+  .ck .h i{ font-style:normal; font-weight:400; color:var(--gray); font-size:7.1pt; letter-spacing:.2pt; }
+  ul.li{ margin:0; padding:0; list-style:none; }
+  ul.li li{
+    position:relative;
+    padding-left:5.4mm;
+    margin-bottom:1.05mm;
+    font-size:8.9pt;
+    line-height:1.38;
+  }
+  ul.li li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:.9mm;
+    width:3mm;
+    height:3mm;
+    border:1pt solid #444;
+  }
+  ul.li li.x::before{
+    border-color:#a11212;
+  }
+  ul.li li.x{ color:#7a2020; }
+  ul.li li b{ letter-spacing:.2pt; }
+
+  /* 双栏 */
+  .two{ display:flex; gap:3.2mm; }
+  .two > *{ flex:1; min-width:0; }
+
+  /* ============ 话术 ============ */
+  .say{
+    border:.6pt solid #b9b9b9;
+    border-left:2.8pt solid var(--rule);
+    padding:1.9mm 2.6mm;
+    margin-bottom:2mm;
+    font-size:9.1pt;
+    line-height:1.5;
+  }
+  .say .tag{
+    display:inline-block;
+    background:var(--rule);
+    color:#fff;
+    font-size:7pt;
+    font-weight:700;
+    letter-spacing:.9pt;
+    padding:.45mm 1.8mm;
+    margin-bottom:1.2mm;
+  }
+  .say q{ font-weight:700; quotes:"「" "」"; }
+  .say .cite{
+    display:block;
+    margin-top:1.2mm;
+    font-size:7.7pt;
+    color:var(--gray);
+    line-height:1.46;
+  }
+
+  /* ============ 警告框 ============ */
+  .warn{
+    border:1.6pt solid #a11212;
+    padding:1.9mm 2.6mm;
+    margin:1.9mm 0 2.5mm;
+    font-size:8.6pt;
+    line-height:1.48;
+    background:#fdf7f7;
+  }
+  .warn .lbl{
+    color:#a11212;
+    font-weight:700;
+    letter-spacing:1pt;
+    font-size:7.7pt;
+    margin-right:1.4mm;
+  }
+  .warn.caution{ border-color:#8a6a00; background:#fdfaf0; }
+  .warn.caution .lbl{ color:#8a6a00; }
+
+  /* ============ 误传表 ============ */
+  .myth td{
+    border:.6pt solid #b9b9b9;
+    padding:1.7mm 2.4mm;
+    font-size:8.6pt;
+    vertical-align:top;
+    line-height:1.44;
+  }
+  .myth td:first-child{ width:58mm; font-weight:700; }
+  .myth tr:nth-child(odd) td{ background:#fafafa; }
+  .myth td .no{ color:#a11212; font-weight:700; }
+
+  /* ============ 流程 ============ */
+  .esc{
+    border:.6pt solid #b9b9b9;
+    padding:1.9mm 2.6mm 1.5mm;
+    font-size:8.6pt;
+  }
+  .esc .row{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:1.4mm;
+    line-height:1.44;
+  }
+  .esc .n{
+    flex:0 0 5.4mm;
+    font-family:Consolas,monospace;
+    font-weight:700;
+    font-size:9.1pt;
+  }
+  .esc .row:last-child{ margin-bottom:0; }
+
+  /* ============ 页脚 ============ */
+  .ft{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    border-top:.7pt solid #999;
+    padding-top:1mm;
+    display:flex;
+    justify-content:space-between;
+    font-size:7pt;
+    color:var(--gray);
+    letter-spacing:.2pt;
+  }
+
+  .kbd{
+    font-family:Consolas,"Courier New",monospace;
+    font-size:8.4pt;
+    background:#efefef;
+    border:.5pt solid #ccc;
+    padding:0 .9mm;
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== 正面 ==================== -->
+<div class="page">
+
+  <div class="hdr">
+    <div class="t">车险定损　快速检查单
+      <span>Vehicle Damage Assessment &nbsp;·&nbsp; Quick Reference Handbook</span>
+    </div>
+    <div class="meta">
+      <b>QRH-01</b>　双面 A4　正/背<br>
+      依据 保险法 22/23/24/25/55/64 条<br>
+      示范条款（2020版）<br>
+      版本 A　核验 2026-10-08
+    </div>
+  </div>
+
+  <!-- 记忆项 -->
+  <div class="sec red">记忆项　MEMORY ITEMS <span>不查手册也必须执行</span></div>
+  <div class="mem">
+    <div class="cap"><span>三条铁律</span><span>违反任一条即失去议价位置</span></div>
+    <ol>
+      <li>不接“修还是全损”的二选一
+        <em>定损员问出口时，只回：“先按你们正规流程走，给我完整定损单。”</em>
+      </li>
+      <li>不主动说“我要全损”，也不主动说“我就修”
+        <em>赔多少由定损单上的数字推出来，不由你的嘴推出来。</em>
+      </li>
+      <li>不接受任何口头结论
+        <em>没有书面定损单：不签字、不拆车、不维修。</em>
+      </li>
+    </ol>
+  </div>
+
+  <!-- 关键数字 -->
+  <div class="sec">关键数字与时限 <span>以下为法定值，不是行业惯例</span></div>
+  <table class="num">
+    <tr>
+      <td class="k">保险公司核定<br><span style="font-weight:400;font-size:6.6pt;color:#5c5c5c">情形复杂</span></td>
+      <td class="v"><span class="big">30 日内</span>　　<span style="color:#5c5c5c">保险法 23 条</span></td>
+    </tr>
+    <tr>
+      <td class="k">属于保险责任 → 赔付</td>
+      <td class="v"><span class="big">10 日内</span>　　<span style="color:#5c5c5c">达成赔偿协议后</span>　　保险法 23 条</td>
+    </tr>
+    <tr>
+      <td class="k">不属于保险责任<br><span style="font-weight:400;font-size:6.6pt;color:#5c5c5c">拒赔通知书由它出给你</span></td>
+      <td class="v"><span class="big">3 日内</span>　　<span style="color:#5c5c5c">自作出核定之日起</span>　　保险法 24 条</td>
+    </tr>
+    <tr>
+      <td class="k">赔款金额定不下来</td>
+      <td class="v"><span class="big">60 日内</span>　<span style="color:#5c5c5c">按已能确定的数额先予支付，最终确定后补差额</span>　　保险法 25 条</td>
+    </tr>
+    <tr>
+      <td class="k">索赔诉讼时效<br><span style="font-weight:400;font-size:6.6pt;color:#5c5c5c">车损险属非人寿保险</span></td>
+      <td class="v"><span class="big">2 年</span>　　<span style="color:#5c5c5c">自知道或应当知道事故发生之日起</span></td>
+    </tr>
+  </table>
+  <div class="note">
+    <b>计时起点：</b>30 日自保险公司<b>初次收到索赔请求及证明材料</b>之日起算。交材料必须留痕 —— <b>这份留痕就是计时起点的证据</b>。
+  </div>
+
+  <!-- 阶段一 -->
+  <div class="grp">
+  <div class="sec">阶段 1 ─ 出险当天 <span>现场处理</span></div>
+  <div class="two">
+    <div class="ck">
+      <div class="h"><span>执行项</span><i>逐项打勾</i></div>
+      <ul class="li">
+        <li>拍照录像：全景 / 接触点 / 双方车牌 / 路况</li>
+        <li>拍对方行驶证、驾驶证</li>
+        <li>报交警 → 取得<b>事故认定书</b></li>
+        <li>报保险，记录<b>报案号</b>、定损员工号</li>
+        <li><b>行车记录仪存储卡拔下自己保管</b></li>
+        <li>停放听指挥，但不指定它推荐的修理厂</li>
+      </ul>
+    </div>
+    <div class="ck">
+      <div class="h"><span>禁止项</span><i>红线</i></div>
+      <ul class="li">
+        <li class="x">未出定损单就签“定损确认单”</li>
+        <li class="x">先修后报 —— “修完找保险报销”</li>
+        <li class="x">接受“我认识个修理厂，拖那儿便宜”</li>
+        <li class="x">把行车记录仪或存储卡交给对方</li>
+        <li class="x">在空白或未列项的定损单上签字</li>
+        <li class="x">私下与对方达成“不走保险”的口头协议</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <!-- 阶段二 -->
+  <div class="grp">
+  <div class="sec">阶段 2 ─ 定损阶段 <span>最关键的 72 小时</span></div>
+  <div class="two">
+    <div class="ck">
+      <div class="h"><span>执行项</span><i>逐项打勾</i></div>
+      <ul class="li">
+        <li>索取<b>书面定损单</b>：逐项列明换 / 修、单价、工时</li>
+        <li>逐项问清：<b>更换还是维修、原厂件还是副厂件</b></li>
+        <li>有异议的，写明<b>“不认可，待复核”再签字</b></li>
+        <li>全程微信文字；通话一律录音</li>
+        <li>要求出示<b>书面核定结论及计算依据</b></li>
+        <li>有异议，要求<b>双方共同委托</b>复检</li>
+      </ul>
+    </div>
+    <div class="ck">
+      <div class="h"><span>禁止项</span><i>红线</i></div>
+      <ul class="li">
+        <li class="x">自掏拆解费</li>
+        <li class="x">签署残值缩水自担的条款</li>
+        <li class="x">在无书面方案的情况下同意拆解</li>
+        <li class="x">相信“你车不值这么多，不能按保额赔”</li>
+        <li class="x">空签或拒签就走</li>
+        <li class="x">定损金额未定前自行委托单方鉴定</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="ft">
+    <span>车险定损 QRH-01　版本 A</span>
+    <span>正面　1 / 2</span>    <span>核验日期 2026-10-08</span>
+  </div>
+</div>
+
+<!-- ==================== 背面 ==================== -->
+<div class="page">
+
+  <div class="hdr">
+    <div class="t">话术 · 警告 · 救济
+      <span>Scripts &nbsp;·&nbsp; Warnings &nbsp;·&nbsp; Escalation</span>
+    </div>
+    <div class="meta">
+      <b>QRH-01</b>　背面<br>
+      引用法条可原话复述<br>
+      版本 A　核验 2026-10-08
+    </div>
+  </div>
+
+  <div class="sec">标准话术 <span>电话里照念，别临场组织语言</span></div>
+
+  <div class="say">
+    <span class="tag">话术 甲　被要求先拆车 / 先付拆解费</span>
+    <q>拆可以，两件事先说清：一，拆解费按《保险法》第 64 条由你们承担；二，拆解造成的残值缩水，不得用来压我的赔款金额。这两条你们书面确认，我就同意拆。不同意，就按现状定损。</q>
+    <span class="cite"><b>支撑：</b>《保险法》第 64 条 —— 为查明和确定保险事故的性质、原因和损失程度所支付的<b>必要的、合理的费用，由保险人承担</b>。已有法院判例认定：要求车主预付并自担拆解费，属将自身法定义务转嫁，缺乏法律依据。</span>
+  </div>
+
+  <div class="warn">
+    <span class="lbl">警告</span>
+    拆解费要顶，拆不拆不要顶。要在“<b>费用谁出、残值怎么算</b>”上坚持，不要在“<b>我就不拆</b>”上坚持。被认定为不履行协助义务后，你单方委托的鉴定结论可能反被法院否定 —— 赢了面子，输掉证据。
+  </div>
+
+  <div class="say">
+    <span class="tag">话术 乙　“你车不值这个价，不能按保额赔”</span>
+    <q>请你们出具书面核定结论和计算依据。顺便确认一件事：我这张保单有没有依《保险法》第 55 条约定并载明保险价值？</q>
+    <span class="cite"><b>支撑：</b>第 55 条 —— 约定并载明保险价值的，<b>以约定价值为赔偿计算标准</b>；未约定的，<b>以事故发生时的实际价值</b>为计算标准。第 18 条 —— 保险金额只是保险人承担赔偿责任的<b>最高限额</b>，不等于赔付标准。所以关键在保单怎么写，不在你怎么吵。</span>
+  </div>
+
+  <div class="say">
+    <span class="tag">话术 丙　拖延不定损</span>
+    <q>核定请按《保险法》第 23 条，30 日内出结果；赔款金额暂时定不下来的，按第 25 条 60 日内先付能确定的部分。逾期我按第 23 条第 2 款主张赔偿损失，并向 12378 反映。</q>
+    <span class="cite"><b>支撑：</b>第 23 条第 2 款 —— 保险人未及时履行前款规定义务的，<b>除支付保险金外，应当赔偿被保险人因此受到的损失</b>。</span>
+  </div>
+
+  <div class="sec">救济顺序 <span>由轻到重，逐级上</span></div>
+  <div class="esc">
+    <div class="row"><span class="n">1</span><span>要求<b>书面核定结论</b>。口头一律无效，书面才留证。</span></div>
+    <div class="row"><span class="n">2</span><span>要求<b>双方共同委托</b>复检：共同委托物价评估中心或保险公估机构。</span></div>
+    <div class="row"><span class="n">3</span><span>自行委托公估机构：费用约 500–800 元，<b>差距大的那一方承担</b>。务必先走第 2 步，单方委托容易被质疑。</span></div>
+    <div class="row"><span class="n">4</span><span>拨打 <b>12378</b>　银行业保险业消费投诉热线（国家金融监督管理总局）。理赔环节明确在受理范围内。</span></div>
+    <div class="row"><span class="n">5</span><span>诉讼。财产保险（含车损险）诉讼时效 <b>2 年</b>。</span></div>
+  </div>
+
+  <div class="sec out">常见误传　勿照做 <span>这三条照做会造成实际损失</span></div>
+  <table class="myth">
+    <tr>
+      <td>维修费＋残值达到保额 <b>80%</b> 即推定全损</td>
+      <td><span class="no">✕</span> 80% 是<b>保险公司自设阈值</b>，各家 60%–95% 不等，<b>不是法定标准</b>。示范条款的表述是“修复费用<b>超过</b>实际价值”。拿一个不存在的规则去争，等于送出一个破绽。</td>
+    </tr>
+    <tr>
+      <td>可以要求保险公司 <b>7 个工作日</b>内出拒赔通知书</td>
+      <td><span class="no">✕</span> 期限错、方向也错。拒赔通知书是<b>它出给你的</b>，时限为作出核定之日起 <b>3 日内</b>。你要的那份文件叫<b>书面核定结论</b>。</td>
+    </tr>
+    <tr>
+      <td>拆解费几千块钱得<b>自己掏</b></td>
+      <td><span class="no">✕</span> 与《保险法》第 64 条及现有判例<b>正好相反</b>。这条照做，等于把钱主动送出去。</td>
+    </tr>
+  </table>
+
+  <div class="warn caution">
+    <span class="lbl">注意</span>
+    本卡只覆盖定损与理赔环节的通用规则，不替代具体保单条款与个案法律意见。<b>保单原文优先于本卡。</b>涉人伤、涉营运车辆、涉改装件定损，情形另有差异。
+  </div>
+
+  <div class="sec">事后必做 <span>比事故当天更重要</span></div>
+  <div class="ck">
+    <div class="h"><span>保单自查</span><i>现在就翻，别等出险</i></div>
+    <ul class="li">
+      <li><b>找“保险价值”四个字</b>：写了“保险金额按投保时实际价值确定”→ 按保额赔，你占理；只印保额未约定价值 → 按出险时实际价值赔，可能低于保额。</li>
+      <li>确认车损险保额是否按投保时实际价值确定，<b>而非按新车购置价高保</b>（高保低赔）。</li>
+      <li>确认是否被搭售<b>“附加发动机进水损坏除外特约条款”</b> —— 有这条，涉水熄火后的发动机损失不赔。</li>
+      <li>确认报案人、车主、被保险人是否为同一人；不一致的，提前写好授权委托。</li>
+    </ul>
+  </div>
+
+  <div class="ft">
+    <span>车险定损 QRH-01　版本 A　依据《保险法》22/23/24/25/55/64 条</span>
+    <span>背面　2 / 2</span>
+    <span>核验日期 2026-10-08</span>
+  </div>
+</div>
+
+</body>
+</html>
