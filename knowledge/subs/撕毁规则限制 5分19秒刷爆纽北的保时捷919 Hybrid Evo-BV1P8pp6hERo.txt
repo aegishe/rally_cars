@@ -1,0 +1,189 @@
+标题：撕毁规则限制 5分19秒刷爆纽北的保时捷919 Hybrid Evo
+发布者：policeman0077（UID:6276552）
+链接：https://www.bilibili.com/video/BV1P8pp6hERo
+提取方式：Whisper ASR (small)
+
+────────────────────────────────────────
+
+This is one of the fastest racing cars ever built. When it was created, it was faster than
+the Grand Prix cars of the time. It smashed lap records, and it was built on the basis
+of a hugely successful Le Mans prototype. This is the story of the Porsche 919 Hybrid Evo.
+Porsche had quit the World Endurance Championship at the end of the 2017 season,
+though design work was thought to have started on an all-new car for the 2018 WEC,
+but instead the manufacturer would not race that season after all, as it was preparing
+for its debut season in the all-electric Formula E Championship. However, Porsche's racing
+department wasn't idle. I suspect that a conversation was had between some of the
+senior management and engineers over a beer or two, and a question was raised,
+how fast could the 919 really go, if not constrained by regulations? Without fuel
+flow or aerodynamic limitations, without a weight limit or deployment and harvesting limits on the
+hybrid system, just how far could that car really go? The 919 was already expected to do a global
+PR tour in its standard configuration as a tribute to the car's huge success, but the idea of the
+Ultimate 919 was amazingly accepted by the Porsche management, and the engineers were given the all
+clear to develop another new version of the car, which would be called the 919 Hybrid Evo.
+Now, before we look at the specific development of the Evo, it's worth taking a look at the
+919 LMP1 in its post-Le Mans 2017 configuration. The car had actually started the season in its
+low drag format, but for the post-Le Mans rounds of the World Endurance Championship that season,
+the bodywork was revised with shorter, lower and somewhat smoother and more curvy front wheel
+pods with smaller headlight lenses. The dive planes were also changed along with the front
+splitter. From the rear, the differences to the bodywork are clear to see, with the trailing
+edge of the car quite different to the Le Mans specification. The overall aim of these
+changes was simple, to boost the downforce level of the car overall for the lower average speed
+of the WEC circuits. That late season car essentially became the basis of the Evo package.
+With chassis 4 of the 2017 Porsche 919s, the car which had actually led much of the 2017 Le Mans
+24 hours before it retired in the closing stages with an engine failure when it had a lead of
+over an hour. And that chassis was the one which was selected specifically for converting into the
+new specification car. It had actually only been introduced at the Le Mans test day, so it had
+a very low mileage. Aerodynamic development started in CFD, but extensive wind tunnel testing was
+also undertaken using Porsche's own Aero Acoustic Wind Tunnel. This aerodynamic program had a very
+clear aim to boost the downforce level even further, but without generating too much aerodynamic drag on
+the car. However, with no technical regulations to worry about, dramatic changes to the design
+were quickly introduced. For example, a completely new nose design was introduced right away,
+with a narrower and shorter front impact structure. And with no need for headlights on the car,
+these were removed to save weight. But there were no mirrors fitted to the car at all,
+which was another weight saving. Again, with no rules enforced, there was no need for the
+overwheel air extractors, the big holes used on all Le Mans prototypes, to try to prevent them
+from flipping over at high speed, though notably the LMP1's stability fin on the
+engine cover remained in place. The overall side pod shape of the 919 was actually quite
+similar between the Evo and the 2017 car, as you can see here. At the rear of the car,
+there were substantial changes, including a completely new twin element rear wing.
+To reduce aerodynamic drag on the straights, the wing featured active aerodynamics, or a drag reduction
+system if you want to call it that. The wings would open on the straights and close in the
+corners, and for this to work well, Porsche would need completely new wing profiles.
+So it went online and found a vast library of possible wing profiles. In fact, Porsche
+trialled 1600 different wing profiles, and using what the company called machine learning,
+it whittled that number down to the final designs, which were then bolted onto absolutely huge end
+plates. Crucially and additionally, the floor of the car was also heavily revised. Not as visible,
+or not visible at all, was a movable aerodynamic device on the trailing edge of the front splitter,
+or front wing if you look at the car in that sense, it further cut drag on the straights.
+Without the need to comply with the regulations, the front splitter was significantly reworked,
+and the diffuser was massively enlarged. To say that the 919 EVO was unlimited in its
+development isn't quite true, there were some limitations placed on the Porsche team. It had
+to use the LMP1 car as the basis of this new machine, not a complete clean sheet design. While
+there were some budgetary limits to the car project as well, and this was particularly evident when it
+came to the side skirts on the car. Fixed skirts were used on the floor edges, but sliding skirts
+were contemplated and even experimented with in the design phase of the 919 EVO,
+but the Porsche engineers simply couldn't get the sliding skirts to work without a complete
+redesign of the side pod, and there simply wasn't the time or budget for that.
+So flexible skirts were then tried out, but these couldn't be made to work reliably,
+resulting in a fixed skirt approach. These fixed skirts offered a significant boost
+in downforce levels, and did shift the car's centre of pressure forwards somewhat,
+but the time and the money just simply wasn't there to get a more advanced skirt solution
+working. Overall, the new aerodynamic package of the 919 EVO increased the downforce level by
+a massive 53%, and it had an efficiency increase of 66% compared to the qualifying trim used at
+Spa in 2017, but it is worth noting that that was the low drag specification of the car and not the
+later high downforce version of the car, so that downforce level increase probably isn't quite
+as big as the 53% figure suggests. However, the changes to the car were not just aerodynamic,
+the mechanical package of the car was also drastically revised, but only revised.
+The core package of the car carried over in its most basic form, the 2017 monocoque was used in
+identical configuration, and the car still used a 2.0-litre V4 turbocharged engine,
+featuring direct injection and an exhaust gas energy recovery system.
+The front-mounted MGUK section of the hybrid was also retained, and the transmission and its
+absolutely huge casing was also retained, as was the amusingly named suspension concept of the car.
+Don't google it. However, many of these elements were massively revised. The engine, for example,
+no longer needed to run with a fuel flow restriction, so the fuel flow meters were removed
+from the car, which was another weight saving, but it also meant that more fuel could reach
+the combustion changes, there was no limit on that, and with that factor removed,
+the engine output was also hugely increased. In 2017 LMP1 trim, the V4 put out a bit under 500
+brake horsepower, though in the 2015 specification it had a bit more than that. In the EVO specification,
+though, it had 720 brake horsepower. The hybrid system linked to the engine was also significantly
+boosted. While the LMP1 regulations put limits on how much energy could be harvested and deployed
+on each lap, the EVO was not subject to any such limit, and that brought the total power level of the
+unit to around 1160 brake horsepower. However, perhaps more performance could actually have been
+unlocked with a Formula One-style dedicated race fuel and co-developed combustion chambers,
+but that wasn't possible again due to time and budget constraints.
+The inboard suspension was also revised slightly to increase roll stiffness, and the front to
+rear interconnected suspension system was also revised additionally. There were quite a lot
+of weight savings across the car, such as the removal of windscreen wipers, the air jack system,
+after all there were no pit stops, and all of the FIA's race control electronics were taken
+out of the car as well. But not every change to the chassis reduced the weight, indeed some
+critical changes actually increased the weight slightly. For example, with the very high
+speeds and the high cornering loads and the higher aerodynamic loads passing through the car,
+compared to the standard 919, the car had to be fitted with new stronger wishbones in the suspension,
+while the steering system was also strengthened for the same reason, and that slightly increased
+the weight of those specific components. The braking system was also heavily revised to cope
+with the higher expected speeds, but also it utilised a four-wheel brake by wire system
+to give the car a little bit of your control. Overall, compared to the LMP1 specification car,
+the 919 EVO was 39kg lighter at 849kg, and actually I'm kind of surprised it wasn't a bit more than
+that, but again I suspect that's down to the two big constraints that Porsche faced with this car,
+time and money. Notably, Michelin actually developed some special tyres just for this car,
+which were designed for short, high-speed runs rather than endurance racing, which further boosted
+the mechanical grip level of the car, and that allowed the car to really push lap records.
+The final car was shaken down at Porsche's test track at Weissach in Germany,
+where it later broke the lap record, and after the initial testing confirmed the car's performance
+and reliability, the updated machine was shipped to Spa in Belgium, where it took to the track
+and went on to utterly shatter the lap record, beating Lewis Hamilton's 2017 pole position time
+by almost 8 tenths of a second. The 919 EVO was officially then faster than a Formula 1 car,
+but it wouldn't keep the Spa record for particularly long, as Sebastian Vettel in a
+Ferrari went 2 tenths of a second quicker than the 919 EVO had done a few months later during
+qualifying for that year's Belgian Grand Prix. Oscar Piastri today holds the outright record at Spa,
+set in a McLaren in 2025, and that record is now over a second faster than the Porsche went.
+Yet this shouldn't detract from the Porsche's pace. In 2018, the Porsche would still have been
+4th fastest in qualifying 2 at the Formula 1 Grand Prix, and in 2025, its 1 minute 41.7 lap
+would have put its 7th on the grid for the Belgian Grand Prix. However, one record that the 919 retains
+to this day is perhaps its most impressive, the outright Nurburgring Nordschleife record, which
+had previously been set by Stefan Beloff at the wheel of a Porsche 956, who covered the almost 13
+mile lap in just over 6 minutes, a record which stood right up until the arrival of the 919 EVO,
+and when the EVO arrived at the ring, the car set out on its fast laps, and soon,
+a completely new record was established almost a minute faster than Beloff had gone in the 956.
+At 5 minutes and 19 seconds driven by Timo Bernhardt, the Porsche 919 was the fastest car
+to ever lap the Nordschleife, and it remains so to this day. On that run, the car set an
+average speed of 233.8 kph, and it hit a top speed of 369.4 kph. And when you start to think about
+those speeds, you start to wonder, could the car have gone after Honda's Bonneville 400 record?
+I wonder. The car went on to conduct demonstration runs at a number of different events,
+and at Brands Hatch in England, the car came very close to the outright lap record on the
+Short Indy circuit. This was not meant to be a record attempt, however, and as such,
+the car wasn't fitted with the special tyres used at Spa and the Nürburgring,
+however, the car did come within 1.1 seconds of the outright record. Notably, the man behind
+the wheel, Nick Tandy, had never actually driven the EVO before that run. A technical glitch on
+the car actually cut the run short, and as a result, it didn't break the record,
+the record which it wasn't officially trying to break. And despite what AI might tell you when
+poorly written Google articles, the outright lap record at Brands Hatch was set by a Lola
+Cosworth Champ car driven by Paul Tracy in 2003, a 37.006 second lap. And it's important to note
+that the lap record is not held by a modified historic F1 car, which set a very quick race lap
+a few years later, but it's not the outright lap record on the Brands Hatch Indy circuit.
+That run that is quoted by the historic F1 car was over a second slower than the Lola had gone
+in 2003. The 919 then found its way to the USA for more promotional work, and at Laguna Seca
+during another demonstration run, the car actually lapped the track quicker than Helio Castroneves'
+best time in a kart car, but it was still slower than Marc Genet had gone in a Ferrari
+demonstration run in 2005. But again, the car wasn't really setting out to go for any records at that
+event. There was some talk of the 919 making an attempt at the Pikes Peak hill climb as well,
+but the lack of a steel roll cage on the car and the difficulty of fitting it with one,
+which was required for that event probably prevented the 919 from doing so, but certainly I think
+conversations were had and they may have fed into the later Volkswagen IDR entry at Pikes Peak.
+In the end, the 919 Evo's last ever public run was on the Public Road in Germany, where it's
+driven from the factory to the Porsche Museum, where the car resides to this day. Indeed,
+during its life, the 919s, not just the Evo but all of them, did make quite a few appearances
+on the public road, but these were demonstration runs of the racing cars. However, in secret,
+Porsche was taking that experience to develop a wild new road car. The 919 Street would utilise
+the monocoque of the Race 919, of which quite a number were built, with at least five cars wearing
+2017 chassis numbers. The car would also use the 2.0-litre V4 engine, and this was very much
+to be an exclusive road car for sale to very wealthy customers. Porsche got as far as developing
+all-new bodywork for the car, which is very much a production car product, and it lacked a lot of the
+aerodynamic devices of the racing car, for obvious reasons it didn't need them, it was a road car.
+But in the end, the 919 Street project was abandoned and it didn't ever make it past
+a full-scale clay model. But Porsche's intent was very, very real, and some years later it
+actually did create a similar concept of car, based on the LMDH racecar, the 963.
+Now you may find online, in a few places, references to the Capricorn 01 Zagato sports car,
+being based on the 919 chassis, but that's just not true. A quick look at the chassis of the car
+will show you it's nothing like a Le Mans prototype chassis, even though it is quite neat
+and was produced by the same organisation which manufactured the 919 Tubbs. It is not though
+a road-going 919 derivative, it's a completely separate design, but the true 919 Street would
+have been absolutely wild had Porsche ever finished its construction. Overall though,
+the Porsche 919 was a truly remarkable machine. It contested 26 races and won 16 of them,
+and it finished on the podium in every single race it contested. To this day, it holds the
+outright lap record at the Nurburgring and remains one of the fastest racing cars ever built,
+and in reality, it probably could have gone even faster than it ever did,
+with a bit more budget and a bit more development and a bit more time,
+but that wasn't the point of the car. It achieved all it set out to do, there was
+nothing left for the 919. Looking back at the 919 or 9R9 as it was known internally,
+it could be seen as the last true Porsche racing car. All subsequent competition cars wearing
+the German manufacturer's brand on the nose and also using its name have either been production car
+based machines like their GT cars or based on the designs of a completely different company.
+The LMDH specification Porsche 963 is a multi-matic design which shares its chassis
+with the abandoned Audi LMDH project, and multi-matics never seen the LMP2 car.
+Meanwhile, the Porsche Formula E car uses a Dolara chassis which is shared by all of the
+teams in that series. The 919 though, was a dedicated Porsche racing car,
+and to date it was the last of its kind. I do wonder if we will ever see it's like again.
+If you've enjoyed this high-speed story of a record-breaking car from Germany,
+then don't forget to hit like and subscribe as there's much more like this to come.
+For now though, thanks for watching and I'll see you soon, somewhere in the pit lane.
